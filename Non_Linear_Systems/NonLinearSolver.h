@@ -31,6 +31,7 @@ public:
 
     //method function
     void Bisection(double a, double b);//bisection between a and b
+    void Bisection();//bisection to find all zeroPoint
     void Aitken();
     void Chord();
     void Newton();

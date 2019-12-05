@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearEquation.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/NonLinearEquation.cpp.obj"
   "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearSolver.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/NonLinearSolver.cpp.obj"
   "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/main.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/main.cpp.obj"
   )

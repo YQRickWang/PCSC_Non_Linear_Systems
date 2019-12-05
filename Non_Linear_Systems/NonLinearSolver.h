@@ -7,36 +7,53 @@
 
 #include "iostream"
 #include "map"
+#include "cmath"
+#include "list"
 #include "string"
+#include "NonLinearSolver.h"
 
-typedef double (*function_type)(double);
+typedef double (*functions_type)(double*); //do i have to add this line in this file
 
 
 class NonLinearSolver {
 private:
-    function_type funPtr;//a function pointer of original function
-    function_type dfunPtr;//a function pointer of derivative of the original function
-    std::map<std::string,double> zeroPoint;//store the zero point of the function as well as method
+    NonLinearEquation equations;//contain the equation and the derivation of the functions
+    std::map<std::string,std::list<double>> zeroPoint;//store the zero point of the linear systems as well as methods
 public:
     //Constructor
     NonLinearSolver();
-    NonLinearSolver(function_type fun, function_type dfun);
+    NonLinearSolver(functions_type input_equations);
     NonLinearSolver(NonLinearSolver& copy);
 
+    //Destructor
+    ~NonLinearSolver();
+
     //get member function
-    const function_type GetFunPtr();
-    const function_type GetDfunPtr();
-    const std::map<std::string,double> GetZeroPointMap();
+    const NonLinearEquation GetEquations();
+    const std::map<std::string,std::list<double>> GetZeroPoint();
 
 
     //method function
     void Bisection(double a, double b);//bisection between a and b
-    void Bisection();//bisection to find all zeroPoint
     void Aitken();
-    void Chord();
+    void Chord(double a, double b);
     void Newton();
+    //void Newton(double* initial_guess);
+    //Newton1D();
     void FixedPoint();
+    void Plot();//plot zeropoint?
+    void Print();//print the zeropoint and method of the function
 
+    //operator
+
+    //iterative linear system solver, helper function?
+    double* LinearSolver_Splitting(double** A, double* b);
+    double* LinearSolver_Jacobi(double** A, double* b);
+    double* LinearSolver_GaussSeidel(double** A, double* b);
+
+    //other helper functions
+    void AddToZeroPoint(std::string method,double* zeros);
+    void AddToZeroPoint(std::string method,double zeros);//overload for 1 dimension
 };
 
 

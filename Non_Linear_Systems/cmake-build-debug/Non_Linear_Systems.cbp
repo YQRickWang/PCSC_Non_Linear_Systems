@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearEquation.cpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearEquation.h">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
 		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearSolver.cpp">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>

@@ -124,6 +124,33 @@ Non_Linear_Systems\fast:
 	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\build
 .PHONY : Non_Linear_Systems\fast
 
+NonLinearEquation.obj: NonLinearEquation.cpp.obj
+
+.PHONY : NonLinearEquation.obj
+
+# target to build an object file
+NonLinearEquation.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\NonLinearEquation.cpp.obj
+.PHONY : NonLinearEquation.cpp.obj
+
+NonLinearEquation.i: NonLinearEquation.cpp.i
+
+.PHONY : NonLinearEquation.i
+
+# target to preprocess a source file
+NonLinearEquation.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\NonLinearEquation.cpp.i
+.PHONY : NonLinearEquation.cpp.i
+
+NonLinearEquation.s: NonLinearEquation.cpp.s
+
+.PHONY : NonLinearEquation.s
+
+# target to generate assembly for a file
+NonLinearEquation.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\NonLinearEquation.cpp.s
+.PHONY : NonLinearEquation.cpp.s
+
 NonLinearSolver.obj: NonLinearSolver.cpp.obj
 
 .PHONY : NonLinearSolver.obj
@@ -187,6 +214,9 @@ help:
 	@echo ... Non_Linear_Systems
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... NonLinearEquation.obj
+	@echo ... NonLinearEquation.i
+	@echo ... NonLinearEquation.s
 	@echo ... NonLinearSolver.obj
 	@echo ... NonLinearSolver.i
 	@echo ... NonLinearSolver.s

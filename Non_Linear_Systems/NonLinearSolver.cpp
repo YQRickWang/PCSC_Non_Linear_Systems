@@ -195,11 +195,61 @@ double* NonLinearSolver::LinearSolver_Splitting(double **A, double *b)
 {
     int dim = equations.GetDimension();
     double* x = nullptr;
-
+    double** P = nullptr;
     x = new double[dim];
 
-    //need to be finished
+    //initialize
+    P = new double*[dim];
+    for(int i=0;i<dim;i++)
+    {
+        P[i] = new double[dim];
+        //initialize x as well
+        x[i] = 0.0;
+    }
 
+    for(int i =0;i<dim;i++)
+    {
+        for(int j=0;j<dim;j++)
+        {
+            if(i==j)
+                P[i][j] = 1.0;
+            else
+                P[i][j] = 0.0;
+        }
+    }
+
+    //iterative
+    do{
+
+    }while()
+
+
+
+
+
+    //need to be finished
+    //choose P as identical matrix
+
+
+
+    //delete P at the end of function
+
+}
+double NonLinearSolver::Error(double *x, double *y)
+{
+    double error = 0.0;
+
+    for(int i=0; i<equations.GetDimension();i++)
+    {
+        error+=pow(x[i]-y[i],2);
+    }
+
+    return sqrt(error/equations.GetDimension());
+}
+
+double NonLinearSolver::Error(double x, double y)
+{
+    return abs(x-y);
 }
 
 //other helper functions

@@ -55,6 +55,10 @@ public:
     void AddToZeroPoint(std::string method,double* zeros);
     void AddToZeroPoint(std::string method,double zeros);//overload for 1 dimension
 
+    double Error(double* x, double* y);
+    double Error(double x, double y);
+
+
     //need to be done
     //1. exception
     //2. plot

@@ -98,6 +98,12 @@ void NonLinearSolver::Chord(double a, double b)
 //fixed point method
 void NonLinearSolver::FixedPoint()
 {
+    int dim = equations.GetDimension();
+
+    if(dim>1)
+    {
+        std::cout<<"The Fixed Point method is only for 1 dimention, please check again."<<std::endl;
+    }
 
 }
 

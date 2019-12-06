@@ -10,6 +10,7 @@ NonLinearEquation::NonLinearEquation()
     dim = 0;
     funPtrArray = nullptr;
     dfunPtrArray = nullptr;
+    fpPtr = nullptr;
 }
 
 NonLinearEquation::NonLinearEquation(NonLinearEquation &copy)
@@ -17,14 +18,17 @@ NonLinearEquation::NonLinearEquation(NonLinearEquation &copy)
     dim = copy.GetDimension();
     funPtrArray = copy.GetFunArray();
     dfunPtrArray = copy.GetDfunArray();
+    fpPtr = copy.GetFpFun();
 }
 
-NonLinearEquation::NonLinearEquation(functions_type *funArray, functions_type **dfunArray, int dimension)
+NonLinearEquation::NonLinearEquation(functions_type *funArray, functions_type **dfunArray,functions_type fixedPoint, int dimension)
 {
     dim = dimension;
     funPtrArray = funArray;
     dfunPtrArray = dfunArray;
+    fpPtr = fixedPoint;
 }
+
 
 NonLinearEquation::~NonLinearEquation()
 {
@@ -44,6 +48,11 @@ functions_type* NonLinearEquation::GetFunArray()
 functions_type** NonLinearEquation::GetDfunArray()
 {
     return dfunPtrArray;
+}
+
+functions_type NonLinearEquation::GetFpFun()
+{
+    return fpPtr;
 }
 
 double* NonLinearEquation::GetFunctionValue(double **input)
@@ -74,6 +83,19 @@ double NonLinearEquation::GetFunctionValue(double input)
 
     return funPtrArray[0](x);
 
+}
+
+//get fixed point function value
+double NonLinearEquation::GetFpFunctionValue(double input, std::string method)
+{
+    if(method=="Fixed Point"&&dim==1&&fpPtr!= nullptr)
+    {
+        return fpPtr(&input);
+    }
+    else{
+        std::cout<<"Cannot get fixed point function value"<<std::endl;
+        return 0;
+    }
 }
 
 double** NonLinearEquation::GetDfunctionValue(double **input)

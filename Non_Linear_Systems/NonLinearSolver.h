@@ -35,12 +35,12 @@ public:
 
     //method function
     void Bisection(double a, double b);//bisection between a and b
-    void Aitken();
+    void Aitken(double initial_guess, int max_iterations);
     void Chord(double a, double b);
     void Newton();
     //void Newton(double* initial_guess);
     //Newton1D();
-    void FixedPoint();
+    void FixedPoint(double initial_guess, int max_iterations);//intial_guess and max_iterations are default values
     void Plot();//plot zeropoint?
     void Print();//print the zeropoint and method of the function
 
@@ -54,6 +54,13 @@ public:
     //other helper functions
     void AddToZeroPoint(std::string method,double* zeros);
     void AddToZeroPoint(std::string method,double zeros);//overload for 1 dimension
+
+    //need to be done
+    //1. exception
+    //2. plot
+    //3. read data from text file?
+    //4. solve linear systems by iterative methods
+    //5. newton method
 };
 
 

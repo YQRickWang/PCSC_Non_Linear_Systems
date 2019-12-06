@@ -29,7 +29,7 @@ public:
     double GetFunctionValue(double input);//overload for dimension 1
     double** GetDfunctionValue(double** input);
     double GetDfunctionValue(double input);//overload for dimesion 1
-    double GetFpFunctionValue(double input, std::string method);
+    double GetFpFunctionValue(double input);
     //void Plot(double a,double b);//only plot for 1d dimension, need to check if 1d
 
     //Get Member Function

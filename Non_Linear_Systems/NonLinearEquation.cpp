@@ -86,14 +86,14 @@ double NonLinearEquation::GetFunctionValue(double input)
 }
 
 //get fixed point function value
-double NonLinearEquation::GetFpFunctionValue(double input, std::string method)
+double NonLinearEquation::GetFpFunctionValue(double input)
 {
-    if(method=="Fixed Point"&&dim==1&&fpPtr!= nullptr)
+    if(dim==1&&fpPtr!= nullptr)
     {
         return fpPtr(&input);
     }
     else{
-        std::cout<<"Cannot get fixed point function value"<<std::endl;
+        std::cout<<"Cannot get fixed point function value, please check"<<std::endl;
         return 0;
     }
 }

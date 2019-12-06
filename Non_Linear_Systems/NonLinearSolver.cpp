@@ -72,9 +72,38 @@ void NonLinearSolver::Bisection(double a, double b)
     AddToZeroPoint("Bisection",c);
 }
 
-void NonLinearSolver::Aitken()
+//basically fixed point method, but using aitkent acceralation
+void NonLinearSolver::Aitken(double initial_guess = 0.0, int max_iterations = 100)
 {
+    int dim = equations.GetDimension();
+    double tol = 1e-5;
+    double x_prev = initial_guess;
+    double x_next = 0.0;
+    double x_next_next = 0.0;
+    double error = 0.0;
+    int it_count = 0;
 
+    if(dim>1)
+    {
+        std::cout<<"The Fixed Point method (Aitken) is only for 1 dimention, please check again."<<std::endl;
+    }
+
+    do{
+        x_next = equations.GetFpFunctionValue(x_prev);
+        x_next_next = equations.GetFpFunctionValue(x_next);
+
+        //compute next by using aitken acceralation
+        x_next = x_prev - (pow(x_next-x_prev,2))/(x_next_next-2*x_next+x_prev);
+
+        error = abs(x_next-x_prev);
+        it_count++;
+    }while(error>=tol&&it_count<=max_iterations);
+
+    if(error>=tol)
+        std::cout<<"The aitken method does not converges."<<std::endl;
+
+    //add to the zeroPoint
+    AddToZeroPoint("Aitken",x_next);
 }
 
 void NonLinearSolver::Chord(double a, double b)
@@ -96,17 +125,37 @@ void NonLinearSolver::Chord(double a, double b)
 }
 
 //fixed point method
-void NonLinearSolver::FixedPoint()
+void NonLinearSolver::FixedPoint(double initial_guess = 0.0, int max_iterations = 100)
 {
     int dim = equations.GetDimension();
+    double tol = 1e-5;
+    double x_prev = initial_guess;
+    double x_next = 0.0;
+    double error = 0.0;
+    int it_count = 0;
 
     if(dim>1)
     {
-        std::cout<<"The Fixed Point method is only for 1 dimention, please check again."<<std::endl;
+        std::cout<<"The fixed point method is only for 1 dimention, please check again."<<std::endl;
     }
+
+    do{
+        x_next = equations.GetFpFunctionValue(x_prev);
+        error = abs(x_next-x_prev);
+        it_count++;
+    }while(it_count<=max_iterations&&error>=tol);
+
+    //check the convergence?
+    if(error>=tol)
+        std::cout<<"The fixed point method does not converges."<<std::endl;
+
+    //add to the zeroPoint
+    AddToZeroPoint("FixedPoint",x_next);
+
 
 }
 
+//for high dimemsion
 void NonLinearSolver::Newton()
 {
     int dim = equations.GetDimension();
@@ -137,6 +186,12 @@ void NonLinearSolver::Newton()
 
 //helper function, linear solver iterative method
 double* NonLinearSolver::LinearSolver_Splitting(double **A, double *b)
+/**
+ *
+ * @param A
+ * @param b
+ * @return
+ */
 {
     int dim = equations.GetDimension();
     double* x = nullptr;

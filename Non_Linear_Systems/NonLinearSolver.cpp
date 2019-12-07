@@ -125,7 +125,7 @@ void NonLinearSolver::Chord(double a, double b)
 }
 
 //fixed point method
-void NonLinearSolver::FixedPoint(double initial_guess = 0.0, int max_iterations = 100)
+void NonLinearSolver::FixedPoint(double initial_guess, int max_iterations)
 {
     int dim = equations.GetDimension();
     double tol = 1e-5;
@@ -156,11 +156,16 @@ void NonLinearSolver::FixedPoint(double initial_guess = 0.0, int max_iterations 
 }
 
 //for high dimemsion
-void NonLinearSolver::Newton()
+void NonLinearSolver::Newton(int max_iterations)
 {
     int dim = equations.GetDimension();
+    int it_count = 0;
     double* initial_guess = nullptr;//initial guess
-    double* zeros = nullptr;
+    double* x_prev = nullptr;
+    double* x_next = nullptr;
+    double* x_delta = nullptr;
+    double** A = nullptr;
+    double* b = nullptr;
     double tol = 1e-5;
 
     //initialize
@@ -171,21 +176,33 @@ void NonLinearSolver::Newton()
         initial_guess[i] = 0.0;
     }
 
-    zeros = equations.GetFunArray(initial_guess);
+    x_prev = initial_guess;
 
     //iterations
+    do{
+        b = equations.GetFunctionValue(x_prev);
+        A = equations.GetDfunctionValue(x_prev);
+        //modify b a little, negative
+        for(int i=0; i<dim; i++)
+        {
+            b[i] = -b[i];
+        }
 
+        x_delta = LinearSolver_Splitting(A,b);
 
-    //solve linear systems
+        x_next = MatrixAdd(x_prev,x_delta);
+        it_count++;
+    }while(it_count<=max_iterations&&GetError(x_prev,x_next)>=tol);
 
-
+    AddToZeroPoint("Newton",x_next);
 
 }
 
 //operator
 
 //helper function, linear solver iterative method
-double* NonLinearSolver::LinearSolver_Splitting(double **A, double *b)
+//need to check use of the space to avoid memory leakage
+double* NonLinearSolver::LinearSolver_Splitting(double **A, double *b, int max_iterations)
 /**
  *
  * @param A
@@ -194,9 +211,18 @@ double* NonLinearSolver::LinearSolver_Splitting(double **A, double *b)
  */
 {
     int dim = equations.GetDimension();
-    double* x = nullptr;
+    int it_count = 0;
+    double tol = 1e-5;
+    double* x_prev = nullptr;
+    double* x_next = nullptr;
+    double* r = nullptr;
+    double* z = nullptr;
     double** P = nullptr;
-    x = new double[dim];
+
+    x_prev = new double[dim];
+    x_next = new double[dim];
+    r = new double[dim];
+    z = new double[dim];
 
     //initialize
     P = new double*[dim];
@@ -204,7 +230,9 @@ double* NonLinearSolver::LinearSolver_Splitting(double **A, double *b)
     {
         P[i] = new double[dim];
         //initialize x as well
-        x[i] = 0.0;
+        x_prev[i] = 0.0;
+        x_next[i] = 0.0;
+        r[i] = 0.0;
     }
 
     for(int i =0;i<dim;i++)
@@ -218,23 +246,32 @@ double* NonLinearSolver::LinearSolver_Splitting(double **A, double *b)
         }
     }
 
+    r = MatrixSub(b,MatrixMulti(A,x_prev));
+
     //iterative
     do{
-
-    }while()
-
-
-
-
-
-    //need to be finished
-    //choose P as identical matrix
+        z = r;
+        x_next = MatrixAdd(x_prev,z);
+        r = MatrixSub(r,MatrixMulti(A,z));
+        it_count++;
+    }while(it_count<=max_iterations&&GetError(x_prev,x_next)>=tol);
 
 
+    if(GetError(x_prev,x_next)>=tol)
+    {
+        std::cout<<"Solve Linear System Eorror: Splitthing Method, Cannot coverges"<<std::endl;
+    }
 
     //delete P at the end of function
+    for(int i=0;i<dim;i++)
+        delete P[i];
+
+    delete []P;
+
+    return x_next;
 
 }
+
 double NonLinearSolver::Error(double *x, double *y)
 {
     double error = 0.0;

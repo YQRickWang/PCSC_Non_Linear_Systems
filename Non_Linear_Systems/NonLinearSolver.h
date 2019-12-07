@@ -37,17 +37,17 @@ public:
     void Bisection(double a, double b);//bisection between a and b
     void Aitken(double initial_guess, int max_iterations);
     void Chord(double a, double b);
-    void Newton();
+    void Newton(int matrix_iterations);
     //void Newton(double* initial_guess);
     //Newton1D();
-    void FixedPoint(double initial_guess, int max_iterations);//intial_guess and max_iterations are default values
+    void FixedPoint(double initial_guess = 0.0 , int max_iterations = 100);//intial_guess and max_iterations are default values
     void Plot();//plot zeropoint?
     void Print();//print the zeropoint and method of the function
 
     //operator
 
     //iterative linear system solver, helper function?
-    double* LinearSolver_Splitting(double** A, double* b);
+    double* LinearSolver_Splitting(double** A, double* b, int max_iterations = 100);
     double* LinearSolver_Jacobi(double** A, double* b);
     double* LinearSolver_GaussSeidel(double** A, double* b);
 

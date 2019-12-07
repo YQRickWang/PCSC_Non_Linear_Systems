@@ -55,7 +55,7 @@ functions_type NonLinearEquation::GetFpFun()
     return fpPtr;
 }
 
-double* NonLinearEquation::GetFunctionValue(double **input)
+double* NonLinearEquation::GetFunctionValue(double *input)
 {
     //the order of rows of input is consistent with the order of equation
     double* output = nullptr;
@@ -63,7 +63,7 @@ double* NonLinearEquation::GetFunctionValue(double **input)
 
     for(int i=0;i<dim;i++)
     {
-        output[i] = funPtrArray[i](input[i]);
+        output[i] = funPtrArray[i](input);
     }
 
     return output;
@@ -98,7 +98,7 @@ double NonLinearEquation::GetFpFunctionValue(double input)
     }
 }
 
-double** NonLinearEquation::GetDfunctionValue(double **input)
+double** NonLinearEquation::GetDfunctionValue(double *input)
 {
     double** output = nullptr;
     output = new double*[dim];
@@ -111,7 +111,7 @@ double** NonLinearEquation::GetDfunctionValue(double **input)
     for(int i=0;i<dim;i++)
         for(int j=0;j<dim;j++)
         {
-            output[i][j] = dfunPtrArray[i][j](input[i]);
+            output[i][j] = dfunPtrArray[i][j](input);
         }
 
     return output;
@@ -139,3 +139,4 @@ NonLinearEquation& NonLinearEquation::operator=(NonLinearEquation& other)
     funPtrArray = other.GetFunArray();
     dfunPtrArray = other.GetDfunArray();
 }
+

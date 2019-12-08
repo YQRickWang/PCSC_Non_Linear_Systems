@@ -37,9 +37,9 @@ public:
 
     //method function
     void Bisection(double a, double b);//bisection between a and b
-    void Aitken(double initial_guess, int max_iterations);
+    void Aitken(double initial_guess = 0.0, int max_iterations = 100);
     void Chord(double a, double b);
-    void Newton(int max_iterations);
+    void Newton(int max_iterations=100);
     //void Newton(double* initial_guess);
     //Newton1D();
     void FixedPoint(double initial_guess = 0.0 , int max_iterations = 100);//intial_guess and max_iterations are default values

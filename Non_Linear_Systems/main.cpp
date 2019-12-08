@@ -55,6 +55,9 @@ int main() {
     NonLinearSolver solver_1(equations_1);
     solver_1.Bisection(0,2);
     solver_1.Chord(0,2);
+    solver_1.FixedPoint();
+    solver_1.Aitken(0.5);
+
 
     //Print zeropint list and method
     std::cout<<"Print zero point"<<std::endl;
@@ -80,7 +83,7 @@ int main() {
 
     fun_2[0] = &Test_B_function_1;
     dfun_2[0][0] = &Test_B_dfunction_11;
-    fp_2 = &Test_A_fpfunction;
+    fp_2 = &Test_B_fpfunction;
 
     NonLinearEquation equations_2(fun_2,dfun_2,fp_2,1);
 
@@ -98,6 +101,8 @@ int main() {
     NonLinearSolver solver_2(equations_2);
     solver_2.Bisection(0,2);
     solver_2.Chord(0,2);
+    solver_2.Aitken(1.0);
+    solver_2.FixedPoint(1.0);
 
     //Print zeropint list and method
     std::cout<<"Print zero point"<<std::endl;

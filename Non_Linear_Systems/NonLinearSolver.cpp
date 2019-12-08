@@ -79,7 +79,7 @@ void NonLinearSolver::Bisection(double a, double b)
 }
 
 //basically fixed point method, but using aitkent acceralation
-void NonLinearSolver::Aitken(double initial_guess = 0.0, int max_iterations = 100)
+void NonLinearSolver::Aitken(double initial_guess, int max_iterations)
 {
     int dim = equations.GetDimension();
     double tol = 1e-5;
@@ -101,7 +101,8 @@ void NonLinearSolver::Aitken(double initial_guess = 0.0, int max_iterations = 10
         //compute next by using aitken acceralation
         x_next = x_prev - (pow(x_next-x_prev,2))/(x_next_next-2*x_next+x_prev);
 
-        error = abs(x_next-x_prev);
+        error = GetError(x_prev,x_next);
+        x_prev = x_next;
         it_count++;
     }while(error>=tol&&it_count<=max_iterations);
 
@@ -115,19 +116,30 @@ void NonLinearSolver::Aitken(double initial_guess = 0.0, int max_iterations = 10
 void NonLinearSolver::Chord(double a, double b)
 {
     double tol = 1e-5;//tolerance of the method
-    double xnp, xn, xnm;
-    xnm = a;
-    xn = b;
-    xnp = 0.0;
-
-    while(abs(xn-xnm)>=tol)
+    double intervalBegin, x, intervalEnd;
+    intervalBegin = a;
+    intervalEnd = b;
+    x = (intervalBegin * equations.GetFunctionValue(intervalEnd) - intervalEnd * equations.GetFunctionValue(intervalBegin)) / (equations.GetFunctionValue(intervalEnd) - equations.GetFunctionValue(intervalBegin));
+    double err = tol + 1;
+    while(err >= tol)
     {
-        xnp = xn - equations.GetFunctionValue(xn)*(xn-xnm)/(equations.GetFunctionValue(xn)-equations.GetFunctionValue(xnm));
-        xn = xnp;
-        xnm = xn;
+        double x_prev = x;
+        if(equations.GetFunctionValue(intervalBegin) * equations.GetFunctionValue(intervalEnd) >= 0.0){
+            std::cout<< "incorrect interval" <<"\n";
+        }
+        else if(equations.GetFunctionValue(intervalBegin) * equations.GetFunctionValue(x) < 0){
+            intervalEnd = x;
+            x = (intervalBegin * equations.GetFunctionValue(intervalEnd) - intervalEnd * equations.GetFunctionValue(intervalBegin)) / (equations.GetFunctionValue(intervalEnd) - equations.GetFunctionValue(intervalBegin));
+        }
+        else{
+            intervalBegin = x;
+            x = (intervalBegin * equations.GetFunctionValue(intervalEnd) - intervalEnd * equations.GetFunctionValue(intervalBegin)) / (equations.GetFunctionValue(intervalEnd) - equations.GetFunctionValue(intervalBegin));
+        }
+
+        err = abs(x - x_prev);
     }
     //add xn to the zeroPoint
-    AddToZeroPoint("Chord",xn);
+    AddToZeroPoint("Chord",x);
 }
 
 //fixed point method
@@ -142,12 +154,14 @@ void NonLinearSolver::FixedPoint(double initial_guess, int max_iterations)
 
     if(dim>1)
     {
-        std::cout<<"The fixed point method is only for 1 dimention, please check again."<<std::endl;
+        std::cout<<"The fixed point method is only for 1 dimension, please check again."<<std::endl;
     }
+
 
     do{
         x_next = equations.GetFpFunctionValue(x_prev);
-        error = abs(x_next-x_prev);
+        error = GetError(x_prev,x_next);
+        x_prev = x_next;
         it_count++;
     }while(it_count<=max_iterations&&error>=tol);
 
@@ -157,7 +171,6 @@ void NonLinearSolver::FixedPoint(double initial_guess, int max_iterations)
 
     //add to the zeroPoint
     AddToZeroPoint("FixedPoint",x_next);
-
 
 }
 

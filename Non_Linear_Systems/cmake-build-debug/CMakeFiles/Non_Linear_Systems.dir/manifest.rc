@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/embed.manifest"

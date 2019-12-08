@@ -20,6 +20,7 @@ public:
     //Constructor
     NonLinearEquation();
     NonLinearEquation(functions_type* funArray,functions_type** dfunArray,functions_type fixedPoint, int dimension);
+    NonLinearEquation(functions_type* funArray,functions_type** dfunArray,int dimension);
     NonLinearEquation(NonLinearEquation& copy);
     //Destructor
     ~NonLinearEquation();
@@ -39,7 +40,7 @@ public:
     functions_type GetFpFun();
 
     //operator
-    NonLinearEquation& operator=(NonLinearEquation& other);//copy assignment
+    //NonLinearEquation &operator =(NonLinearEquation);//copy assignment
 
     //Helper functions
 };

@@ -11,6 +11,7 @@
 #include "list"
 #include "string"
 #include "NonLinearSolver.h"
+#include "NonLinearEquation.h"
 #include "Helper.h" //helper function
 
 typedef double (*functions_type)(double*); //do i have to add this line in this file
@@ -23,7 +24,7 @@ private:
 public:
     //Constructor
     NonLinearSolver();
-    NonLinearSolver(functions_type input_equations);
+    NonLinearSolver(NonLinearEquation input_equations);
     NonLinearSolver(NonLinearSolver& copy);
 
     //Destructor
@@ -38,12 +39,12 @@ public:
     void Bisection(double a, double b);//bisection between a and b
     void Aitken(double initial_guess, int max_iterations);
     void Chord(double a, double b);
-    void Newton(int matrix_iterations);
+    void Newton(int max_iterations);
     //void Newton(double* initial_guess);
     //Newton1D();
     void FixedPoint(double initial_guess = 0.0 , int max_iterations = 100);//intial_guess and max_iterations are default values
     void Plot();//plot zeropoint?
-    void Print();//print the zeropoint and method of the function
+    void ZeroPointPrint();//print the zeropoint and method of the function
 
     //operator
 
@@ -55,9 +56,6 @@ public:
     //other helper functions
     void AddToZeroPoint(std::string method,double* zeros);
     void AddToZeroPoint(std::string method,double zeros);//overload for 1 dimension
-
-    double Error(double* x, double* y);
-    double Error(double x, double y);
 
 
     //need to be done

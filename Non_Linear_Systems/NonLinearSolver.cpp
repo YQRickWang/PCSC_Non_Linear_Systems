@@ -8,20 +8,26 @@
 //Constructor
 NonLinearSolver::NonLinearSolver()
 {
-    equations = new NonLinearEquation();
-    zeroPoint.clear();
+    NonLinearEquation voideq;
+    this->equations=voideq;
+    this->zeroPoint.clear();
 }
 
-NonLinearSolver::NonLinearSolver(functions_type input_equations)
+NonLinearSolver::NonLinearSolver(NonLinearEquation input_equations)
 {
-    equations = input_equations;
-    zeroPoint.clear();
+    this->equations = input_equations;
+    this->zeroPoint.clear();
 }
 
 NonLinearSolver::NonLinearSolver(NonLinearSolver& copy)
 {
-    equations = copy.GetEquations();
-    zeroPoint = copy.GetZeroPoint();
+    this->equations = copy.GetEquations();
+    this->zeroPoint = copy.GetZeroPoint();
+}
+
+NonLinearSolver::~NonLinearSolver()
+{
+    //nothing to do
 }
 
 //Member Function
@@ -272,21 +278,19 @@ double* NonLinearSolver::LinearSolver_Splitting(double **A, double *b, int max_i
 
 }
 
-double NonLinearSolver::Error(double *x, double *y)
+void NonLinearSolver::ZeroPointPrint()
 {
-    double error = 0.0;
-
-    for(int i=0; i<equations.GetDimension();i++)
+    //print zero point
+    for(auto it = zeroPoint.begin();it!=zeroPoint.end();++it)
     {
-        error+=pow(x[i]-y[i],2);
+        std::cout<<it->first<<":"<<std::endl;
+
+
+        for(auto it_list = (it->second).begin();it_list!=(it->second).end();++it_list)
+        {
+            std::cout<<*it_list<<std::endl;
+        }
     }
-
-    return sqrt(error/equations.GetDimension());
-}
-
-double NonLinearSolver::Error(double x, double y)
-{
-    return abs(x-y);
 }
 
 //other helper functions

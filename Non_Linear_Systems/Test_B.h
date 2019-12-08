@@ -14,12 +14,12 @@
 //g(x) = e^x-2
 //x1 = -1.8414
 //x2 = 1.14619
-class Test_B {
-public:
-    double function_1(double* input);
-    double dfunction_11(double* input);
-    double fpfunction(double* input);
-};
+
+
+double Test_B_function_1(double* input);
+double Test_B_dfunction_11(double* input);
+double Test_B_fpfunction(double* input);
+
 
 
 #endif //NON_LINEAR_SYSTEMS_TEST_B_H

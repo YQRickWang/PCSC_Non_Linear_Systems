@@ -29,6 +29,14 @@ NonLinearEquation::NonLinearEquation(functions_type *funArray, functions_type **
     fpPtr = fixedPoint;
 }
 
+NonLinearEquation::NonLinearEquation(functions_type *funArray, functions_type **dfunArray, int dimension)
+{
+    dim = dimension;
+    funPtrArray = funArray;
+    dfunPtrArray = dfunArray;
+    fpPtr = nullptr;
+}
+
 
 NonLinearEquation::~NonLinearEquation()
 {
@@ -132,11 +140,12 @@ double NonLinearEquation::GetDfunctionValue(double input)
 }
 
 //operator
-NonLinearEquation& NonLinearEquation::operator=(NonLinearEquation& other)
-{
-    //copy assignment
-    dim = other.GetDimension();
-    funPtrArray = other.GetFunArray();
-    dfunPtrArray = other.GetDfunArray();
-}
+//NonLinearEquation& NonLinearEquation::operator=(NonLinearEquation other)
+//{
+//    //copy assignment
+//    dim = other.GetDimension();
+//    funPtrArray = other.GetFunArray();
+//    dfunPtrArray = other.GetDfunArray();
+//    fpPtr = other.GetFpFun();
+//}
 

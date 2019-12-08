@@ -11,6 +11,7 @@
 #include "list"
 #include "string"
 #include "NonLinearSolver.h"
+#include "Helper.h" //helper function
 
 typedef double (*functions_type)(double*); //do i have to add this line in this file
 

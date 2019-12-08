@@ -153,13 +153,33 @@ CMakeFiles\Non_Linear_Systems.dir\Test_B.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Non_Linear_Systems.dir\Test_B.cpp.s /c "D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\Test_B.cpp"
 <<
 
+CMakeFiles\Non_Linear_Systems.dir\Helper.cpp.obj: CMakeFiles\Non_Linear_Systems.dir\flags.make
+CMakeFiles\Non_Linear_Systems.dir\Helper.cpp.obj: ..\Helper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Non_Linear_Systems.dir/Helper.cpp.obj"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Non_Linear_Systems.dir\Helper.cpp.obj /FdCMakeFiles\Non_Linear_Systems.dir\ /FS -c "D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\Helper.cpp"
+<<
+
+CMakeFiles\Non_Linear_Systems.dir\Helper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Non_Linear_Systems.dir/Helper.cpp.i"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe > CMakeFiles\Non_Linear_Systems.dir\Helper.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\Helper.cpp"
+<<
+
+CMakeFiles\Non_Linear_Systems.dir\Helper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Non_Linear_Systems.dir/Helper.cpp.s"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Non_Linear_Systems.dir\Helper.cpp.s /c "D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\Helper.cpp"
+<<
+
 # Object files for target Non_Linear_Systems
 Non_Linear_Systems_OBJECTS = \
 "CMakeFiles\Non_Linear_Systems.dir\main.cpp.obj" \
 "CMakeFiles\Non_Linear_Systems.dir\NonLinearSolver.cpp.obj" \
 "CMakeFiles\Non_Linear_Systems.dir\NonLinearEquation.cpp.obj" \
 "CMakeFiles\Non_Linear_Systems.dir\Test_A.cpp.obj" \
-"CMakeFiles\Non_Linear_Systems.dir\Test_B.cpp.obj"
+"CMakeFiles\Non_Linear_Systems.dir\Test_B.cpp.obj" \
+"CMakeFiles\Non_Linear_Systems.dir\Helper.cpp.obj"
 
 # External object files for target Non_Linear_Systems
 Non_Linear_Systems_EXTERNAL_OBJECTS =
@@ -169,9 +189,10 @@ Non_Linear_Systems.exe: CMakeFiles\Non_Linear_Systems.dir\NonLinearSolver.cpp.ob
 Non_Linear_Systems.exe: CMakeFiles\Non_Linear_Systems.dir\NonLinearEquation.cpp.obj
 Non_Linear_Systems.exe: CMakeFiles\Non_Linear_Systems.dir\Test_A.cpp.obj
 Non_Linear_Systems.exe: CMakeFiles\Non_Linear_Systems.dir\Test_B.cpp.obj
+Non_Linear_Systems.exe: CMakeFiles\Non_Linear_Systems.dir\Helper.cpp.obj
 Non_Linear_Systems.exe: CMakeFiles\Non_Linear_Systems.dir\build.make
 Non_Linear_Systems.exe: CMakeFiles\Non_Linear_Systems.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Non_Linear_Systems.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Non_Linear_Systems.exe"
 	"C:\Program Files\JetBrains\CLion 2019.2.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\Non_Linear_Systems.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\Non_Linear_Systems.dir\objects1.rsp @<<
  /out:Non_Linear_Systems.exe /implib:Non_Linear_Systems.lib /pdb:"D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Non_Linear_Systems.pdb" /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

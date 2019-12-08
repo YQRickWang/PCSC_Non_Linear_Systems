@@ -190,9 +190,9 @@ void NonLinearSolver::Newton(int max_iterations)
 
         x_delta = LinearSolver_Splitting(A,b);
 
-        x_next = MatrixAdd(x_prev,x_delta);
+        x_next = MatrixAdd(x_prev,x_delta,dim);//need to check
         it_count++;
-    }while(it_count<=max_iterations&&GetError(x_prev,x_next)>=tol);
+    }while(it_count<=max_iterations&&GetError(x_prev,x_next,dim)>=tol);
 
     AddToZeroPoint("Newton",x_next);
 
@@ -246,18 +246,18 @@ double* NonLinearSolver::LinearSolver_Splitting(double **A, double *b, int max_i
         }
     }
 
-    r = MatrixSub(b,MatrixMulti(A,x_prev));
+    r = MatrixSub(b,MatrixMulti(A,x_prev,dim),dim);
 
     //iterative
     do{
         z = r;
-        x_next = MatrixAdd(x_prev,z);
-        r = MatrixSub(r,MatrixMulti(A,z));
+        x_next = MatrixAdd(x_prev,z,dim);
+        r = MatrixSub(r,MatrixMulti(A,z,dim),dim);
         it_count++;
-    }while(it_count<=max_iterations&&GetError(x_prev,x_next)>=tol);
+    }while(it_count<=max_iterations&&GetError(x_prev,x_next,dim)>=tol);
 
 
-    if(GetError(x_prev,x_next)>=tol)
+    if(GetError(x_prev,x_next,dim)>=tol)
     {
         std::cout<<"Solve Linear System Eorror: Splitthing Method, Cannot coverges"<<std::endl;
     }

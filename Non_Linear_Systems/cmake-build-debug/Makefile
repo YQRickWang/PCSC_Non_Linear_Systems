@@ -124,6 +124,33 @@ Non_Linear_Systems\fast:
 	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\build
 .PHONY : Non_Linear_Systems\fast
 
+Helper.obj: Helper.cpp.obj
+
+.PHONY : Helper.obj
+
+# target to build an object file
+Helper.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Helper.cpp.obj
+.PHONY : Helper.cpp.obj
+
+Helper.i: Helper.cpp.i
+
+.PHONY : Helper.i
+
+# target to preprocess a source file
+Helper.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Helper.cpp.i
+.PHONY : Helper.cpp.i
+
+Helper.s: Helper.cpp.s
+
+.PHONY : Helper.s
+
+# target to generate assembly for a file
+Helper.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Helper.cpp.s
+.PHONY : Helper.cpp.s
+
 NonLinearEquation.obj: NonLinearEquation.cpp.obj
 
 .PHONY : NonLinearEquation.obj
@@ -268,6 +295,9 @@ help:
 	@echo ... Non_Linear_Systems
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Helper.obj
+	@echo ... Helper.i
+	@echo ... Helper.s
 	@echo ... NonLinearEquation.obj
 	@echo ... NonLinearEquation.i
 	@echo ... NonLinearEquation.s

@@ -57,6 +57,7 @@ int main() {
     solver_1.Chord(0,2);
     solver_1.FixedPoint();
     solver_1.Aitken(0.5);
+    solver_1.Newton1D(0.0);
 
 
     //Print zeropint list and method
@@ -103,6 +104,7 @@ int main() {
     solver_2.Chord(0,2);
     solver_2.Aitken(1.0);
     solver_2.FixedPoint(1.0);
+    solver_2.Newton1D(1.0);
 
     //Print zeropint list and method
     std::cout<<"Print zero point"<<std::endl;

@@ -231,6 +231,8 @@ void NonLinearSolver::Newton1D(double initial_guess, int max_iterations) {
         err = abs(x - x_prev);
         it_count = it_count + 1;
     }
+
+    AddToZeroPoint("Newton1D",x);
 }
 
 //operator

@@ -217,6 +217,22 @@ void NonLinearSolver::Newton(int max_iterations)
 
 }
 
+void NonLinearSolver::Newton1D(double initial_guess, int max_iterations) {
+    double tol = 1e-5;
+    int it_count = 0;
+
+    double x = initial_guess - equations.GetFunctionValue(initial_guess) / equations.GetDfunctionValue(initial_guess);
+
+    double err = tol + 1;
+
+    while(err >= tol && it_count <= max_iterations){
+        double x_prev = x;
+        x = x - equations.GetFunctionValue(x) / equations.GetDfunctionValue(x);
+        err = abs(x - x_prev);
+        it_count = it_count + 1;
+    }
+}
+
 //operator
 
 //helper function, linear solver iterative method

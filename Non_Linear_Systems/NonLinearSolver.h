@@ -40,7 +40,7 @@ public:
     void Aitken(double initial_guess = 0.0, int max_iterations = 100);
     void Chord(double a, double b);
     void Newton(int max_iterations=100);
-    //void Newton(double* initial_guess);
+    void Newton1D(double initial_guess, int max_iterations);
     //Newton1D();
     void FixedPoint(double initial_guess = 0.0 , int max_iterations = 100);//intial_guess and max_iterations are default values
     void Plot();//plot zeropoint?

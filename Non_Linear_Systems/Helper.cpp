@@ -20,7 +20,7 @@ double GetError(double* x1, double* x2, int size){
 double GetError(double x1, double x2)
 {
     double error = 0.0;
-    error = abs(x1 - x2);
+    error = fabs(x1 - x2);
 
     return error;
 }

@@ -136,7 +136,7 @@ void NonLinearSolver::Chord(double a, double b)
             x = (intervalBegin * equations.GetFunctionValue(intervalEnd) - intervalEnd * equations.GetFunctionValue(intervalBegin)) / (equations.GetFunctionValue(intervalEnd) - equations.GetFunctionValue(intervalBegin));
         }
 
-        err = abs(x - x_prev);
+        err = fabs(x - x_prev);
     }
     //add xn to the zeroPoint
     AddToZeroPoint("Chord",x);

@@ -103,7 +103,5 @@ int main() {
     std::cout<<"Print zero point"<<std::endl;
     solver_2.ZeroPointPrint();
 
-
-
 }
 

@@ -105,6 +105,7 @@ int main() {
     solver_2.Aitken(1.0);
     solver_2.FixedPoint(1.0);
     solver_2.Newton1D(1.0);
+    solver_2.Newton();
 
     //Print zeropint list and method
     std::cout<<"Print zero point"<<std::endl;

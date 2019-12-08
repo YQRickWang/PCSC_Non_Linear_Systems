@@ -186,13 +186,14 @@ void NonLinearSolver::Newton(int max_iterations)
     double** A = nullptr;
     double* b = nullptr;
     double tol = 1e-5;
+    double error = 0.0;
 
     //initialize
     //set the initial guess as a array of zero values
     initial_guess = new double[dim];
     for(int i=0; i<dim; i++)
     {
-        initial_guess[i] = 0.0;
+        initial_guess[i] = 1.0;
     }
 
     x_prev = initial_guess;
@@ -210,8 +211,10 @@ void NonLinearSolver::Newton(int max_iterations)
         x_delta = LinearSolver_Splitting(A,b);
 
         x_next = MatrixAdd(x_prev,x_delta,dim);//need to check
+        error = GetError(x_prev,x_next,dim);
+        x_prev = x_next;
         it_count++;
-    }while(it_count<=max_iterations&&GetError(x_prev,x_next,dim)>=tol);
+    }while(it_count<=max_iterations&&error>=tol);
 
     AddToZeroPoint("Newton",x_next);
 
@@ -250,6 +253,7 @@ double* NonLinearSolver::LinearSolver_Splitting(double **A, double *b, int max_i
     int dim = equations.GetDimension();
     int it_count = 0;
     double tol = 1e-5;
+    double error = 0.0;
     double* x_prev = nullptr;
     double* x_next = nullptr;
     double* r = nullptr;
@@ -290,11 +294,13 @@ double* NonLinearSolver::LinearSolver_Splitting(double **A, double *b, int max_i
         z = r;
         x_next = MatrixAdd(x_prev,z,dim);
         r = MatrixSub(r,MatrixMulti(A,z,dim),dim);
+        error = GetError(x_prev,x_next,dim);
+        x_prev = x_next;
         it_count++;
-    }while(it_count<=max_iterations&&GetError(x_prev,x_next,dim)>=tol);
+    }while(it_count<=max_iterations&&error>=tol);
 
 
-    if(GetError(x_prev,x_next,dim)>=tol)
+    if(error>=tol)
     {
         std::cout<<"Solve Linear System Eorror: Splitthing Method, Cannot coverges"<<std::endl;
     }

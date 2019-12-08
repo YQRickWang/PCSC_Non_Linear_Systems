@@ -78,7 +78,7 @@ void NonLinearSolver::Bisection(double a, double b)
     AddToZeroPoint("Bisection",c);
 }
 
-//basically fixed point method, but using aitkent acceralation
+//basically fixed point method, but using aitken acceleration
 void NonLinearSolver::Aitken(double initial_guess, int max_iterations)
 {
     int dim = equations.GetDimension();
@@ -91,7 +91,7 @@ void NonLinearSolver::Aitken(double initial_guess, int max_iterations)
 
     if(dim>1)
     {
-        std::cout<<"The Fixed Point method (Aitken) is only for 1 dimention, please check again."<<std::endl;
+        std::cout<<"The Fixed Point method (Aitken) is only for 1 dimension, please check again."<<std::endl;
     }
 
     do{

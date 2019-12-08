@@ -178,6 +178,60 @@ NonLinearSolver.cpp.s:
 	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\NonLinearSolver.cpp.s
 .PHONY : NonLinearSolver.cpp.s
 
+Test_A.obj: Test_A.cpp.obj
+
+.PHONY : Test_A.obj
+
+# target to build an object file
+Test_A.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_A.cpp.obj
+.PHONY : Test_A.cpp.obj
+
+Test_A.i: Test_A.cpp.i
+
+.PHONY : Test_A.i
+
+# target to preprocess a source file
+Test_A.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_A.cpp.i
+.PHONY : Test_A.cpp.i
+
+Test_A.s: Test_A.cpp.s
+
+.PHONY : Test_A.s
+
+# target to generate assembly for a file
+Test_A.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_A.cpp.s
+.PHONY : Test_A.cpp.s
+
+Test_B.obj: Test_B.cpp.obj
+
+.PHONY : Test_B.obj
+
+# target to build an object file
+Test_B.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_B.cpp.obj
+.PHONY : Test_B.cpp.obj
+
+Test_B.i: Test_B.cpp.i
+
+.PHONY : Test_B.i
+
+# target to preprocess a source file
+Test_B.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_B.cpp.i
+.PHONY : Test_B.cpp.i
+
+Test_B.s: Test_B.cpp.s
+
+.PHONY : Test_B.s
+
+# target to generate assembly for a file
+Test_B.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_B.cpp.s
+.PHONY : Test_B.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -220,6 +274,12 @@ help:
 	@echo ... NonLinearSolver.obj
 	@echo ... NonLinearSolver.i
 	@echo ... NonLinearSolver.s
+	@echo ... Test_A.obj
+	@echo ... Test_A.i
+	@echo ... Test_A.s
+	@echo ... Test_B.obj
+	@echo ... Test_B.i
+	@echo ... Test_B.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

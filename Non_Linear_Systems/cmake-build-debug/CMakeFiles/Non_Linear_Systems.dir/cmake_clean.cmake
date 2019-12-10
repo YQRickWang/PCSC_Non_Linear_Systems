@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Non_Linear_Systems.dir/Helper.cpp.obj"
   "CMakeFiles/Non_Linear_Systems.dir/NonLinearEquation.cpp.obj"
   "CMakeFiles/Non_Linear_Systems.dir/NonLinearSolver.cpp.obj"
+  "CMakeFiles/Non_Linear_Systems.dir/TestBase.cpp.obj"
   "CMakeFiles/Non_Linear_Systems.dir/Test_A.cpp.obj"
   "CMakeFiles/Non_Linear_Systems.dir/Test_B.cpp.obj"
   "CMakeFiles/Non_Linear_Systems.dir/Test_C.cpp.obj"

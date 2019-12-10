@@ -143,6 +143,7 @@ double* Backward(double** P, double* res, int dim){
     return ans;
 }
 
+//need to add pivot technique
 void LUDecomposition(double** A, double** L, double** U, int n)
 {
     //allocate the space for A, L, U outside the function
@@ -177,46 +178,37 @@ void LUDecomposition(double** A, double** L, double** U, int n)
     }
 }
 
+double det(double** A, int n){
+    if(n ==1)
+        return A[0][0];
+    double** B = new double* [n-1];
+    for (int l = 0; l < n-1; l++){
+        B[l] = new double[n-1];
+    }
+    double sum = 0.0;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            for (int k = 0; k <(n - 1); k++) {
+                if (j < i){
+                    B[k][j] = A[k+1][j];
+                }
+                else if (j > i){
+                    B[k][j-1] = A[k+1][j];
+                }
+            }
+        }
+        sum = sum + pow(-1, i)*A[0][i] * det(B, (n - 1));
+    }
+    for (int l = 0; l < n-1; l++){
+        delete[] B[l];
+    }
+    delete[] B;
+}
 
-
-//double MatrixDeter(double** m, int n)
-//{
-//    int c, subi, i, j, subj;
-//    double** subm = new double*[n];
-//
-//    for(int t=0;t<n;t++)
-//    {
-//        subm[t] = new double[n];
-//    }
-//
-//    if(n==1)
-//    {
-//        return m[0][0];
-//    }
-//    else if(n==2)
-//    {
-//        return((m[0][0]*m[1][1])-(m[1][0]*m[0][1]));
-//    }
-//    else
-//    {
-//        for(c = 0; c<n;c++)
-//        {
-//            subi = 0;
-//            for(i=1;i<n;i++)
-//            {
-//                subj = 0;
-//                for(j=0;j<n;j++)
-//                {
-//                    if(j==c)
-//                    {
-//                        continue;
-//                    }
-//                    subm[subi][subj] =m[i][j];
-//                    subj++;
-//                }
-//                subi++;
-//            }
-//        }
-//        d = d+
-//    }
-//}
+bool unique(double** A, double* b, int dim){
+    bool uni = true;
+    if(fabs(det(A,dim))<1e-5){
+        uni = false;
+    }
+    return uni;
+}

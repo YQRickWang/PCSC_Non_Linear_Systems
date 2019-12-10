@@ -12,6 +12,12 @@ CMakeFiles\Non_Linear_Systems.dir\NonLinearSolver.cpp.obj: ..\NonLinearEquation.
 CMakeFiles\Non_Linear_Systems.dir\NonLinearSolver.cpp.obj: ..\NonLinearSolver.cpp
 CMakeFiles\Non_Linear_Systems.dir\NonLinearSolver.cpp.obj: ..\NonLinearSolver.h
 
+CMakeFiles\Non_Linear_Systems.dir\TestBase.cpp.obj: ..\Helper.h
+CMakeFiles\Non_Linear_Systems.dir\TestBase.cpp.obj: ..\NonLinearEquation.h
+CMakeFiles\Non_Linear_Systems.dir\TestBase.cpp.obj: ..\NonLinearSolver.h
+CMakeFiles\Non_Linear_Systems.dir\TestBase.cpp.obj: ..\TestBase.cpp
+CMakeFiles\Non_Linear_Systems.dir\TestBase.cpp.obj: ..\TestBase.h
+
 CMakeFiles\Non_Linear_Systems.dir\Test_A.cpp.obj: ..\NonLinearEquation.h
 CMakeFiles\Non_Linear_Systems.dir\Test_A.cpp.obj: ..\Test_A.cpp
 CMakeFiles\Non_Linear_Systems.dir\Test_A.cpp.obj: ..\Test_A.h

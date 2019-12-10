@@ -63,9 +63,11 @@ int main() {
     solver_1.Bisection(0,2);
     solver_1.Chord(0,2);
     solver_1.FixedPoint();
-    solver_1.Aitken(0.5);
+    solver_1.Aitken(0.0);
     solver_1.Newton1D(0.0);
-    //solver_1.Newton();
+    solver_1.Newton();
+    solver_1.ModifiedNewton();
+    solver_1.ModifiedNewton1D(0.0,2.0);
 
 
     //Print zeropint list and method
@@ -113,7 +115,9 @@ int main() {
     solver_2.Aitken(1.0);
     solver_2.FixedPoint(1.0);
     solver_2.Newton1D(1.0);
-    //solver_2.Newton();
+    solver_2.Newton();
+    solver_2.ModifiedNewton();
+    solver_2.ModifiedNewton1D(1.0,2.0);
 
     //Print zeropoint list and method
     std::cout<<"Print zero point"<<std::endl;
@@ -141,9 +145,9 @@ int main() {
 //f1(x) = 2*x^2-y+1
 //f2(x) = x+2*y-6
 //df11(x) = 4*x
-//df12(x) = -1
+//df12(y) = -1
 //df21(x) = 1
-//df22(x) = 2
+//df22(y) = 2
     std::cout<<"Test C"<<std::endl<<std::endl;
     functions_type* fun_3 = nullptr;
     functions_type** dfun_3 = nullptr;
@@ -167,6 +171,7 @@ int main() {
     NonLinearSolver solver_3(equations_3);
 
     solver_3.Newton();
+    solver_3.ModifiedNewton(1.0,100);
     solver_3.ZeroPointPrint();
 
 }

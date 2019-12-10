@@ -238,6 +238,68 @@ void NonLinearSolver::Newton(int max_iterations)
 
 }
 
+void NonLinearSolver::ModifiedNewton(double m, int max_iterations)
+{
+    int dim = equations.GetDimension();
+    int it_count = 0;
+    double* initial_guess = nullptr;//initial guess
+    double* x_prev = nullptr;
+    double* x_next = nullptr;
+    double* x_delta = nullptr;
+    double** A = nullptr;
+    double* b = nullptr;
+    double tol = 1e-5;
+    double error = 0.0;
+
+    //initialize
+    //set the initial guess as a array of zero values
+    initial_guess = new double[dim];
+    for(int i=0; i<dim; i++)
+    {
+        initial_guess[i] = 0.5;
+    }
+
+    x_prev = initial_guess;
+
+    //iterations
+    do{
+        b = equations.GetFunctionValue(x_prev);
+        A = equations.GetDfunctionValue(x_prev);
+        //modify b a little, negative
+        for(int i=0; i<dim; i++)
+        {
+            b[i] = -m*b[i];
+        }
+
+        for(int i=0;i<dim;i++)
+        {
+            std::cout<<"line:"<<i<<"   ";
+            for(int j=0;j<dim;j++)
+            {
+                std::cout<<A[i][j]<<" ";
+            }
+            std::cout<<b[i]<<std::endl;
+        }
+
+        x_delta = LinearSolver_LU(A,b);
+
+        //test
+        std::cout<<"Result of x_delta:"<<"  ";
+        for(int i=0;i<dim;i++)
+        {
+            std::cout<<x_delta[i]<<"  ";
+        }
+        std::cout<<std::endl;
+
+        x_next = MatrixAdd(x_prev,x_delta,dim);//need to check
+        error = GetError(x_prev,x_next,dim);
+        x_prev = x_next;
+        it_count++;
+    }while(it_count<=max_iterations&&error>=tol);
+
+    AddToZeroPoint("ModifiedNewton",x_next);
+}
+
 void NonLinearSolver::Newton1D(double initial_guess, int max_iterations) {
     double tol = 1e-5;
     int it_count = 0;
@@ -255,6 +317,25 @@ void NonLinearSolver::Newton1D(double initial_guess, int max_iterations) {
 
     AddToZeroPoint("Newton1D",x);
 }
+
+void NonLinearSolver::ModifiedNewton1D(double initial_guess, double m, int max_iterations) {
+    double tol = 1e-5;
+    int it_count = 0;
+
+    double x = initial_guess - m*equations.GetFunctionValue(initial_guess) / equations.GetDfunctionValue(initial_guess);
+
+    double err = tol + 1;
+
+    while(err >= tol && it_count <= max_iterations){
+        double x_prev = x;
+        x = x - equations.GetFunctionValue(x) / equations.GetDfunctionValue(x);
+        err = fabs(x - x_prev);
+        it_count = it_count + 1;
+    }
+
+    AddToZeroPoint("ModifiedNewton1D",x);
+}
+
 
 //operator
 

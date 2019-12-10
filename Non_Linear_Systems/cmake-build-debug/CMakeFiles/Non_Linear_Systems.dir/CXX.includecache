@@ -32,11 +32,33 @@ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearEquation.h
 Helper.h
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Helper.h
 
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/TestBase.cpp
+TestBase.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/TestBase.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/TestBase.h
+NonLinearSolver.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearSolver.h
+NonLinearEquation.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearEquation.h
+cmath
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmath
+string
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/string
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_A.cpp
+Test_A.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_A.h
+
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_A.h
 cmath
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmath
 NonLinearEquation.h
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearEquation.h
+NonLinearSolver.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearSolver.h
+TestBase.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/TestBase.h
 
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_B.h
 cmath

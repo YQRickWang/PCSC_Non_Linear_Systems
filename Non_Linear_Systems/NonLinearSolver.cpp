@@ -36,6 +36,12 @@ const NonLinearEquation NonLinearSolver::GetEquations()
     return equations;
 }
 
+//Set Member Function
+void NonLinearSolver::SetEquations(NonLinearEquation input_equations)
+{
+    this->equations = input_equations;
+}
+
 const std::map<std::string,std::list<double>> NonLinearSolver::GetZeroPoint()
 {
     return zeroPoint;
@@ -481,4 +487,9 @@ void NonLinearSolver::AddToZeroPoint(std::string method, double* zeros)
     }
 
     zeroPoint.insert(std::pair<std::string,std::list<double>>(method,zerolist));
+}
+
+void NonLinearSolver::ClearZeroPoint()
+{
+    zeroPoint.clear();
 }

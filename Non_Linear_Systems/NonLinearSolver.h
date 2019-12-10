@@ -34,6 +34,9 @@ public:
     const NonLinearEquation GetEquations();
     const std::map<std::string,std::list<double>> GetZeroPoint();
 
+    //Set member function
+    void SetEquations(NonLinearEquation input_equations);
+
 
     //method function
     void Bisection(double a, double b);//bisection between a and b
@@ -58,6 +61,7 @@ public:
     //other helper functions
     void AddToZeroPoint(std::string method,double* zeros);
     void AddToZeroPoint(std::string method,double zeros);//overload for 1 dimension
+    void ClearZeroPoint();
 
 
     //need to be done

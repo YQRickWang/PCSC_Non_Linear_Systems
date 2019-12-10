@@ -39,6 +39,12 @@ public:
     functions_type** GetDfunArray();
     functions_type GetFpFun();
 
+    //Set Member Function
+    void SetDimension(int dimension);
+    void SetFunArray(functions_type* funarray);
+    void SetDFunArray(functions_type** dfunarray);
+    void SetFpFun(functions_type fp);
+
     //operator
     //NonLinearEquation &operator =(NonLinearEquation);//copy assignment
 

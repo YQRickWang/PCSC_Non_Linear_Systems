@@ -7,12 +7,18 @@
 
 #include "NonLinearSolver.h"
 #include "NonLinearEquation.h"
+#include "cmath"
+#include "string"
 
 class TestBase {
 public:
     NonLinearSolver solver;
     NonLinearEquation equations;
     TestBase();
+    ~TestBase();
+    virtual void RunTest();//run all test
+    virtual void ShowEquationsInfo();//show equations information
+    void ChooseMethod(std::string method);
 };
 
 

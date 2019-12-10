@@ -34,14 +34,18 @@ public:
     const NonLinearEquation GetEquations();
     const std::map<std::string,std::list<double>> GetZeroPoint();
 
+    //Set member function
+    void SetEquations(NonLinearEquation input_equations);
+
 
     //method function
     void Bisection(double a, double b);//bisection between a and b
     void Aitken(double initial_guess = 0.0, int max_iterations = 100);
     void Chord(double a, double b);
     void Newton(int max_iterations=100);
-    void Newton1D(double initial_guess, int max_iterations);
-    //Newton1D();
+    void ModifiedNewton(double m=1.0, int max_iterations=100);
+    void ModifiedNewton1D(double initial_guess = 0.0, double m=2.0, int max_iterations=100);
+    void Newton1D(double initial_guess=0.0, int max_iterations=100);
     void FixedPoint(double initial_guess = 0.0 , int max_iterations = 100);//intial_guess and max_iterations are default values
     void Plot();//plot zeropoint?
     void ZeroPointPrint();//print the zeropoint and method of the function
@@ -52,10 +56,12 @@ public:
     double* LinearSolver_Splitting(double** A, double* b, int max_iterations = 100);
     double* LinearSolver_Jacobi(double** A, double* b);
     double* LinearSolver_GaussSeidel(double** A, double* b);
+    double* LinearSolver_LU(double** A,double* b);
 
     //other helper functions
     void AddToZeroPoint(std::string method,double* zeros);
     void AddToZeroPoint(std::string method,double zeros);//overload for 1 dimension
+    void ClearZeroPoint();
 
 
     //need to be done

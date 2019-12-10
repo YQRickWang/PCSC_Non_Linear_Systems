@@ -63,6 +63,27 @@ functions_type NonLinearEquation::GetFpFun()
     return fpPtr;
 }
 
+//Set Member Functions
+void NonLinearEquation::SetDimension(int dimension)
+{
+    this->dim = dimension;
+}
+
+void NonLinearEquation::SetFunArray(functions_type *funarray)
+{
+    this->funPtrArray = funarray;
+}
+
+void NonLinearEquation::SetDFunArray(functions_type **dfunarray)
+{
+    this->dfunPtrArray = dfunarray;
+}
+
+void NonLinearEquation::SetFpFun(functions_type fp)
+{
+    this->fpPtr = fp;
+}
+
 double* NonLinearEquation::GetFunctionValue(double *input)
 {
     //the order of rows of input is consistent with the order of equation

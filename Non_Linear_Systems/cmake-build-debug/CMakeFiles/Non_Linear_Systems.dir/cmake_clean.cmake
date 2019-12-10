@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Non_Linear_Systems.dir/NonLinearSolver.cpp.obj"
   "CMakeFiles/Non_Linear_Systems.dir/Test_A.cpp.obj"
   "CMakeFiles/Non_Linear_Systems.dir/Test_B.cpp.obj"
+  "CMakeFiles/Non_Linear_Systems.dir/Test_C.cpp.obj"
+  "CMakeFiles/Non_Linear_Systems.dir/UserInterface.cpp.obj"
   "CMakeFiles/Non_Linear_Systems.dir/main.cpp.obj"
   "Non_Linear_Systems.exe"
   "Non_Linear_Systems.exe.manifest"

@@ -52,6 +52,7 @@ public:
     double* LinearSolver_Splitting(double** A, double* b, int max_iterations = 100);
     double* LinearSolver_Jacobi(double** A, double* b);
     double* LinearSolver_GaussSeidel(double** A, double* b);
+    double* LinearSolver_LU(double** A,double* b);
 
     //other helper functions
     void AddToZeroPoint(std::string method,double* zeros);

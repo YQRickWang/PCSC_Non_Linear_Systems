@@ -3,7 +3,14 @@
 #include "NonLinearSolver.h"
 #include "Test_A.h"
 #include "Test_B.h"
+#include "Test_C.h"
 
+
+//Work need to be done
+//1. Check method to make it correct.
+//2. User Interface
+//3. Read functions from files
+//4.
 
 typedef double (*functions_type)(double*);
 
@@ -58,6 +65,7 @@ int main() {
     solver_1.FixedPoint();
     solver_1.Aitken(0.5);
     solver_1.Newton1D(0.0);
+    //solver_1.Newton();
 
 
     //Print zeropint list and method
@@ -105,11 +113,61 @@ int main() {
     solver_2.Aitken(1.0);
     solver_2.FixedPoint(1.0);
     solver_2.Newton1D(1.0);
-    solver_2.Newton();
+    //solver_2.Newton();
 
-    //Print zeropint list and method
+    //Print zeropoint list and method
     std::cout<<"Print zero point"<<std::endl;
     solver_2.ZeroPointPrint();
+
+//    double** A=new double*[2];
+//    double* x = nullptr;
+//    double* b = new double[2];
+//    A[0] = new double[2];
+//    A[1] = new double[2];
+//    A[0][0] = 1;
+//    A[0][1] = 1;
+//    A[1][0] = 0;
+//    A[1][1] = 1;
+//    b[0] = 5;
+//    b[1] = 4;
+//
+//    x = solver_2.LinearSolver_Splitting(A,b);
+//    std::cout<<x[0]<<std::endl;
+//    std::cout<<x[1]<<std::endl;
+
+/*Test Case C*/
+//basic test for 2 dimensions
+//simple test
+//f1(x) = 2*x^2-y+1
+//f2(x) = x+2*y-6
+//df11(x) = 4*x
+//df12(x) = -1
+//df21(x) = 1
+//df22(x) = 2
+    std::cout<<"Test C"<<std::endl<<std::endl;
+    functions_type* fun_3 = nullptr;
+    functions_type** dfun_3 = nullptr;
+
+    //initialize
+    fun_3 = new functions_type[2];
+    dfun_3 = new functions_type*[2];
+    dfun_3[0] = new functions_type[2];
+    dfun_3[1] = new functions_type[2];
+
+    fun_3[0] = &Test_C_function_1;
+    fun_3[1] = &Test_C_function_2;
+    dfun_3[0][0] = &Test_C_dfunction_11;
+    dfun_3[0][1] = &Test_C_dfunction_12;
+    dfun_3[1][0] = &Test_C_dfunction_21;
+    dfun_3[1][1] = &Test_C_dfunction_22;
+    NonLinearEquation equations_3(fun_3,dfun_3,2);
+
+    //Test solver
+    std::cout<<"Test solver"<<std::endl;
+    NonLinearSolver solver_3(equations_3);
+
+    solver_3.Newton();
+    solver_3.ZeroPointPrint();
 
 }
 

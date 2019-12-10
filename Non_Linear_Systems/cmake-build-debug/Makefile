@@ -259,6 +259,60 @@ Test_B.cpp.s:
 	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_B.cpp.s
 .PHONY : Test_B.cpp.s
 
+Test_C.obj: Test_C.cpp.obj
+
+.PHONY : Test_C.obj
+
+# target to build an object file
+Test_C.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_C.cpp.obj
+.PHONY : Test_C.cpp.obj
+
+Test_C.i: Test_C.cpp.i
+
+.PHONY : Test_C.i
+
+# target to preprocess a source file
+Test_C.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_C.cpp.i
+.PHONY : Test_C.cpp.i
+
+Test_C.s: Test_C.cpp.s
+
+.PHONY : Test_C.s
+
+# target to generate assembly for a file
+Test_C.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_C.cpp.s
+.PHONY : Test_C.cpp.s
+
+UserInterface.obj: UserInterface.cpp.obj
+
+.PHONY : UserInterface.obj
+
+# target to build an object file
+UserInterface.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\UserInterface.cpp.obj
+.PHONY : UserInterface.cpp.obj
+
+UserInterface.i: UserInterface.cpp.i
+
+.PHONY : UserInterface.i
+
+# target to preprocess a source file
+UserInterface.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\UserInterface.cpp.i
+.PHONY : UserInterface.cpp.i
+
+UserInterface.s: UserInterface.cpp.s
+
+.PHONY : UserInterface.s
+
+# target to generate assembly for a file
+UserInterface.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\UserInterface.cpp.s
+.PHONY : UserInterface.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -310,6 +364,12 @@ help:
 	@echo ... Test_B.obj
 	@echo ... Test_B.i
 	@echo ... Test_B.s
+	@echo ... Test_C.obj
+	@echo ... Test_C.i
+	@echo ... Test_C.s
+	@echo ... UserInterface.obj
+	@echo ... UserInterface.i
+	@echo ... UserInterface.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

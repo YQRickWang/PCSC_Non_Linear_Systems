@@ -193,7 +193,7 @@ void NonLinearSolver::Newton(int max_iterations)
     initial_guess = new double[dim];
     for(int i=0; i<dim; i++)
     {
-        initial_guess[i] = 1.0;
+        initial_guess[i] = 0.5;
     }
 
     x_prev = initial_guess;
@@ -205,10 +205,28 @@ void NonLinearSolver::Newton(int max_iterations)
         //modify b a little, negative
         for(int i=0; i<dim; i++)
         {
-            b[i] = -b[i];
+            b[i] = -1*b[i];
         }
 
-        x_delta = LinearSolver_Splitting(A,b);
+        for(int i=0;i<dim;i++)
+        {
+            std::cout<<"line:"<<i<<"   ";
+            for(int j=0;j<dim;j++)
+            {
+                std::cout<<A[i][j]<<" ";
+            }
+            std::cout<<b[i]<<std::endl;
+        }
+
+        x_delta = LinearSolver_LU(A,b);
+
+        //test
+        std::cout<<"Result of x_delta:"<<"  ";
+        for(int i=0;i<dim;i++)
+        {
+            std::cout<<x_delta[i]<<"  ";
+        }
+        std::cout<<std::endl;
 
         x_next = MatrixAdd(x_prev,x_delta,dim);//need to check
         error = GetError(x_prev,x_next,dim);
@@ -231,7 +249,7 @@ void NonLinearSolver::Newton1D(double initial_guess, int max_iterations) {
     while(err >= tol && it_count <= max_iterations){
         double x_prev = x;
         x = x - equations.GetFunctionValue(x) / equations.GetDfunctionValue(x);
-        err = abs(x - x_prev);
+        err = fabs(x - x_prev);
         it_count = it_count + 1;
     }
 
@@ -250,7 +268,7 @@ double* NonLinearSolver::LinearSolver_Splitting(double **A, double *b, int max_i
  * @return
  */
 {
-    int dim = equations.GetDimension();
+    int dim = 2;
     int it_count = 0;
     double tol = 1e-5;
     double error = 0.0;
@@ -294,7 +312,7 @@ double* NonLinearSolver::LinearSolver_Splitting(double **A, double *b, int max_i
         z = r;
         x_next = MatrixAdd(x_prev,z,dim);
         r = MatrixSub(r,MatrixMulti(A,z,dim),dim);
-        error = GetError(x_prev,x_next,dim);
+        error = GetError(r,dim);
         x_prev = x_next;
         it_count++;
     }while(it_count<=max_iterations&&error>=tol);
@@ -313,6 +331,39 @@ double* NonLinearSolver::LinearSolver_Splitting(double **A, double *b, int max_i
 
     return x_next;
 
+}
+
+double* NonLinearSolver::LinearSolver_LU(double **A, double *b)
+{
+    int dim = equations.GetDimension();
+    double** L = new double*[dim];
+    double** U = new double*[dim];
+    double* y = nullptr;
+    double* x = nullptr;
+
+    for(int i=0;i<dim;i++)
+    {
+        L[i] = new double[dim];
+        U[i] = new double[dim];
+    }
+
+    LUDecomposition(A,L,U,dim);
+    y = Forward(L,b,dim);
+    x = Backward(U,y,dim);
+
+
+    //delete the sapce
+    for(int i=0;i<dim;i++)
+    {
+        delete L[i];
+        delete U[i];
+    }
+
+    delete []L;
+    delete []U;
+
+
+    return x;
 }
 
 void NonLinearSolver::ZeroPointPrint()

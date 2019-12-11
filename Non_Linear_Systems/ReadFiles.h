@@ -6,6 +6,7 @@
 #define NON_LINEAR_SYSTEMS_READFILES_H
 #include "string"
 #include "list"
+#include "exprtk/exprtk.hpp"
 
 //the input functions should follow a specific standard
 //do i need to check the balance of brackets

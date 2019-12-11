@@ -15,7 +15,17 @@ CMakeFiles/Non_Linear_Systems.dir/NonLinearSolver.cpp.obj
 CMakeFiles/Non_Linear_Systems.dir/RandomFunctions.cpp.obj
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.cpp
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.h
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
+CMakeFiles/Non_Linear_Systems.dir/RandomTest.cpp.obj
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Helper.h
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearEquation.h
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearSolver.h
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.h
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomTest.cpp
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomTest.h
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/TestBase.h
 CMakeFiles/Non_Linear_Systems.dir/ReadFiles.cpp.obj
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.cpp
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
@@ -45,9 +55,12 @@ CMakeFiles/Non_Linear_Systems.dir/main.cpp.obj
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Helper.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearEquation.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearSolver.h
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.h
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomTest.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/TestBase.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_A.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_B.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_C.h
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/main.cpp

@@ -37,7 +37,27 @@ RandomFunctions.h
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.h
 string
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/string
+exprtk/exprtk.hpp
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
 
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.h
+iostream
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/iostream
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomTest.cpp
+RandomTest.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomTest.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomTest.h
+TestBase.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/TestBase.h
+cmath
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmath
+NonLinearEquation.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearEquation.h
+NonLinearSolver.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearSolver.h
+RandomFunctions.h
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.h
 
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.cpp
@@ -55,12 +75,16 @@ cmath
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmath
 exprtk/exprtk.hpp
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
+RandomFunctions.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.h
 
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.h
 string
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/string
 list
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/list
+exprtk/exprtk.hpp
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
 
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/TestBase.h
 NonLinearSolver.h
@@ -155,6 +179,8 @@ Test_B.h
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_B.h
 Test_C.h
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_C.h
+RandomTest.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomTest.h
 ReadFiles.h
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.h
 

@@ -4,6 +4,7 @@
 #include "Test_A.h"
 #include "Test_B.h"
 #include "Test_C.h"
+#include "RandomTest.h"
 #include "ReadFiles.h"
 
 
@@ -16,8 +17,9 @@
 typedef double (*functions_type)(double*);
 
 int main() {
-
     ReadFromFiles();
+    RandomTest random_test;
+    random_test.RunTest();
     //AnalyzeFunction("5*x^2+exp(3*x)-x-10");
 /*Test Case A*/
 //Test Case: A

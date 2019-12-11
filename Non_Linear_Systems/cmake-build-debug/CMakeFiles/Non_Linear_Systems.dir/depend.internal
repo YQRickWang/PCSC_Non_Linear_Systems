@@ -12,6 +12,13 @@ CMakeFiles/Non_Linear_Systems.dir/NonLinearSolver.cpp.obj
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearEquation.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearSolver.cpp
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearSolver.h
+CMakeFiles/Non_Linear_Systems.dir/RandomFunctions.cpp.obj
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.cpp
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.h
+CMakeFiles/Non_Linear_Systems.dir/ReadFiles.cpp.obj
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.cpp
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.h
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
 CMakeFiles/Non_Linear_Systems.dir/TestBase.cpp.obj
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Helper.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearEquation.h
@@ -38,6 +45,7 @@ CMakeFiles/Non_Linear_Systems.dir/main.cpp.obj
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Helper.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearEquation.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearSolver.h
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/TestBase.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_A.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_B.h

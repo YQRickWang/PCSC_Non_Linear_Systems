@@ -4,6 +4,7 @@
 #include "Test_A.h"
 #include "Test_B.h"
 #include "Test_C.h"
+#include "ReadFiles.h"
 
 
 //Work need to be done
@@ -15,6 +16,9 @@
 typedef double (*functions_type)(double*);
 
 int main() {
+
+    ReadFromFiles();
+    //AnalyzeFunction("5*x^2+exp(3*x)-x-10");
 /*Test Case A*/
 //Test Case: A
 //basic test for 1 dimension
@@ -69,8 +73,8 @@ int main() {
 //    solver_1.ModifiedNewton();
 //    solver_1.ModifiedNewton1D(0.0,2.0);
 
-    Test_A test_1;
-    test_1.RunTest();
+//    Test_A test_1;
+//    test_1.RunTest();
 
 
 //    //Print zeropint list and method

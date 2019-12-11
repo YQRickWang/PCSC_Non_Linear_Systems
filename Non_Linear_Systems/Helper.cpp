@@ -178,7 +178,7 @@ void LUDecomposition(double** A, double** L, double** U, int n)
     }
 }
 
-double det(double** A, int n){
+double Deter(double** A, int n){
     if(n ==1)
         return A[0][0];
     double** B = new double* [n-1];
@@ -197,7 +197,7 @@ double det(double** A, int n){
                 }
             }
         }
-        sum = sum + pow(-1, i)*A[0][i] * det(B, (n - 1));
+        sum = sum + pow(-1, i)*A[0][i] * Deter(B, (n - 1));
     }
     for (int l = 0; l < n-1; l++){
         delete[] B[l];
@@ -207,7 +207,7 @@ double det(double** A, int n){
 
 bool unique(double** A, double* b, int dim){
     bool uni = true;
-    if(fabs(det(A,dim))<1e-5){
+    if(fabs(Deter(A,dim))<1e-5){
         uni = false;
     }
     return uni;

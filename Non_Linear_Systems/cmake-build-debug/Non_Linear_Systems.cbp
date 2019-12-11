@@ -100,6 +100,24 @@
 		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearSolver.h">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.cpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.h">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomTest.cpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomTest.h">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.cpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.h">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
 		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/TestBase.cpp">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>

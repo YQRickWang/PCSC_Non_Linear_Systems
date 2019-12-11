@@ -32,9 +32,59 @@ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearEquation.h
 Helper.h
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Helper.h
 
-D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/TestBase.cpp
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.cpp
+RandomFunctions.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.h
+string
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/string
+exprtk/exprtk.hpp
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.h
+iostream
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/iostream
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomTest.cpp
+RandomTest.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomTest.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomTest.h
 TestBase.h
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/TestBase.h
+cmath
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmath
+NonLinearEquation.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearEquation.h
+NonLinearSolver.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearSolver.h
+RandomFunctions.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.cpp
+ReadFiles.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.h
+iostream
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/iostream
+fstream
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/fstream
+string
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/string
+list
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/list
+cmath
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmath
+exprtk/exprtk.hpp
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
+RandomFunctions.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.h
+string
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/string
+list
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/list
+exprtk/exprtk.hpp
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
 
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/TestBase.h
 NonLinearSolver.h
@@ -45,10 +95,6 @@ cmath
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmath
 string
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/string
-
-D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_A.cpp
-Test_A.h
-D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_A.h
 
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_A.h
 cmath
@@ -65,6 +111,60 @@ cmath
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmath
 
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_C.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
+algorithm
+-
+cctype
+-
+cmath
+-
+complex
+-
+cstdio
+-
+cstdlib
+-
+cstring
+-
+deque
+-
+exception
+-
+functional
+-
+iterator
+-
+limits
+-
+list
+-
+map
+-
+set
+-
+stack
+-
+stdexcept
+-
+string
+-
+utility
+-
+vector
+-
+windows.h
+-
+ctime
+-
+ctime
+-
+sys/time.h
+-
+sys/types.h
+-
+fstream
+-
 
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/main.cpp
 iostream
@@ -79,4 +179,8 @@ Test_B.h
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_B.h
 Test_C.h
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_C.h
+RandomTest.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomTest.h
+ReadFiles.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.h
 

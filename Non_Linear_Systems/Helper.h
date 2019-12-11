@@ -26,6 +26,6 @@ double* Backward(double** P, double* res, int dim);
 
 void LUDecomposition(double** A, double** L, double** U, int n);
 
-double MatrixDeter(double** m, int n);
+double Deter(double** m, int n);
 
 #endif //NON_LINEAR_SYSTEMS_HELPER_H

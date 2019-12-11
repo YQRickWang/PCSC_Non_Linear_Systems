@@ -49,8 +49,10 @@ CMakeFiles/Non_Linear_Systems.dir/Test_C.cpp.obj
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_C.cpp
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_C.h
 CMakeFiles/Non_Linear_Systems.dir/UserInterface.cpp.obj
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/UserInterface.cpp
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/UserInterface.h
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
 CMakeFiles/Non_Linear_Systems.dir/main.cpp.obj
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Helper.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearEquation.h
@@ -62,5 +64,6 @@ CMakeFiles/Non_Linear_Systems.dir/main.cpp.obj
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_A.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_B.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_C.h
+ D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/UserInterface.h
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
  D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/main.cpp

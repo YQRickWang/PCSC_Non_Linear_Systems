@@ -4,11 +4,117 @@
 
 #include "UserInterface.h"
 #include "iostream"
+#include "string"
+#include "ReadFiles.h"
 
-void user_interface()
+void UserInterface()
 {
+    std::string command;
     std::cout<<"PCSC Non Linear System Solver"<<std::endl;
     std::cout<<"------------------------------------------------------------------------"<<std::endl;
-    
+    WelcomeInfo();
+    std::cin>>command;
+    std::cout<<"------------------------------------------------------------------------"<<std::endl;
+    while(true)
+    {
+        if(command=="1")
+        {
+            TestCaseInterface();
+        }
+        else if(command=="2")
+        {
+            KeyboardInterface();
+        }
+        else if(command=="3")
+        {
+            TestFileInterface();
+        }
+        else if(command=="exit"||command=="4")
+        {
+            std::cout<<"PCSC Non Linear System Solver exit."<<std::endl;
+            std::cout<<"------------------------------------------------------------------------"<<std::endl;
+            break;
+        }
+        else{
+            std::cout<<"Invalid Command, Please check again."<<std::endl;
+            std::cout<<"------------------------------------------------------------------------"<<std::endl;
+        }
+        WelcomeInfo();
+        std::cin>>command;
+    }
 }
 
+void WelcomeInfo()
+{
+    std::cout<<"There are several mode you can choose."<<std::endl;
+    std::cout<<"1-"<<"Test from existing test cases."<<std::endl;
+    std::cout<<"2-"<<"Test from keyboard."<<std::endl;
+    std::cout<<"3-"<<"Test from txt files."<<std::endl;
+    std::cout<<"4-"<<"Exit"<<std::endl;
+    std::cout<<R"(Please type in the mode you want to choose or type "4" or "exit" to exit)"<<std::endl;
+    std::cout<<"------------------------------------------------------------------------"<<std::endl;
+    std::cout<<">>";
+}
+
+void TestCaseInterface()
+{
+    std::string command;
+    std::cout<<"Test from existing test cases."<<std::endl;
+    std::cout<<"------------------------------------------------------------------------"<<std::endl;
+    TestCaseWelcomeInfo();
+    std::cin>>command;
+    std::cout<<"------------------------------------------------------------------------"<<std::endl;
+    while(true)
+    {
+        if(command=="1")
+        {
+        }
+        else if(command=="2")
+        {
+        }
+        else if(command=="exit"||command=="3")
+        {
+            std::cout<<"Test from existing test cases exit."<<std::endl;
+            std::cout<<"------------------------------------------------------------------------"<<std::endl;
+            break;
+        }
+        else{
+            std::cout<<"Invalid Command, Please check again."<<std::endl;
+            std::cout<<"------------------------------------------------------------------------"<<std::endl;
+        }
+        TestCaseWelcomeInfo();
+        std::cin>>command;
+    }
+}
+
+void TestCaseWelcomeInfo()
+{
+    std::cout<<"There are several mode you can choose."<<std::endl;
+    std::cout<<"1-"<<"Show all the test cases info."<<std::endl;
+    std::cout<<"2-"<<"Choose a specific test case."<<std::endl;
+    std::cout<<"3-"<<"Exit."<<std::endl;
+    std::cout<<R"(Please type in the mode you want to choose or type "3" or "exit" to exit)"<<std::endl;
+    std::cout<<"------------------------------------------------------------------------"<<std::endl;
+    std::cout<<">>";
+}
+
+void KeyboardInterface()
+{
+
+}
+
+void KeyboardWelcomeInfo()
+{
+
+}
+
+
+void TestFileInterface()
+{
+
+}
+
+void TestFileWelcomeInfo()
+{
+
+}

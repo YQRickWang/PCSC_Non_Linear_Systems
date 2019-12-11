@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
 algorithm
 -
 cctype
@@ -60,129 +60,199 @@ sys/types.h
 fstream
 -
 
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/Helper.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/main.cpp
+src/UserInterface.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/UserInterface.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/Helper.cpp
+Helper.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/Helper.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/Helper.h
 cmath
 -
 
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
-iostream
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/iostream
-
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h
-iostream
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/iostream
-map
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/map
-cmath
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/cmath
-list
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/list
-string
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/string
-NonLinearSolver.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.cpp
 NonLinearEquation.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
-Helper.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/Helper.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
 
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/ReadFiles.h
-string
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/string
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
+iostream
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/iostream
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.cpp
+NonLinearSolver.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h
+NonLinearEquation.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h
+iostream
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/iostream
+map
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/map
+cmath
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/cmath
 list
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/list
-../exprtk/exprtk.hpp
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
-
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/UserInterface.cpp
-UserInterface.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/UserInterface.h
-iostream
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/iostream
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/list
 string
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/string
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/string
+NonLinearSolver.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h
+NonLinearEquation.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
+Helper.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/Helper.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/ReadFiles.cpp
 ReadFiles.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/ReadFiles.h
-../test/RandomTest.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomTest.h
-../test/TestBase.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h
-../test/Test_A.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_A.h
-../test/Test_B.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_B.h
-../test/Test_C.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_C.h
-../test/Test_D.hpp
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_D.hpp
-
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/UserInterface.h
-
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomFunctions.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/ReadFiles.h
 iostream
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/iostream
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/iostream
+fstream
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/fstream
 string
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/string
-
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomTest.h
-TestBase.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/string
+list
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/list
 cmath
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/cmath
-../src/NonLinearEquation.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
-../src/NonLinearSolver.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/cmath
+../exprtk/exprtk.hpp
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
+../test/RandomFunctions.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomFunctions.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/ReadFiles.h
+string
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/string
+list
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/list
+../exprtk/exprtk.hpp
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/UserInterface.cpp
+UserInterface.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/UserInterface.h
+iostream
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/iostream
+string
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/string
+ReadFiles.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/ReadFiles.h
+../test/RandomTest.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomTest.h
+../test/TestBase.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h
+../test/Test_A.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_A.h
+../test/Test_B.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_B.h
+../test/Test_C.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_C.h
+../test/Test_D.hpp
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_D.hpp
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/UserInterface.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomFunctions.cpp
 RandomFunctions.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomFunctions.h
-
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h
-../src/NonLinearSolver.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h
-../src/NonLinearEquation.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
-cmath
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/cmath
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomFunctions.h
 string
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/string
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/string
+../exprtk/exprtk.hpp
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
 
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_A.h
-cmath
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/cmath
-../src/NonLinearEquation.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
-../src/NonLinearSolver.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h
-TestBase.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomFunctions.h
+iostream
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/iostream
+string
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/string
 
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_B.h
-cmath
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/cmath
-../src/NonLinearEquation.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
-../src/NonLinearSolver.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h
-TestBase.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomTest.cpp
+RandomTest.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomTest.h
 
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_C.h
-cmath
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/cmath
-../src/NonLinearEquation.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
-../src/NonLinearSolver.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomTest.h
 TestBase.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h
+cmath
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/cmath
+../src/NonLinearEquation.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
+../src/NonLinearSolver.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h
+RandomFunctions.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomFunctions.h
 
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_D.hpp
-cmath
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/cmath
-../src/NonLinearEquation.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
-../src/NonLinearSolver.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.cpp
 TestBase.h
-/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h
+../src/NonLinearSolver.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h
+../src/NonLinearEquation.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
+cmath
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/cmath
+string
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/string
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_A.cpp
+Test_A.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_A.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_A.h
+cmath
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/cmath
+../src/NonLinearEquation.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
+../src/NonLinearSolver.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h
+TestBase.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_B.cpp
+Test_B.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_B.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_B.h
+cmath
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/cmath
+../src/NonLinearEquation.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
+../src/NonLinearSolver.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h
+TestBase.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_C.cpp
+Test_C.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_C.h
+cmath
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/cmath
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_C.h
+cmath
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/cmath
+../src/NonLinearEquation.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
+../src/NonLinearSolver.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h
+TestBase.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_D.cpp
+Test_D.hpp
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_D.hpp
+
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_D.hpp
+cmath
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/cmath
+../src/NonLinearEquation.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h
+../src/NonLinearSolver.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h
+TestBase.h
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h
 

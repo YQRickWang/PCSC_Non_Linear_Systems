@@ -104,6 +104,7 @@ void ReadFromInput()
             std::cout<<"Please type in number "<<i<<j<<" Dfunction"<<std::endl;
             std::cout<<"Note: We will not check functions right now, we will check it later, please make it correct."<<std::endl;
             std::string str_dfunc;
+            std::cin>>str_dfunc;
             if(i==1)
             {
                 if(j==1)
@@ -159,6 +160,16 @@ void ReadFromInput()
                 std::cout<<"Error"<<std::endl;
             }
         }
+    }
+
+    //Read fixedpoint function (if it exits)
+    if(dim==1)
+    {
+        std::cout<<"Please type in fixed point function "<<std::endl;
+        std::cout<<"Note: We will not check functions right now, we will check it later, please make it correct."<<std::endl;
+        std::string str_fp;
+        std::cin>>str_fp;
+        fun_fp_expression = str_fp;
     }
 }
 

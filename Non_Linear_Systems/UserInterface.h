@@ -10,8 +10,6 @@ void WelcomeInfo();
 void TestCaseInterface();
 void TestCaseWelcomeInfo();
 void KeyboardInterface();
-void KeyboardWelcomeInfo();
 void TestFileInterface();
-void TestFileWelcomeInfo();
 
 #endif //NON_LINEAR_SYSTEMS_USERINTERFACE_H

@@ -6,6 +6,7 @@
 #include "iostream"
 #include "string"
 #include "ReadFiles.h"
+#include "RandomTest.h"
 
 void UserInterface()
 {
@@ -46,7 +47,7 @@ void UserInterface()
 
 void WelcomeInfo()
 {
-    std::cout<<"There are several mode you can choose."<<std::endl;
+    std::cout<<"There are several modes you can choose."<<std::endl;
     std::cout<<"1-"<<"Test from existing test cases."<<std::endl;
     std::cout<<"2-"<<"Test from keyboard."<<std::endl;
     std::cout<<"3-"<<"Test from txt files."<<std::endl;
@@ -89,7 +90,7 @@ void TestCaseInterface()
 
 void TestCaseWelcomeInfo()
 {
-    std::cout<<"There are several mode you can choose."<<std::endl;
+    std::cout<<"There are several modes you can choose."<<std::endl;
     std::cout<<"1-"<<"Show all the test cases info."<<std::endl;
     std::cout<<"2-"<<"Choose a specific test case."<<std::endl;
     std::cout<<"3-"<<"Exit."<<std::endl;
@@ -100,21 +101,29 @@ void TestCaseWelcomeInfo()
 
 void KeyboardInterface()
 {
-
+    std::string command;
+    std::cout<<"Test from keyboard input."<<std::endl;
+    std::cout<<"------------------------------------------------------------------------"<<std::endl;
+    ReadFromInput();
+    RandomTest test;
+    std::cout<<fun_1_expression<<std::endl;
+    std::cout<<dfun_11_expression<<std::endl;
+    std::cout<<fun_fp_expression<<std::endl;
+    test.RunTest();
 }
 
-void KeyboardWelcomeInfo()
-{
-
-}
 
 
 void TestFileInterface()
 {
-
-}
-
-void TestFileWelcomeInfo()
-{
-
+    std::string command;
+    std::cout<<"Test from txt files."<<std::endl;
+    std::cout<<R"(Test files should be stored in the "textfiles" directory.)"<<std::endl;
+    std::cout<<"------------------------------------------------------------------------"<<std::endl;
+    ReadFromFiles();
+    RandomTest test;
+    std::cout<<fun_1_expression<<std::endl;
+    std::cout<<dfun_11_expression<<std::endl;
+    std::cout<<fun_fp_expression<<std::endl;
+    test.RunTest();
 }

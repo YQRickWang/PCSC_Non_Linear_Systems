@@ -6,77 +6,9 @@
 
 #IncludeRegexTransform: 
 
-D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.h
-string
-D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/string
-list
-D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/list
-exprtk/exprtk.hpp
-D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/UserInterface.h
 
-D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/UserInterface.cpp
+D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/main.cpp
 UserInterface.h
 D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/UserInterface.h
-iostream
-D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/iostream
-string
-D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/string
-ReadFiles.h
-D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.h
-
-D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/UserInterface.h
-
-D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/exprtk/exprtk.hpp
-algorithm
--
-cctype
--
-cmath
--
-complex
--
-cstdio
--
-cstdlib
--
-cstring
--
-deque
--
-exception
--
-functional
--
-iterator
--
-limits
--
-list
--
-map
--
-set
--
-stack
--
-stdexcept
--
-string
--
-utility
--
-vector
--
-windows.h
--
-ctime
--
-ctime
--
-sys/time.h
--
-sys/types.h
--
-fstream
--
 

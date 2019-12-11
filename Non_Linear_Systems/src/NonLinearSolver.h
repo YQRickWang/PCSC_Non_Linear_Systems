@@ -43,16 +43,15 @@ public:
     void Aitken(double initial_guess = 0.0, int max_iterations = 100);
     void Chord(double a, double b);
     void Newton(int max_iterations=100);
-    void ModifiedNewton(double m=1.0, int max_iterations=100);
-    void ModifiedNewton1D(double initial_guess = 0.0, double m=2.0, int max_iterations=100);
     void Newton1D(double initial_guess=0.0, int max_iterations=100);
+    void ModifiedNewton(double m=1.0, int max_iterations=100);
+    void ModifiedNewton1D(double initial_guess = 0.0, double m=1.0, int max_iterations=100);
     void FixedPoint(double initial_guess = 0.0 , int max_iterations = 100);//intial_guess and max_iterations are default values
     void ZeroPointPrint();//print the zeropoint and method of the function
 
-    //operator
 
-    //iterative linear system solver, helper function?
-    double* LinearSolver_Jacobi(double** A, double* b);
+    //iterative linear system solver
+    double* LinearSolver_Jacobi(double** A, double* b, int max_iterations = 1000);
     double* LinearSolver_LU(double** A,double* b);
 
     //other helper functions
@@ -60,13 +59,6 @@ public:
     void AddToZeroPoint(std::string method,double zeros);//overload for 1 dimension
     void ClearZeroPoint();
 
-
-    //need to be done
-    //1. exception
-    //2. plot
-    //3. read data from text file?
-    //4. solve linear systems by iterative methods
-    //5. newton method
 };
 
 

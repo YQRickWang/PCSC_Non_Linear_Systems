@@ -342,11 +342,68 @@ void NonLinearSolver::ModifiedNewton1D(double initial_guess, double m, int max_i
     AddToZeroPoint("ModifiedNewton1D",x);
 }
 
-
-//operator
-
 //helper function, linear solver iterative method
-//need to check use of the space to avoid memory leakage
+double* NonLinearSolver::LinearSolver_Jacobi(double **A, double *b, int max_iterations) {
+    int dim = equations.GetDimension();
+    double tol = 1e-6;
+    double err;
+    err = tol + 1.0;
+    double* initial_guess = new double[dim];
+    double* x_prev = new double[dim];
+    double* x_next = new double[dim];
+
+    for (int i = 0; i < dim; i++){
+        initial_guess[i] = 0.0;
+        x_prev[i] = initial_guess[i];
+    }
+
+    double** P = new double* [dim];
+    std::cout<<"print P"<<"\n";
+    for(int i = 0; i < dim; i++){
+        P[i] = new double[dim];
+        for (int j = 0; j < dim; j++){
+            if(i == j){
+                P[i][j] = A[i][j];
+                std::cout<<P[i][j]<<" ";
+            }
+            else{
+                P[i][j] = 0.0;
+                std::cout<<P[i][j]<<" ";
+            }
+        }
+        std::cout<<"\n";
+    }
+    double* res = new double[dim];
+    res = MatrixSub(b, MatrixMulti(A, x_prev, dim), dim);
+    std::cout<<"print res"<<"\n";
+    for(int i = 0; i < dim; i++){
+        std::cout<<res[i]<<" ";
+    }
+    std::cout<<"\n";
+    int it_count = 0;
+    while(err >= tol && it_count <= max_iterations){
+        double* z = new double[dim];
+        z = Forward(P, res, dim);
+        for(int i =0; i < dim; i++){
+            x_next[i] = x_prev[i] + z[i];
+        }
+
+        err = GetError(res, MatrixMulti(A, z, dim), dim);
+        res = MatrixSub(res, MatrixMulti(A, z, dim), dim);
+        for(int i = 0; i < dim; i++){
+            x_prev[i] = x_next[i];
+        }
+        it_count = it_count + 1;
+    }
+
+    for(int i=0; i<dim; i++)
+    {delete P[i];}
+
+    delete []P;
+
+    return x_prev;
+}
+
 
 double* NonLinearSolver::LinearSolver_LU(double **A, double *b)
 {

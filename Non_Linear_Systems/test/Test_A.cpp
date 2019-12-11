@@ -4,12 +4,6 @@
 
 #include "Test_A.h"
 
-//basic test for 1 dimension
-//simple test
-//f(x) = x-1
-//df(x) = 1
-//g(x) = 1
-//x=1
 double Test_A_function_1(double *input)
 {
     return input[0]-1;
@@ -49,15 +43,6 @@ Test_A::Test_A()
 
 void Test_A::RunTest()
 {
-//    this->solver.Bisection(0,2);
-//    this->solver.Chord(0,2);
-//    this->solver.FixedPoint();
-//    this->solver.Aitken(0.0);
-//    this->solver.Newton1D(0.0);
-//    this->solver.Newton();
-//    this->solver.ModifiedNewton();
-//    this->solver.ModifiedNewton1D(0.0,2.0);
-//    this->solver.ZeroPointPrint();
     std::string command;
     std::cout<<"Test A is running"<<std::endl;
     std::cout<<"--------------------------------------------------"<<std::endl;

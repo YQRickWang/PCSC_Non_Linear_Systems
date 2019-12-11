@@ -7,6 +7,11 @@
 #include "string"
 #include "ReadFiles.h"
 #include "../test/RandomTest.h"
+#include "../test/TestBase.h"
+#include "../test/Test_A.h"
+#include "../test/Test_B.h"
+#include "../test/Test_C.h"
+#include "../test/Test_D.hpp"
 
 void UserInterface()
 {
@@ -69,10 +74,46 @@ void TestCaseInterface()
     {
         if(command=="1")
         {
-
+            std::cout<<"We have 4 stored test cases(A(one-dimensional), B(one-dimensional), C(bi-dimensional), D(bi-dimensional))"<<std::endl;
         }
         else if(command=="2")
         {
+
+                std::string index,exit;
+                std::cout << "Choose the index of the stored case: " << std::endl;
+                std::cin >> index;
+                std::cout<<"Type exit if want to exit or type anything else to continue"<<std::endl;
+                std::cin>>exit;
+                if (index == "A") {
+                    Test_A test_a;
+                    test_a.RunTest();
+                    std::cout<<"Type exit if want to exit or type anything else to continue"<<std::endl;
+                    std::cin>>exit;
+                } else if (index == "B") {
+                    Test_B test_b;
+                    test_b.RunTest();
+                    std::cout<<"Type exit if want to exit or type anything else to continue"<<std::endl;
+                    std::cin>>exit;
+                } else if (index == "C"){
+                    Test_C test_c;
+                    test_c.RunTest();
+                    std::cout<<"Type exit if want to exit or type anything else to continue"<<std::endl;
+                    std::cin>>exit;
+                }
+                else if(index == "D"){
+                    Test_D test_d;
+                    test_d.RunTest();
+                    std::cout<<"Type exit if want to exit or type anything else to continue"<<std::endl;
+                    std::cin>>exit;
+                }
+                else if(exit == "exit"){
+                    break;
+                }
+                else{
+                    std::cout<<"No such test case"<<std::endl;
+                    std::cout<<"Type exit if want to exit or type anything else to continue"<<std::endl;
+                    std::cin>>exit;
+                }
 
         }
         else if(command=="exit"||command=="3")

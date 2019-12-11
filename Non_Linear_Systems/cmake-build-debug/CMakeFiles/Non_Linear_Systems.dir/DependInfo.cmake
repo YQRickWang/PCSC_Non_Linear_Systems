@@ -4,20 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/main.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/main.cpp.obj"
-  "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/Helper.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/src/Helper.cpp.obj"
-  "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/src/NonLinearEquation.cpp.obj"
-  "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/src/NonLinearSolver.cpp.obj"
-  "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/ReadFiles.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/src/ReadFiles.cpp.obj"
-  "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/UserInterface.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/src/UserInterface.cpp.obj"
-  "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomFunctions.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/test/RandomFunctions.cpp.obj"
-  "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomTest.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/test/RandomTest.cpp.obj"
-  "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/test/TestBase.cpp.obj"
-  "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_A.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/test/Test_A.cpp.obj"
-  "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_B.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/test/Test_B.cpp.obj"
-  "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_C.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/test/Test_C.cpp.obj"
+  "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/main.cpp" "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/main.cpp.o"
+  "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/Helper.cpp" "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/src/Helper.cpp.o"
+  "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.cpp" "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/src/NonLinearEquation.cpp.o"
+  "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.cpp" "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/src/NonLinearSolver.cpp.o"
+  "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/ReadFiles.cpp" "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/src/ReadFiles.cpp.o"
+  "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/UserInterface.cpp" "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/src/UserInterface.cpp.o"
+  "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomFunctions.cpp" "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/test/RandomFunctions.cpp.o"
+  "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomTest.cpp" "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/test/RandomTest.cpp.o"
+  "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.cpp" "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/test/TestBase.cpp.o"
+  "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_A.cpp" "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/test/Test_A.cpp.o"
+  "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_B.cpp" "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/test/Test_B.cpp.o"
+  "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_C.cpp" "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/test/Test_C.cpp.o"
+  "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_D.cpp" "/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/test/Test_D.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "MSVC")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

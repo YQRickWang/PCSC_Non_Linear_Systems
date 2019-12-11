@@ -4,154 +4,162 @@
 	<Project>
 		<Option title="Non_Linear_Systems"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="msvc8"/>
+		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug"/>
+				<Option working_dir="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Non_Linear_Systems">
-				<Option output="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Non_Linear_Systems.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="msvc8"/>
-				<Compiler>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 Non_Linear_Systems"/>
-					<CompileFile command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Non_Linear_Systems/fast">
-				<Option output="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Non_Linear_Systems.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="msvc8"/>
-				<Compiler>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 Non_Linear_Systems/fast"/>
-					<CompileFile command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 edit_cache"/>
-					<CompileFile command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug"/>
+				<Option working_dir="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f &quot;D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Non_Linear_Systems">
+				<Option output="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Non_Linear_Systems" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 Non_Linear_Systems"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Non_Linear_Systems/fast">
+				<Option output="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Non_Linear_Systems" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 Non_Linear_Systems/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/main.cpp">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/main.cpp">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/Helper.cpp">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/Helper.cpp">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/Helper.h">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/Helper.h">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.cpp">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.cpp">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.cpp">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.cpp">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/ReadFiles.cpp">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/ReadFiles.cpp">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/ReadFiles.h">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/ReadFiles.h">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/UserInterface.cpp">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/UserInterface.cpp">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/UserInterface.h">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/UserInterface.h">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomFunctions.cpp">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomFunctions.cpp">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomFunctions.h">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomFunctions.h">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomTest.cpp">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomTest.cpp">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomTest.h">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomTest.h">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.cpp">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.cpp">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_A.cpp">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_A.cpp">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_A.h">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_A.h">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_B.cpp">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_B.cpp">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_B.h">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_B.h">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_C.cpp">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_C.cpp">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_C.h">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_C.h">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/CMakeLists.txt">
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_D.cpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_D.hpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="/home/hzhu/project/PCSC_Non_Linear_Systems/Non_Linear_Systems/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

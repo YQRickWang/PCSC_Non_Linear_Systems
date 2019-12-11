@@ -29,107 +29,171 @@ std::string dfun_43_expression;
 std::string dfun_44_expression;
 std::string fun_fp_expression;
 
+double RandomFunctionBase(std::string str_expression,double* input)
+{
+    typedef double T;
+    typedef exprtk::symbol_table<T> symbol_table_t;
+    typedef exprtk::expression<T>     expression_t;
+    typedef exprtk::parser<T>             parser_t;
+
+    symbol_table_t symbol_table;
+
+
+    T x,y,z,w;
+    if(random_dimension==1)
+    {
+        x = input[0];
+        symbol_table.add_variable("x",x);
+    }
+    else if(random_dimension==2)
+    {
+        x = input[0];
+        y = input[1];
+        symbol_table.add_variable("x",x);
+        symbol_table.add_variable("y",y);
+    }
+    else if(random_dimension==3)
+    {
+        x = input[0];
+        y = input[1];
+        z = input[2];
+        symbol_table.add_variable("x",x);
+        symbol_table.add_variable("y",y);
+        symbol_table.add_variable("z",z);
+    }
+    else if(random_dimension==4)
+    {
+        x = input[0];
+        y = input[1];
+        z = input[2];
+        w = input[3];
+        symbol_table.add_variable("x",x);
+        symbol_table.add_variable("y",y);
+        symbol_table.add_variable("z",z);
+        symbol_table.add_variable("w",w);
+    }
+    else{
+        std::cout<<"Error"<<std::endl;
+    }
+
+
+
+    expression_t expression;
+    expression.register_symbol_table(symbol_table);
+
+    parser_t parser;
+
+    if (!parser.compile(str_expression,expression))
+    {
+        std::cout<<"Compilation error"<<std::endl;
+        return 0.0;
+    }
+
+    T result = expression.value();
+    return result;
+}
 
 double RandomFunction_1(double* input)
 {
-    typedef double T;
-    typedef exprtk::symbol_table<T> symbol_table_t;
-    typedef exprtk::expression<T>     expression_t;
-    typedef exprtk::parser<T>             parser_t;
-
-    T x = T(input[0]);
-
-    symbol_table_t symbol_table;
-    symbol_table.add_variable("x",x);
-
-    expression_t expression;
-    expression.register_symbol_table(symbol_table);
-
-    parser_t parser;
-
-    if (!parser.compile(fun_1_expression,expression))
-    {
-        std::cout<<"Compilation error"<<std::endl;
-        return 0.0;
-    }
-
-    T result = expression.value();
-    return result;
-    //std::cout<<result<<std::endl;
+    return RandomFunctionBase(fun_1_expression,input);
 }
 
-//double RandomFunction_2(double* input);
-//double RandomFunction_3(double* input);
-//double RandomFunction_4(double* input);
+double RandomFunction_2(double* input)
+{
+    return RandomFunctionBase(fun_2_expression,input);
+}
+
+double RandomFunction_3(double* input)
+{
+    return RandomFunctionBase(fun_3_expression,input);
+}
+
+double RandomFunction_4(double* input)
+{
+    return RandomFunctionBase(fun_4_expression,input);
+}
 
 double RandomDFunction_11(double* input)
 {
-    typedef double T;
-    typedef exprtk::symbol_table<T> symbol_table_t;
-    typedef exprtk::expression<T>     expression_t;
-    typedef exprtk::parser<T>             parser_t;
-
-    T x = T(input[0]);
-
-    symbol_table_t symbol_table;
-    symbol_table.add_variable("x",x);
-
-    expression_t expression;
-    expression.register_symbol_table(symbol_table);
-
-    parser_t parser;
-
-    if (!parser.compile(dfun_11_expression,expression))
-    {
-        std::cout<<"Compilation error"<<std::endl;
-        return 0.0;
-    }
-
-    T result = expression.value();
-    return result;
-    //std::cout<<result<<std::endl;
+    return RandomFunctionBase(dfun_11_expression,input);
 }
 
-//double RandomDFunction_12(double* input);
-//double RandomDFunction_13(double* input);
-//double RandomDFunction_14(double* input);
-//double RandomDFunction_21(double* input);
-//double RandomDFunction_22(double* input);
-//double RandomDFunction_23(double* input);
-//double RandomDFunction_24(double* input);
-//double RandomDFunction_31(double* input);
-//double RandomDFunction_32(double* input);
-//double RandomDFunction_33(double* input);
-//double RandomDFunction_34(double* input);
-//double RandomDFunction_41(double* input);
-//double RandomDFunction_42(double* input);
-//double RandomDFunction_43(double* input);
-//double RandomDFunction_44(double* input);
-
-double RandomDFunction_fp(double* input)
+double RandomDFunction_12(double* input)
 {
-    typedef double T;
-    typedef exprtk::symbol_table<T> symbol_table_t;
-    typedef exprtk::expression<T>     expression_t;
-    typedef exprtk::parser<T>             parser_t;
+    return RandomFunctionBase(dfun_12_expression,input);
+}
 
-    T x = T(input[0]);
+double RandomDFunction_13(double* input)
+{
+    return RandomFunctionBase(dfun_13_expression,input);
+}
 
-    symbol_table_t symbol_table;
-    symbol_table.add_variable("x",x);
+double RandomDFunction_14(double* input)
+{
+    return RandomFunctionBase(dfun_14_expression,input);
+}
 
-    expression_t expression;
-    expression.register_symbol_table(symbol_table);
+double RandomDFunction_21(double* input)
+{
+    return RandomFunctionBase(dfun_21_expression,input);
+}
 
-    parser_t parser;
+double RandomDFunction_22(double* input)
+{
+    return RandomFunctionBase(dfun_22_expression,input);
+}
 
-    if (!parser.compile(fun_fp_expression,expression))
-    {
-        std::cout<<"Compilation error"<<std::endl;
-        return 0.0;
-    }
+double RandomDFunction_23(double* input)
+{
+    return RandomFunctionBase(dfun_23_expression,input);
+}
 
-    T result = expression.value();
-    return result;
-    //std::cout<<result<<std::endl;
+double RandomDFunction_24(double* input)
+{
+    return RandomFunctionBase(dfun_24_expression,input);
+}
+
+double RandomDFunction_31(double* input)
+{
+    return RandomFunctionBase(dfun_31_expression,input);
+}
+
+double RandomDFunction_32(double* input)
+{
+    return RandomFunctionBase(dfun_32_expression,input);
+}
+
+double RandomDFunction_33(double* input)
+{
+    return RandomFunctionBase(dfun_33_expression,input);
+}
+
+double RandomDFunction_34(double* input)
+{
+    return RandomFunctionBase(dfun_34_expression,input);
+}
+
+double RandomDFunction_41(double* input)
+{
+    return RandomFunctionBase(dfun_41_expression,input);
+}
+
+double RandomDFunction_42(double* input)
+{
+    return RandomFunctionBase(dfun_42_expression,input);
+}
+
+double RandomDFunction_43(double* input)
+{
+    return RandomFunctionBase(dfun_43_expression,input);
+}
+
+double RandomDFunction_44(double* input)
+{
+    return RandomFunctionBase(dfun_44_expression,input);
+}
+
+double RandomFunction_fp(double* input)
+{
+    return RandomFunctionBase(fun_fp_expression,input);
 }

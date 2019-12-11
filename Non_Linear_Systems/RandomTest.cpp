@@ -17,7 +17,7 @@ RandomTest::RandomTest()
 
     fun_1[0] = &RandomFunction_1;
     dfun_1[0][0] = &RandomDFunction_11;
-    fp_1 = &RandomDFunction_fp;
+    fp_1 = &RandomFunction_fp;
 
     this->equations.SetDimension(random_dimension);
     this->equations.SetFunArray(fun_1);

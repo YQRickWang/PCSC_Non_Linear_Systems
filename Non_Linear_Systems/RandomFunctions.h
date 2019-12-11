@@ -6,6 +6,7 @@
 #define NON_LINEAR_SYSTEMS_RANDOMFUNCTIONS_H
 
 #include "iostream"
+#include "string"
 
 double RandomFunction_1(double* input);
 double RandomFunction_2(double* input);
@@ -27,7 +28,8 @@ double RandomDFunction_41(double* input);
 double RandomDFunction_42(double* input);
 double RandomDFunction_43(double* input);
 double RandomDFunction_44(double* input);
-double RandomDFunction_fp(double* input);
+double RandomFunction_fp(double* input);
+double RandomFunctionBase(std::string str_expression,double* input);
 
 //define global value
 //define global variable for random function

@@ -190,41 +190,60 @@ void AnalyzeFiles(std::list<std::string> string_list)
     }
     else if(dim>1)
     {
-        std::cout<<"High Dimension not supported right now"<<std::endl;
+        //read functions
+        if(dim==2)
+        {
+            fun_1_expression = *(it++);
+            fun_2_expression = *(it++);
+            dfun_11_expression = *(it++);
+            dfun_12_expression = *(it++);
+            dfun_21_expression = *(it++);
+            dfun_22_expression = *(it++);
+        }
+        else if(dim==3)
+        {
+            fun_1_expression = *(it++);
+            fun_2_expression = *(it++);
+            fun_3_expression = *(it++);
+            dfun_11_expression = *(it++);
+            dfun_12_expression = *(it++);
+            dfun_13_expression = *(it++);
+            dfun_21_expression = *(it++);
+            dfun_22_expression = *(it++);
+            dfun_23_expression = *(it++);
+            dfun_31_expression = *(it++);
+            dfun_32_expression = *(it++);
+            dfun_33_expression = *(it++);
+        }
+        else if(dim==4)
+        {
+            fun_1_expression = *(it++);
+            fun_2_expression = *(it++);
+            fun_3_expression = *(it++);
+            fun_4_expression = *(it++);
+            dfun_11_expression = *(it++);
+            dfun_12_expression = *(it++);
+            dfun_13_expression = *(it++);
+            dfun_14_expression = *(it++);
+            dfun_21_expression = *(it++);
+            dfun_22_expression = *(it++);
+            dfun_23_expression = *(it++);
+            dfun_24_expression = *(it++);
+            dfun_31_expression = *(it++);
+            dfun_32_expression = *(it++);
+            dfun_33_expression = *(it++);
+            dfun_34_expression = *(it++);
+            dfun_41_expression = *(it++);
+            dfun_42_expression = *(it++);
+            dfun_43_expression = *(it++);
+            dfun_44_expression = *(it++);
+        }
+        else
+        {
+            std::cout<<"Higher Dimension is not supported"<<std::endl;
+        }
     } else{
-        std::cout<<"Dimension Error"<<std::endl;
+        std::cout<<"Dimension error, please check dimension"<<std::endl;
     }
-
 }
 
-
-void AnalyzeFunction(std::string expression_string)
-{
-//    typedef double T;
-//    typedef exprtk::symbol_table<T> symbol_table_t;
-//    typedef exprtk::expression<T>     expression_t;
-//    typedef exprtk::parser<T>             parser_t;
-//
-//    T x = T(0);
-//    //T y = T(98.98);
-//    //T z = T(0.0);
-//
-//    symbol_table_t symbol_table;
-//    symbol_table.add_variable("x",x);
-//    //symbol_table.add_variable("y",y);
-//    //symbol_table.add_variable("z",z);
-//
-//    expression_t expression;
-//    expression.register_symbol_table(symbol_table);
-//
-//    parser_t parser;
-//
-//    if (!parser.compile(expression_string,expression))
-//    {
-//        std::cout<<"Compilation error"<<std::endl;
-//        return;
-//    }
-//
-//    T result = expression.value();
-//    std::cout<<result<<std::endl;
-}

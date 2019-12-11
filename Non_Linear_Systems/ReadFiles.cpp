@@ -45,7 +45,7 @@ void ReadFromFiles()
     }
 
     AnalyzeFiles(string_list);
-    
+
 }
 
 void ReadFromInput()

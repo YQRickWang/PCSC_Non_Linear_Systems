@@ -82,73 +82,73 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Helper.cpp">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Helper.h">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearEquation.cpp">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearEquation.h">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearSolver.cpp">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/NonLinearSolver.h">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.cpp">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomFunctions.h">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomTest.cpp">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/RandomTest.h">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.cpp">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/ReadFiles.h">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/TestBase.cpp">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/TestBase.h">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_A.cpp">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_A.h">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_B.cpp">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_B.h">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_C.cpp">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/Test_C.h">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/UserInterface.cpp">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/UserInterface.h">
-			<Option target="Non_Linear_Systems"/>
-		</Unit>
 		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/main.cpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/Helper.cpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/Helper.h">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.cpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.h">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.cpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.h">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/ReadFiles.cpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/ReadFiles.h">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/UserInterface.cpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/UserInterface.h">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomFunctions.cpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomFunctions.h">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomTest.cpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/RandomTest.h">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.cpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/TestBase.h">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_A.cpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_A.h">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_B.cpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_B.h">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_C.cpp">
+			<Option target="Non_Linear_Systems"/>
+		</Unit>
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_C.h">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
 		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/CMakeLists.txt">

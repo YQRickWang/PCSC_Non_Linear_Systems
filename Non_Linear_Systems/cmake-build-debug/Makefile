@@ -124,303 +124,6 @@ Non_Linear_Systems\fast:
 	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\build
 .PHONY : Non_Linear_Systems\fast
 
-Helper.obj: Helper.cpp.obj
-
-.PHONY : Helper.obj
-
-# target to build an object file
-Helper.cpp.obj:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Helper.cpp.obj
-.PHONY : Helper.cpp.obj
-
-Helper.i: Helper.cpp.i
-
-.PHONY : Helper.i
-
-# target to preprocess a source file
-Helper.cpp.i:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Helper.cpp.i
-.PHONY : Helper.cpp.i
-
-Helper.s: Helper.cpp.s
-
-.PHONY : Helper.s
-
-# target to generate assembly for a file
-Helper.cpp.s:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Helper.cpp.s
-.PHONY : Helper.cpp.s
-
-NonLinearEquation.obj: NonLinearEquation.cpp.obj
-
-.PHONY : NonLinearEquation.obj
-
-# target to build an object file
-NonLinearEquation.cpp.obj:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\NonLinearEquation.cpp.obj
-.PHONY : NonLinearEquation.cpp.obj
-
-NonLinearEquation.i: NonLinearEquation.cpp.i
-
-.PHONY : NonLinearEquation.i
-
-# target to preprocess a source file
-NonLinearEquation.cpp.i:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\NonLinearEquation.cpp.i
-.PHONY : NonLinearEquation.cpp.i
-
-NonLinearEquation.s: NonLinearEquation.cpp.s
-
-.PHONY : NonLinearEquation.s
-
-# target to generate assembly for a file
-NonLinearEquation.cpp.s:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\NonLinearEquation.cpp.s
-.PHONY : NonLinearEquation.cpp.s
-
-NonLinearSolver.obj: NonLinearSolver.cpp.obj
-
-.PHONY : NonLinearSolver.obj
-
-# target to build an object file
-NonLinearSolver.cpp.obj:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\NonLinearSolver.cpp.obj
-.PHONY : NonLinearSolver.cpp.obj
-
-NonLinearSolver.i: NonLinearSolver.cpp.i
-
-.PHONY : NonLinearSolver.i
-
-# target to preprocess a source file
-NonLinearSolver.cpp.i:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\NonLinearSolver.cpp.i
-.PHONY : NonLinearSolver.cpp.i
-
-NonLinearSolver.s: NonLinearSolver.cpp.s
-
-.PHONY : NonLinearSolver.s
-
-# target to generate assembly for a file
-NonLinearSolver.cpp.s:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\NonLinearSolver.cpp.s
-.PHONY : NonLinearSolver.cpp.s
-
-RandomFunctions.obj: RandomFunctions.cpp.obj
-
-.PHONY : RandomFunctions.obj
-
-# target to build an object file
-RandomFunctions.cpp.obj:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\RandomFunctions.cpp.obj
-.PHONY : RandomFunctions.cpp.obj
-
-RandomFunctions.i: RandomFunctions.cpp.i
-
-.PHONY : RandomFunctions.i
-
-# target to preprocess a source file
-RandomFunctions.cpp.i:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\RandomFunctions.cpp.i
-.PHONY : RandomFunctions.cpp.i
-
-RandomFunctions.s: RandomFunctions.cpp.s
-
-.PHONY : RandomFunctions.s
-
-# target to generate assembly for a file
-RandomFunctions.cpp.s:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\RandomFunctions.cpp.s
-.PHONY : RandomFunctions.cpp.s
-
-RandomTest.obj: RandomTest.cpp.obj
-
-.PHONY : RandomTest.obj
-
-# target to build an object file
-RandomTest.cpp.obj:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\RandomTest.cpp.obj
-.PHONY : RandomTest.cpp.obj
-
-RandomTest.i: RandomTest.cpp.i
-
-.PHONY : RandomTest.i
-
-# target to preprocess a source file
-RandomTest.cpp.i:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\RandomTest.cpp.i
-.PHONY : RandomTest.cpp.i
-
-RandomTest.s: RandomTest.cpp.s
-
-.PHONY : RandomTest.s
-
-# target to generate assembly for a file
-RandomTest.cpp.s:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\RandomTest.cpp.s
-.PHONY : RandomTest.cpp.s
-
-ReadFiles.obj: ReadFiles.cpp.obj
-
-.PHONY : ReadFiles.obj
-
-# target to build an object file
-ReadFiles.cpp.obj:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\ReadFiles.cpp.obj
-.PHONY : ReadFiles.cpp.obj
-
-ReadFiles.i: ReadFiles.cpp.i
-
-.PHONY : ReadFiles.i
-
-# target to preprocess a source file
-ReadFiles.cpp.i:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\ReadFiles.cpp.i
-.PHONY : ReadFiles.cpp.i
-
-ReadFiles.s: ReadFiles.cpp.s
-
-.PHONY : ReadFiles.s
-
-# target to generate assembly for a file
-ReadFiles.cpp.s:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\ReadFiles.cpp.s
-.PHONY : ReadFiles.cpp.s
-
-TestBase.obj: TestBase.cpp.obj
-
-.PHONY : TestBase.obj
-
-# target to build an object file
-TestBase.cpp.obj:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\TestBase.cpp.obj
-.PHONY : TestBase.cpp.obj
-
-TestBase.i: TestBase.cpp.i
-
-.PHONY : TestBase.i
-
-# target to preprocess a source file
-TestBase.cpp.i:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\TestBase.cpp.i
-.PHONY : TestBase.cpp.i
-
-TestBase.s: TestBase.cpp.s
-
-.PHONY : TestBase.s
-
-# target to generate assembly for a file
-TestBase.cpp.s:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\TestBase.cpp.s
-.PHONY : TestBase.cpp.s
-
-Test_A.obj: Test_A.cpp.obj
-
-.PHONY : Test_A.obj
-
-# target to build an object file
-Test_A.cpp.obj:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_A.cpp.obj
-.PHONY : Test_A.cpp.obj
-
-Test_A.i: Test_A.cpp.i
-
-.PHONY : Test_A.i
-
-# target to preprocess a source file
-Test_A.cpp.i:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_A.cpp.i
-.PHONY : Test_A.cpp.i
-
-Test_A.s: Test_A.cpp.s
-
-.PHONY : Test_A.s
-
-# target to generate assembly for a file
-Test_A.cpp.s:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_A.cpp.s
-.PHONY : Test_A.cpp.s
-
-Test_B.obj: Test_B.cpp.obj
-
-.PHONY : Test_B.obj
-
-# target to build an object file
-Test_B.cpp.obj:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_B.cpp.obj
-.PHONY : Test_B.cpp.obj
-
-Test_B.i: Test_B.cpp.i
-
-.PHONY : Test_B.i
-
-# target to preprocess a source file
-Test_B.cpp.i:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_B.cpp.i
-.PHONY : Test_B.cpp.i
-
-Test_B.s: Test_B.cpp.s
-
-.PHONY : Test_B.s
-
-# target to generate assembly for a file
-Test_B.cpp.s:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_B.cpp.s
-.PHONY : Test_B.cpp.s
-
-Test_C.obj: Test_C.cpp.obj
-
-.PHONY : Test_C.obj
-
-# target to build an object file
-Test_C.cpp.obj:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_C.cpp.obj
-.PHONY : Test_C.cpp.obj
-
-Test_C.i: Test_C.cpp.i
-
-.PHONY : Test_C.i
-
-# target to preprocess a source file
-Test_C.cpp.i:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_C.cpp.i
-.PHONY : Test_C.cpp.i
-
-Test_C.s: Test_C.cpp.s
-
-.PHONY : Test_C.s
-
-# target to generate assembly for a file
-Test_C.cpp.s:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\Test_C.cpp.s
-.PHONY : Test_C.cpp.s
-
-UserInterface.obj: UserInterface.cpp.obj
-
-.PHONY : UserInterface.obj
-
-# target to build an object file
-UserInterface.cpp.obj:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\UserInterface.cpp.obj
-.PHONY : UserInterface.cpp.obj
-
-UserInterface.i: UserInterface.cpp.i
-
-.PHONY : UserInterface.i
-
-# target to preprocess a source file
-UserInterface.cpp.i:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\UserInterface.cpp.i
-.PHONY : UserInterface.cpp.i
-
-UserInterface.s: UserInterface.cpp.s
-
-.PHONY : UserInterface.s
-
-# target to generate assembly for a file
-UserInterface.cpp.s:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\UserInterface.cpp.s
-.PHONY : UserInterface.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -448,6 +151,330 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\main.cpp.s
 .PHONY : main.cpp.s
 
+src\Helper.obj: src\Helper.cpp.obj
+
+.PHONY : src\Helper.obj
+
+# target to build an object file
+src\Helper.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\Helper.cpp.obj
+.PHONY : src\Helper.cpp.obj
+
+src\Helper.i: src\Helper.cpp.i
+
+.PHONY : src\Helper.i
+
+# target to preprocess a source file
+src\Helper.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\Helper.cpp.i
+.PHONY : src\Helper.cpp.i
+
+src\Helper.s: src\Helper.cpp.s
+
+.PHONY : src\Helper.s
+
+# target to generate assembly for a file
+src\Helper.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\Helper.cpp.s
+.PHONY : src\Helper.cpp.s
+
+src\NonLinearEquation.obj: src\NonLinearEquation.cpp.obj
+
+.PHONY : src\NonLinearEquation.obj
+
+# target to build an object file
+src\NonLinearEquation.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\NonLinearEquation.cpp.obj
+.PHONY : src\NonLinearEquation.cpp.obj
+
+src\NonLinearEquation.i: src\NonLinearEquation.cpp.i
+
+.PHONY : src\NonLinearEquation.i
+
+# target to preprocess a source file
+src\NonLinearEquation.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\NonLinearEquation.cpp.i
+.PHONY : src\NonLinearEquation.cpp.i
+
+src\NonLinearEquation.s: src\NonLinearEquation.cpp.s
+
+.PHONY : src\NonLinearEquation.s
+
+# target to generate assembly for a file
+src\NonLinearEquation.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\NonLinearEquation.cpp.s
+.PHONY : src\NonLinearEquation.cpp.s
+
+src\NonLinearSolver.obj: src\NonLinearSolver.cpp.obj
+
+.PHONY : src\NonLinearSolver.obj
+
+# target to build an object file
+src\NonLinearSolver.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\NonLinearSolver.cpp.obj
+.PHONY : src\NonLinearSolver.cpp.obj
+
+src\NonLinearSolver.i: src\NonLinearSolver.cpp.i
+
+.PHONY : src\NonLinearSolver.i
+
+# target to preprocess a source file
+src\NonLinearSolver.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\NonLinearSolver.cpp.i
+.PHONY : src\NonLinearSolver.cpp.i
+
+src\NonLinearSolver.s: src\NonLinearSolver.cpp.s
+
+.PHONY : src\NonLinearSolver.s
+
+# target to generate assembly for a file
+src\NonLinearSolver.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\NonLinearSolver.cpp.s
+.PHONY : src\NonLinearSolver.cpp.s
+
+src\ReadFiles.obj: src\ReadFiles.cpp.obj
+
+.PHONY : src\ReadFiles.obj
+
+# target to build an object file
+src\ReadFiles.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\ReadFiles.cpp.obj
+.PHONY : src\ReadFiles.cpp.obj
+
+src\ReadFiles.i: src\ReadFiles.cpp.i
+
+.PHONY : src\ReadFiles.i
+
+# target to preprocess a source file
+src\ReadFiles.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\ReadFiles.cpp.i
+.PHONY : src\ReadFiles.cpp.i
+
+src\ReadFiles.s: src\ReadFiles.cpp.s
+
+.PHONY : src\ReadFiles.s
+
+# target to generate assembly for a file
+src\ReadFiles.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\ReadFiles.cpp.s
+.PHONY : src\ReadFiles.cpp.s
+
+src\UserInterface.obj: src\UserInterface.cpp.obj
+
+.PHONY : src\UserInterface.obj
+
+# target to build an object file
+src\UserInterface.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\UserInterface.cpp.obj
+.PHONY : src\UserInterface.cpp.obj
+
+src\UserInterface.i: src\UserInterface.cpp.i
+
+.PHONY : src\UserInterface.i
+
+# target to preprocess a source file
+src\UserInterface.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\UserInterface.cpp.i
+.PHONY : src\UserInterface.cpp.i
+
+src\UserInterface.s: src\UserInterface.cpp.s
+
+.PHONY : src\UserInterface.s
+
+# target to generate assembly for a file
+src\UserInterface.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\UserInterface.cpp.s
+.PHONY : src\UserInterface.cpp.s
+
+test\RandomFunctions.obj: test\RandomFunctions.cpp.obj
+
+.PHONY : test\RandomFunctions.obj
+
+# target to build an object file
+test\RandomFunctions.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\RandomFunctions.cpp.obj
+.PHONY : test\RandomFunctions.cpp.obj
+
+test\RandomFunctions.i: test\RandomFunctions.cpp.i
+
+.PHONY : test\RandomFunctions.i
+
+# target to preprocess a source file
+test\RandomFunctions.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\RandomFunctions.cpp.i
+.PHONY : test\RandomFunctions.cpp.i
+
+test\RandomFunctions.s: test\RandomFunctions.cpp.s
+
+.PHONY : test\RandomFunctions.s
+
+# target to generate assembly for a file
+test\RandomFunctions.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\RandomFunctions.cpp.s
+.PHONY : test\RandomFunctions.cpp.s
+
+test\RandomTest.obj: test\RandomTest.cpp.obj
+
+.PHONY : test\RandomTest.obj
+
+# target to build an object file
+test\RandomTest.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\RandomTest.cpp.obj
+.PHONY : test\RandomTest.cpp.obj
+
+test\RandomTest.i: test\RandomTest.cpp.i
+
+.PHONY : test\RandomTest.i
+
+# target to preprocess a source file
+test\RandomTest.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\RandomTest.cpp.i
+.PHONY : test\RandomTest.cpp.i
+
+test\RandomTest.s: test\RandomTest.cpp.s
+
+.PHONY : test\RandomTest.s
+
+# target to generate assembly for a file
+test\RandomTest.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\RandomTest.cpp.s
+.PHONY : test\RandomTest.cpp.s
+
+test\TestBase.obj: test\TestBase.cpp.obj
+
+.PHONY : test\TestBase.obj
+
+# target to build an object file
+test\TestBase.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\TestBase.cpp.obj
+.PHONY : test\TestBase.cpp.obj
+
+test\TestBase.i: test\TestBase.cpp.i
+
+.PHONY : test\TestBase.i
+
+# target to preprocess a source file
+test\TestBase.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\TestBase.cpp.i
+.PHONY : test\TestBase.cpp.i
+
+test\TestBase.s: test\TestBase.cpp.s
+
+.PHONY : test\TestBase.s
+
+# target to generate assembly for a file
+test\TestBase.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\TestBase.cpp.s
+.PHONY : test\TestBase.cpp.s
+
+test\Test_A.obj: test\Test_A.cpp.obj
+
+.PHONY : test\Test_A.obj
+
+# target to build an object file
+test\Test_A.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\Test_A.cpp.obj
+.PHONY : test\Test_A.cpp.obj
+
+test\Test_A.i: test\Test_A.cpp.i
+
+.PHONY : test\Test_A.i
+
+# target to preprocess a source file
+test\Test_A.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\Test_A.cpp.i
+.PHONY : test\Test_A.cpp.i
+
+test\Test_A.s: test\Test_A.cpp.s
+
+.PHONY : test\Test_A.s
+
+# target to generate assembly for a file
+test\Test_A.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\Test_A.cpp.s
+.PHONY : test\Test_A.cpp.s
+
+test\Test_B.obj: test\Test_B.cpp.obj
+
+.PHONY : test\Test_B.obj
+
+# target to build an object file
+test\Test_B.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\Test_B.cpp.obj
+.PHONY : test\Test_B.cpp.obj
+
+test\Test_B.i: test\Test_B.cpp.i
+
+.PHONY : test\Test_B.i
+
+# target to preprocess a source file
+test\Test_B.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\Test_B.cpp.i
+.PHONY : test\Test_B.cpp.i
+
+test\Test_B.s: test\Test_B.cpp.s
+
+.PHONY : test\Test_B.s
+
+# target to generate assembly for a file
+test\Test_B.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\Test_B.cpp.s
+.PHONY : test\Test_B.cpp.s
+
+test\Test_C.obj: test\Test_C.cpp.obj
+
+.PHONY : test\Test_C.obj
+
+# target to build an object file
+test\Test_C.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\Test_C.cpp.obj
+.PHONY : test\Test_C.cpp.obj
+
+test\Test_C.i: test\Test_C.cpp.i
+
+.PHONY : test\Test_C.i
+
+# target to preprocess a source file
+test\Test_C.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\Test_C.cpp.i
+.PHONY : test\Test_C.cpp.i
+
+test\Test_C.s: test\Test_C.cpp.s
+
+.PHONY : test\Test_C.s
+
+# target to generate assembly for a file
+test\Test_C.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\Test_C.cpp.s
+.PHONY : test\Test_C.cpp.s
+
+test\Test_D.obj: test\Test_D.cpp.obj
+
+.PHONY : test\Test_D.obj
+
+# target to build an object file
+test\Test_D.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\Test_D.cpp.obj
+.PHONY : test\Test_D.cpp.obj
+
+test\Test_D.i: test\Test_D.cpp.i
+
+.PHONY : test\Test_D.i
+
+# target to preprocess a source file
+test\Test_D.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\Test_D.cpp.i
+.PHONY : test\Test_D.cpp.i
+
+test\Test_D.s: test\Test_D.cpp.s
+
+.PHONY : test\Test_D.s
+
+# target to generate assembly for a file
+test\Test_D.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\test\Test_D.cpp.s
+.PHONY : test\Test_D.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -457,42 +484,45 @@ help:
 	@echo ... Non_Linear_Systems
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Helper.obj
-	@echo ... Helper.i
-	@echo ... Helper.s
-	@echo ... NonLinearEquation.obj
-	@echo ... NonLinearEquation.i
-	@echo ... NonLinearEquation.s
-	@echo ... NonLinearSolver.obj
-	@echo ... NonLinearSolver.i
-	@echo ... NonLinearSolver.s
-	@echo ... RandomFunctions.obj
-	@echo ... RandomFunctions.i
-	@echo ... RandomFunctions.s
-	@echo ... RandomTest.obj
-	@echo ... RandomTest.i
-	@echo ... RandomTest.s
-	@echo ... ReadFiles.obj
-	@echo ... ReadFiles.i
-	@echo ... ReadFiles.s
-	@echo ... TestBase.obj
-	@echo ... TestBase.i
-	@echo ... TestBase.s
-	@echo ... Test_A.obj
-	@echo ... Test_A.i
-	@echo ... Test_A.s
-	@echo ... Test_B.obj
-	@echo ... Test_B.i
-	@echo ... Test_B.s
-	@echo ... Test_C.obj
-	@echo ... Test_C.i
-	@echo ... Test_C.s
-	@echo ... UserInterface.obj
-	@echo ... UserInterface.i
-	@echo ... UserInterface.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Helper.obj
+	@echo ... src/Helper.i
+	@echo ... src/Helper.s
+	@echo ... src/NonLinearEquation.obj
+	@echo ... src/NonLinearEquation.i
+	@echo ... src/NonLinearEquation.s
+	@echo ... src/NonLinearSolver.obj
+	@echo ... src/NonLinearSolver.i
+	@echo ... src/NonLinearSolver.s
+	@echo ... src/ReadFiles.obj
+	@echo ... src/ReadFiles.i
+	@echo ... src/ReadFiles.s
+	@echo ... src/UserInterface.obj
+	@echo ... src/UserInterface.i
+	@echo ... src/UserInterface.s
+	@echo ... test/RandomFunctions.obj
+	@echo ... test/RandomFunctions.i
+	@echo ... test/RandomFunctions.s
+	@echo ... test/RandomTest.obj
+	@echo ... test/RandomTest.i
+	@echo ... test/RandomTest.s
+	@echo ... test/TestBase.obj
+	@echo ... test/TestBase.i
+	@echo ... test/TestBase.s
+	@echo ... test/Test_A.obj
+	@echo ... test/Test_A.i
+	@echo ... test/Test_A.s
+	@echo ... test/Test_B.obj
+	@echo ... test/Test_B.i
+	@echo ... test/Test_B.s
+	@echo ... test/Test_C.obj
+	@echo ... test/Test_C.i
+	@echo ... test/Test_C.s
+	@echo ... test/Test_D.obj
+	@echo ... test/Test_D.i
+	@echo ... test/Test_D.s
 .PHONY : help
 
 

@@ -1,22 +1,10 @@
-#include <iostream>
-#include "NonLinearEquation.h"
-#include "NonLinearSolver.h"
-#include "Test_A.h"
-#include "Test_B.h"
-#include "Test_C.h"
-#include "RandomTest.h"
-#include "ReadFiles.h"
+#include "src/UserInterface.h"
 
-
-//Work need to be done
-//1. Check method to make it correct.
-//2. User Interface
-//3. Read functions from files
-//4.
 
 typedef double (*functions_type)(double*);
 
 int main() {
+<<<<<<< HEAD
     ReadFromFiles();
     RandomTest random_test;
     random_test.RunTest();
@@ -186,5 +174,8 @@ int main() {
     //git test
     //git test
 
+=======
+    UserInterface();
+>>>>>>> branch1
 }
 

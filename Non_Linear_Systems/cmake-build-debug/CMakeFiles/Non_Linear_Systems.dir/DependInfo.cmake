@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/main.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/main.cpp.obj"
-  "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/Helper.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/src/Helper.cpp.obj"
+  "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/MatrixHelper.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/src/MatrixHelper.cpp.obj"
   "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/src/NonLinearEquation.cpp.obj"
   "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearSolver.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/src/NonLinearSolver.cpp.obj"
   "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/ReadFiles.cpp" "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/CMakeFiles/Non_Linear_Systems.dir/src/ReadFiles.cpp.obj"

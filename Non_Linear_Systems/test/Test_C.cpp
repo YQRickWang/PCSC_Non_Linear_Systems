@@ -65,7 +65,7 @@ Test_C::Test_C()
     dfun_1[1][1] = &Test_C_dfunction_22;
 
 
-    this->equations.SetDimension(1);
+    this->equations.SetDimension(2);
     this->equations.SetFunArray(fun_1);
     this->equations.SetDFunArray(dfun_1);
     this->equations.SetFpFun(fp_1);
@@ -84,6 +84,7 @@ void Test_C::RunTest()
         std::cout<<"--------------------------------------------------"<<std::endl;
         std::cout<<"Type \"exit\" to get out the test case."<<std::endl;
         std::cout<<"--------------------------------------------------"<<std::endl;
+        std::cout << ">>";
         std::cin>>command;
         if(command=="exit")
         {
@@ -104,7 +105,7 @@ void Test_C::ShowEquationsInfo()
     std::cout<<"Expected Result: x = , y = "<<std::endl;
     std::cout<<"--------------------------------------------------"<<std::endl;
     std::cout<<"In this case, you can choose following methods: "<<std::endl;
-    std::cout<<"ModifiedNewton Newton All"<<std::endl;
+    std::cout<<"ModifiedNewton Newton"<<std::endl;
     std::cout<<"--------------------------------------------------"<<std::endl;
 }
 

@@ -85,10 +85,10 @@
 		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/main.cpp">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/Helper.cpp">
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/MatrixHelper.cpp">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
-		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/Helper.h">
+		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/MatrixHelper.h">
 			<Option target="Non_Linear_Systems"/>
 		</Unit>
 		<Unit filename="D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/src/NonLinearEquation.cpp">

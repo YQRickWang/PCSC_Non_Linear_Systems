@@ -184,11 +184,10 @@ void NonLinearSolver::FixedPoint(double initial_guess, int max_iterations)
 }
 
 //for high dimemsion
-void NonLinearSolver::Newton(int max_iterations)
+void NonLinearSolver::Newton(double* initial_guess, int max_iterations)
 {
     int dim = equations.GetDimension();
     int it_count = 0;
-    double* initial_guess = nullptr;//initial guess
     double* x_prev = nullptr;
     double* x_next = nullptr;
     double* x_delta = nullptr;
@@ -197,61 +196,49 @@ void NonLinearSolver::Newton(int max_iterations)
     double tol = 1e-5;
     double error = 0.0;
 
-    //initialize
-    //set the initial guess as a array of zero values
-    initial_guess = new double[dim];
-    for(int i=0; i<dim; i++)
-    {
-        initial_guess[i] = 0.5;
-    }
-
     x_prev = initial_guess;
 
     //iterations
     do{
         b = equations.GetFunctionValue(x_prev);
         A = equations.GetDfunctionValue(x_prev);
-        //modify b a little, negative
+
         for(int i=0; i<dim; i++)
         {
             b[i] = -1*b[i];
         }
 
-        for(int i=0;i<dim;i++)
-        {
-            std::cout<<"line:"<<i<<"   ";
-            for(int j=0;j<dim;j++)
-            {
-                std::cout<<A[i][j]<<" ";
-            }
-            std::cout<<b[i]<<std::endl;
-        }
-
         x_delta = LinearSolver_LU(A,b);
-
-        //test
-        std::cout<<"Result of x_delta:"<<"  ";
-        for(int i=0;i<dim;i++)
-        {
-            std::cout<<x_delta[i]<<"  ";
-        }
-        std::cout<<std::endl;
-
-        x_next = MatrixAdd(x_prev,x_delta,dim);//need to check
+        x_next = MatrixAdd(x_prev,x_delta,dim);
         error = GetError(x_prev,x_next,dim);
+
+        //delete x_delta and x_prev to avoid memory leak
+        if(it_count>1)
+        {
+            delete []x_prev;
+        }
+        delete []x_delta;
         x_prev = x_next;
         it_count++;
+
+        //delete the allocated space to avoid memory leak
+        delete []b;
+        for(int i=0; i<dim;i++)
+        {
+            delete A[i];
+        }
+        delete []A;
+
     }while(it_count<=max_iterations&&error>=tol);
 
     AddToZeroPoint("Newton",x_next);
-
+    delete []x_next;
 }
 
-void NonLinearSolver::ModifiedNewton(double m, int max_iterations)
+void NonLinearSolver::ModifiedNewton(double* initial_guess, double m, int max_iterations)
 {
     int dim = equations.GetDimension();
     int it_count = 0;
-    double* initial_guess = nullptr;//initial guess
     double* x_prev = nullptr;
     double* x_next = nullptr;
     double* x_delta = nullptr;
@@ -260,53 +247,45 @@ void NonLinearSolver::ModifiedNewton(double m, int max_iterations)
     double tol = 1e-5;
     double error = 0.0;
 
-    //initialize
-    //set the initial guess as a array of zero values
-    initial_guess = new double[dim];
-    for(int i=0; i<dim; i++)
-    {
-        initial_guess[i] = 0.5;
-    }
-
     x_prev = initial_guess;
 
     //iterations
     do{
         b = equations.GetFunctionValue(x_prev);
         A = equations.GetDfunctionValue(x_prev);
-        //modify b a little, negative
+
         for(int i=0; i<dim; i++)
         {
             b[i] = -m*b[i];
         }
 
-        for(int i=0;i<dim;i++)
-        {
-            std::cout<<"line:"<<i<<"   ";
-            for(int j=0;j<dim;j++)
-            {
-                std::cout<<A[i][j]<<" ";
-            }
-            std::cout<<b[i]<<std::endl;
-        }
 
         x_delta = LinearSolver_LU(A,b);
-
-        //test
-        std::cout<<"Result of x_delta:"<<"  ";
-        for(int i=0;i<dim;i++)
-        {
-            std::cout<<x_delta[i]<<"  ";
-        }
-        std::cout<<std::endl;
-
-        x_next = MatrixAdd(x_prev,x_delta,dim);//need to check
+        x_next = MatrixAdd(x_prev,x_delta,dim);
         error = GetError(x_prev,x_next,dim);
+
+        //delete x_delta and x_prev to avoid memory leak
+        if(it_count>1)
+        {
+            delete []x_prev;
+        }
+        delete []x_delta;
         x_prev = x_next;
         it_count++;
+
+        //delete the allocated space to avoid memory leak
+        delete []b;
+        for(int i=0; i<dim;i++)
+        {
+            delete A[i];
+        }
+        delete []A;
+
     }while(it_count<=max_iterations&&error>=tol);
 
     AddToZeroPoint("ModifiedNewton",x_next);
+
+    delete []x_next;
 }
 
 void NonLinearSolver::Newton1D(double initial_guess, int max_iterations) {
@@ -427,7 +406,7 @@ double* NonLinearSolver::LinearSolver_LU(double **A, double *b)
     x = Backward(U,y,dim);
 
 
-    //delete the sapce
+    //delete allocated space
     for(int i=0;i<dim;i++)
     {
         delete L[i];
@@ -436,7 +415,7 @@ double* NonLinearSolver::LinearSolver_LU(double **A, double *b)
 
     delete []L;
     delete []U;
-
+    delete []y;
 
     return x;
 }

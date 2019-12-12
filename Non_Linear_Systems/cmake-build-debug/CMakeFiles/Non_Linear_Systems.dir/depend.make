@@ -4,13 +4,13 @@
 CMakeFiles\Non_Linear_Systems.dir\main.cpp.obj: ..\main.cpp
 CMakeFiles\Non_Linear_Systems.dir\main.cpp.obj: ..\src\UserInterface.h
 
-CMakeFiles\Non_Linear_Systems.dir\src\Helper.cpp.obj: ..\src\Helper.cpp
-CMakeFiles\Non_Linear_Systems.dir\src\Helper.cpp.obj: ..\src\Helper.h
+CMakeFiles\Non_Linear_Systems.dir\src\MatrixHelper.cpp.obj: ..\src\MatrixHelper.cpp
+CMakeFiles\Non_Linear_Systems.dir\src\MatrixHelper.cpp.obj: ..\src\MatrixHelper.h
 
 CMakeFiles\Non_Linear_Systems.dir\src\NonLinearEquation.cpp.obj: ..\src\NonLinearEquation.cpp
 CMakeFiles\Non_Linear_Systems.dir\src\NonLinearEquation.cpp.obj: ..\src\NonLinearEquation.h
 
-CMakeFiles\Non_Linear_Systems.dir\src\NonLinearSolver.cpp.obj: ..\src\Helper.h
+CMakeFiles\Non_Linear_Systems.dir\src\NonLinearSolver.cpp.obj: ..\src\MatrixHelper.h
 CMakeFiles\Non_Linear_Systems.dir\src\NonLinearSolver.cpp.obj: ..\src\NonLinearEquation.h
 CMakeFiles\Non_Linear_Systems.dir\src\NonLinearSolver.cpp.obj: ..\src\NonLinearSolver.cpp
 CMakeFiles\Non_Linear_Systems.dir\src\NonLinearSolver.cpp.obj: ..\src\NonLinearSolver.h
@@ -21,7 +21,7 @@ CMakeFiles\Non_Linear_Systems.dir\src\ReadFiles.cpp.obj: ..\src\ReadFiles.h
 CMakeFiles\Non_Linear_Systems.dir\src\ReadFiles.cpp.obj: ..\test\RandomFunctions.h
 
 CMakeFiles\Non_Linear_Systems.dir\src\UserInterface.cpp.obj: ..\exprtk\exprtk.hpp
-CMakeFiles\Non_Linear_Systems.dir\src\UserInterface.cpp.obj: ..\src\Helper.h
+CMakeFiles\Non_Linear_Systems.dir\src\UserInterface.cpp.obj: ..\src\MatrixHelper.h
 CMakeFiles\Non_Linear_Systems.dir\src\UserInterface.cpp.obj: ..\src\NonLinearEquation.h
 CMakeFiles\Non_Linear_Systems.dir\src\UserInterface.cpp.obj: ..\src\NonLinearSolver.h
 CMakeFiles\Non_Linear_Systems.dir\src\UserInterface.cpp.obj: ..\src\ReadFiles.h
@@ -39,7 +39,7 @@ CMakeFiles\Non_Linear_Systems.dir\test\RandomFunctions.cpp.obj: ..\exprtk\exprtk
 CMakeFiles\Non_Linear_Systems.dir\test\RandomFunctions.cpp.obj: ..\test\RandomFunctions.cpp
 CMakeFiles\Non_Linear_Systems.dir\test\RandomFunctions.cpp.obj: ..\test\RandomFunctions.h
 
-CMakeFiles\Non_Linear_Systems.dir\test\RandomTest.cpp.obj: ..\src\Helper.h
+CMakeFiles\Non_Linear_Systems.dir\test\RandomTest.cpp.obj: ..\src\MatrixHelper.h
 CMakeFiles\Non_Linear_Systems.dir\test\RandomTest.cpp.obj: ..\src\NonLinearEquation.h
 CMakeFiles\Non_Linear_Systems.dir\test\RandomTest.cpp.obj: ..\src\NonLinearSolver.h
 CMakeFiles\Non_Linear_Systems.dir\test\RandomTest.cpp.obj: ..\test\RandomFunctions.h
@@ -47,34 +47,34 @@ CMakeFiles\Non_Linear_Systems.dir\test\RandomTest.cpp.obj: ..\test\RandomTest.cp
 CMakeFiles\Non_Linear_Systems.dir\test\RandomTest.cpp.obj: ..\test\RandomTest.h
 CMakeFiles\Non_Linear_Systems.dir\test\RandomTest.cpp.obj: ..\test\TestBase.h
 
-CMakeFiles\Non_Linear_Systems.dir\test\TestBase.cpp.obj: ..\src\Helper.h
+CMakeFiles\Non_Linear_Systems.dir\test\TestBase.cpp.obj: ..\src\MatrixHelper.h
 CMakeFiles\Non_Linear_Systems.dir\test\TestBase.cpp.obj: ..\src\NonLinearEquation.h
 CMakeFiles\Non_Linear_Systems.dir\test\TestBase.cpp.obj: ..\src\NonLinearSolver.h
 CMakeFiles\Non_Linear_Systems.dir\test\TestBase.cpp.obj: ..\test\TestBase.cpp
 CMakeFiles\Non_Linear_Systems.dir\test\TestBase.cpp.obj: ..\test\TestBase.h
 
-CMakeFiles\Non_Linear_Systems.dir\test\Test_A.cpp.obj: ..\src\Helper.h
+CMakeFiles\Non_Linear_Systems.dir\test\Test_A.cpp.obj: ..\src\MatrixHelper.h
 CMakeFiles\Non_Linear_Systems.dir\test\Test_A.cpp.obj: ..\src\NonLinearEquation.h
 CMakeFiles\Non_Linear_Systems.dir\test\Test_A.cpp.obj: ..\src\NonLinearSolver.h
 CMakeFiles\Non_Linear_Systems.dir\test\Test_A.cpp.obj: ..\test\TestBase.h
 CMakeFiles\Non_Linear_Systems.dir\test\Test_A.cpp.obj: ..\test\Test_A.cpp
 CMakeFiles\Non_Linear_Systems.dir\test\Test_A.cpp.obj: ..\test\Test_A.h
 
-CMakeFiles\Non_Linear_Systems.dir\test\Test_B.cpp.obj: ..\src\Helper.h
+CMakeFiles\Non_Linear_Systems.dir\test\Test_B.cpp.obj: ..\src\MatrixHelper.h
 CMakeFiles\Non_Linear_Systems.dir\test\Test_B.cpp.obj: ..\src\NonLinearEquation.h
 CMakeFiles\Non_Linear_Systems.dir\test\Test_B.cpp.obj: ..\src\NonLinearSolver.h
 CMakeFiles\Non_Linear_Systems.dir\test\Test_B.cpp.obj: ..\test\TestBase.h
 CMakeFiles\Non_Linear_Systems.dir\test\Test_B.cpp.obj: ..\test\Test_B.cpp
 CMakeFiles\Non_Linear_Systems.dir\test\Test_B.cpp.obj: ..\test\Test_B.h
 
-CMakeFiles\Non_Linear_Systems.dir\test\Test_C.cpp.obj: ..\src\Helper.h
+CMakeFiles\Non_Linear_Systems.dir\test\Test_C.cpp.obj: ..\src\MatrixHelper.h
 CMakeFiles\Non_Linear_Systems.dir\test\Test_C.cpp.obj: ..\src\NonLinearEquation.h
 CMakeFiles\Non_Linear_Systems.dir\test\Test_C.cpp.obj: ..\src\NonLinearSolver.h
 CMakeFiles\Non_Linear_Systems.dir\test\Test_C.cpp.obj: ..\test\TestBase.h
 CMakeFiles\Non_Linear_Systems.dir\test\Test_C.cpp.obj: ..\test\Test_C.cpp
 CMakeFiles\Non_Linear_Systems.dir\test\Test_C.cpp.obj: ..\test\Test_C.h
 
-CMakeFiles\Non_Linear_Systems.dir\test\Test_D.cpp.obj: ..\src\Helper.h
+CMakeFiles\Non_Linear_Systems.dir\test\Test_D.cpp.obj: ..\src\MatrixHelper.h
 CMakeFiles\Non_Linear_Systems.dir\test\Test_D.cpp.obj: ..\src\NonLinearEquation.h
 CMakeFiles\Non_Linear_Systems.dir\test\Test_D.cpp.obj: ..\src\NonLinearSolver.h
 CMakeFiles\Non_Linear_Systems.dir\test\Test_D.cpp.obj: ..\test\TestBase.h

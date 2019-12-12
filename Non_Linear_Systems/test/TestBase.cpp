@@ -102,18 +102,37 @@ void TestBase::ChooseMethod(std::string method)
         solver.ClearZeroPoint();
     }
     else if(method=="Newton" && dim > 1){
-        solver.Newton();
+        std::cout<<"Enter the initial guess: "<<std::endl;
+        std::cout << ">>";
+        double* initial_guess = new double[dim];
+        for(int i=0;i<dim;i++)
+        {
+            std::cin>>initial_guess[i];
+        }
+        solver.Newton(initial_guess);
+
         solver.ZeroPointPrint();
         solver.ClearZeroPoint();
+
+        delete []initial_guess;
     }
     else if(method=="ModifiedNewton" && dim > 1){
+        std::cout<<"Enter the initial guess: "<<std::endl;
+        std::cout << ">>";
+        double* initial_guess = new double[dim];
+        for(int i=0;i<dim;i++)
+        {
+            std::cin>>initial_guess[i];
+        }
         double m;
         std::cout<<"Enter the weight m in the modified Newton method: "<<"\n";
         std::cout << ">>";
         std::cin>>m;
-        solver.ModifiedNewton(m);
+        solver.ModifiedNewton(initial_guess,m);
         solver.ZeroPointPrint();
         solver.ClearZeroPoint();
+
+        delete []initial_guess;
     }
     else
     {

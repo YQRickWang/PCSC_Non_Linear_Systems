@@ -60,6 +60,7 @@ void Test_B::RunTest()
         std::cout<<"--------------------------------------------------"<<std::endl;
         std::cout<<"Type \"exit\" to get out the test case."<<std::endl;
         std::cout<<"--------------------------------------------------"<<std::endl;
+        std::cout << ">>";
         std::cin>>command;
         if(command=="exit")
         {
@@ -80,7 +81,7 @@ void Test_B::ShowEquationsInfo()
     std::cout<<"Expected Result: -1.8414, 1.14619"<<std::endl;
     std::cout<<"--------------------------------------------------"<<std::endl;
     std::cout<<"In this case, you can choose following methods: "<<std::endl;
-    std::cout<<"Aitken Bisection Chord FixedPoint ModifiedNewton1D Newton1D All"<<std::endl;
+    std::cout<<"Aitken Bisection Chord FixedPoint ModifiedNewton1D Newton1D"<<std::endl;
     std::cout<<"--------------------------------------------------"<<std::endl;
 }
 

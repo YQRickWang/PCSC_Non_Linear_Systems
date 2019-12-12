@@ -153,23 +153,23 @@ CMakeFiles\Non_Linear_Systems.dir\test\Test_B.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Non_Linear_Systems.dir\test\Test_B.cpp.s /c "D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\test\Test_B.cpp"
 <<
 
-CMakeFiles\Non_Linear_Systems.dir\src\Helper.cpp.obj: CMakeFiles\Non_Linear_Systems.dir\flags.make
-CMakeFiles\Non_Linear_Systems.dir\src\Helper.cpp.obj: ..\src\Helper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Non_Linear_Systems.dir/src/Helper.cpp.obj"
+CMakeFiles\Non_Linear_Systems.dir\src\MatrixHelper.cpp.obj: CMakeFiles\Non_Linear_Systems.dir\flags.make
+CMakeFiles\Non_Linear_Systems.dir\src\MatrixHelper.cpp.obj: ..\src\MatrixHelper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Non_Linear_Systems.dir/src/MatrixHelper.cpp.obj"
 	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Non_Linear_Systems.dir\src\Helper.cpp.obj /FdCMakeFiles\Non_Linear_Systems.dir\ /FS -c "D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\src\Helper.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Non_Linear_Systems.dir\src\MatrixHelper.cpp.obj /FdCMakeFiles\Non_Linear_Systems.dir\ /FS -c "D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\src\MatrixHelper.cpp"
 <<
 
-CMakeFiles\Non_Linear_Systems.dir\src\Helper.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Non_Linear_Systems.dir/src/Helper.cpp.i"
-	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe > CMakeFiles\Non_Linear_Systems.dir\src\Helper.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\src\Helper.cpp"
+CMakeFiles\Non_Linear_Systems.dir\src\MatrixHelper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Non_Linear_Systems.dir/src/MatrixHelper.cpp.i"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe > CMakeFiles\Non_Linear_Systems.dir\src\MatrixHelper.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\src\MatrixHelper.cpp"
 <<
 
-CMakeFiles\Non_Linear_Systems.dir\src\Helper.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Non_Linear_Systems.dir/src/Helper.cpp.s"
+CMakeFiles\Non_Linear_Systems.dir\src\MatrixHelper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Non_Linear_Systems.dir/src/MatrixHelper.cpp.s"
 	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Non_Linear_Systems.dir\src\Helper.cpp.s /c "D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\src\Helper.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Non_Linear_Systems.dir\src\MatrixHelper.cpp.s /c "D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems\src\MatrixHelper.cpp"
 <<
 
 CMakeFiles\Non_Linear_Systems.dir\src\UserInterface.cpp.obj: CMakeFiles\Non_Linear_Systems.dir\flags.make
@@ -312,7 +312,7 @@ Non_Linear_Systems_OBJECTS = \
 "CMakeFiles\Non_Linear_Systems.dir\src\NonLinearEquation.cpp.obj" \
 "CMakeFiles\Non_Linear_Systems.dir\test\Test_A.cpp.obj" \
 "CMakeFiles\Non_Linear_Systems.dir\test\Test_B.cpp.obj" \
-"CMakeFiles\Non_Linear_Systems.dir\src\Helper.cpp.obj" \
+"CMakeFiles\Non_Linear_Systems.dir\src\MatrixHelper.cpp.obj" \
 "CMakeFiles\Non_Linear_Systems.dir\src\UserInterface.cpp.obj" \
 "CMakeFiles\Non_Linear_Systems.dir\test\Test_C.cpp.obj" \
 "CMakeFiles\Non_Linear_Systems.dir\test\Test_D.cpp.obj" \
@@ -329,7 +329,7 @@ Non_Linear_Systems.exe: CMakeFiles\Non_Linear_Systems.dir\src\NonLinearSolver.cp
 Non_Linear_Systems.exe: CMakeFiles\Non_Linear_Systems.dir\src\NonLinearEquation.cpp.obj
 Non_Linear_Systems.exe: CMakeFiles\Non_Linear_Systems.dir\test\Test_A.cpp.obj
 Non_Linear_Systems.exe: CMakeFiles\Non_Linear_Systems.dir\test\Test_B.cpp.obj
-Non_Linear_Systems.exe: CMakeFiles\Non_Linear_Systems.dir\src\Helper.cpp.obj
+Non_Linear_Systems.exe: CMakeFiles\Non_Linear_Systems.dir\src\MatrixHelper.cpp.obj
 Non_Linear_Systems.exe: CMakeFiles\Non_Linear_Systems.dir\src\UserInterface.cpp.obj
 Non_Linear_Systems.exe: CMakeFiles\Non_Linear_Systems.dir\test\Test_C.cpp.obj
 Non_Linear_Systems.exe: CMakeFiles\Non_Linear_Systems.dir\test\Test_D.cpp.obj

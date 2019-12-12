@@ -12,7 +12,7 @@
 #include "string"
 #include "NonLinearSolver.h"
 #include "NonLinearEquation.h"
-#include "Helper.h"
+#include "MatrixHelper.h"
 
 typedef double (*functions_type)(double*);
 
@@ -44,8 +44,8 @@ public:
     void FixedPoint(double initial_guess = 0.0 , int max_iterations = 100);
     void Newton1D(double initial_guess=0.0, int max_iterations=100);
     void ModifiedNewton1D(double initial_guess = 0.0, double m=1.0, int max_iterations=100);
-    void Newton(int max_iterations=100);
-    void ModifiedNewton(double m=1.0, int max_iterations=100);
+    void Newton(double* initial_guess, int max_iterations=100);
+    void ModifiedNewton(double* initial_guess, double m=1.0, int max_iterations=100);
 
     //print the zero point list
     void ZeroPointPrint();//print the zeropoint and method of the function

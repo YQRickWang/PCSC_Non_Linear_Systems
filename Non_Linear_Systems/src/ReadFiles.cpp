@@ -35,17 +35,14 @@ void ReadFromFiles()
     {
         while(std::getline(myfile,line))
         {
-            std::cout<<line<<std::endl;
             string_list.push_back(line);
         }
         myfile.close();
+        AnalyzeFiles(string_list);
     }
     else{
         std::cout<<"Unable to open file, please check again."<<std::endl;
     }
-
-    AnalyzeFiles(string_list);
-
 }
 
 void ReadFromInput()

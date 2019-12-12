@@ -152,8 +152,5 @@ void TestFileInterface()
     std::cout<<"------------------------------------------------------------------------"<<std::endl;
     ReadFromFiles();
     RandomTest test;
-    std::cout<<fun_1_expression<<std::endl;
-    std::cout<<dfun_11_expression<<std::endl;
-    std::cout<<fun_fp_expression<<std::endl;
     test.RunTest();
 }

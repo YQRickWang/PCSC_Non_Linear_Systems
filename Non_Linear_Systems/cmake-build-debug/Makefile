@@ -151,32 +151,32 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\main.cpp.s
 .PHONY : main.cpp.s
 
-src\Helper.obj: src\Helper.cpp.obj
+src\MatrixHelper.obj: src\MatrixHelper.cpp.obj
 
-.PHONY : src\Helper.obj
+.PHONY : src\MatrixHelper.obj
 
 # target to build an object file
-src\Helper.cpp.obj:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\Helper.cpp.obj
-.PHONY : src\Helper.cpp.obj
+src\MatrixHelper.cpp.obj:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\MatrixHelper.cpp.obj
+.PHONY : src\MatrixHelper.cpp.obj
 
-src\Helper.i: src\Helper.cpp.i
+src\MatrixHelper.i: src\MatrixHelper.cpp.i
 
-.PHONY : src\Helper.i
+.PHONY : src\MatrixHelper.i
 
 # target to preprocess a source file
-src\Helper.cpp.i:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\Helper.cpp.i
-.PHONY : src\Helper.cpp.i
+src\MatrixHelper.cpp.i:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\MatrixHelper.cpp.i
+.PHONY : src\MatrixHelper.cpp.i
 
-src\Helper.s: src\Helper.cpp.s
+src\MatrixHelper.s: src\MatrixHelper.cpp.s
 
-.PHONY : src\Helper.s
+.PHONY : src\MatrixHelper.s
 
 # target to generate assembly for a file
-src\Helper.cpp.s:
-	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\Helper.cpp.s
-.PHONY : src\Helper.cpp.s
+src\MatrixHelper.cpp.s:
+	$(MAKE) -f CMakeFiles\Non_Linear_Systems.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Non_Linear_Systems.dir\src\MatrixHelper.cpp.s
+.PHONY : src\MatrixHelper.cpp.s
 
 src\NonLinearEquation.obj: src\NonLinearEquation.cpp.obj
 
@@ -487,9 +487,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... src/Helper.obj
-	@echo ... src/Helper.i
-	@echo ... src/Helper.s
+	@echo ... src/MatrixHelper.obj
+	@echo ... src/MatrixHelper.i
+	@echo ... src/MatrixHelper.s
 	@echo ... src/NonLinearEquation.obj
 	@echo ... src/NonLinearEquation.i
 	@echo ... src/NonLinearEquation.s

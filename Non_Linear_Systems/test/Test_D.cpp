@@ -94,7 +94,7 @@ void Test_D::ShowEquationsInfo()
     std::cout<<"Expected Result: x = , y = "<<std::endl;
     std::cout<<"--------------------------------------------------"<<std::endl;
     std::cout<<"In this case, you can choose following methods: "<<std::endl;
-    std::cout<<"ModifiedNewton Newton All"<<std::endl;
+    std::cout<<"ModifiedNewton Newton"<<std::endl;
     std::cout<<"--------------------------------------------------"<<std::endl;
 }
 

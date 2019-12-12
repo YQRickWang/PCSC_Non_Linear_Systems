@@ -1,4 +1,21 @@
-"C:\Program Files\JetBrains\CLion 2019.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" "D:\A_github repos\PCSC_Non_Linear_Systems\Non_Linear_Systems"
+"D:\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\11818\Desktop\EPFL\S1\MATH-458\Projet\PCSC_Non_Linear_Systems\Non_Linear_Systems
+-- The C compiler identification is GNU 8.1.0
+-- The CXX compiler identification is GNU 8.1.0
+-- Check for working C compiler: D:/MinGW/mingw32/bin/gcc.exe
+-- Check for working C compiler: D:/MinGW/mingw32/bin/gcc.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: D:/MinGW/mingw32/bin/g++.exe
+-- Check for working CXX compiler: D:/MinGW/mingw32/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug
+-- Build files have been written to: C:/Users/11818/Desktop/EPFL/S1/MATH-458/Projet/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug
+
+Problems were encountered while collecting compiler information:
+	g++.exe: error: unrecognized command line option '-bigobj'

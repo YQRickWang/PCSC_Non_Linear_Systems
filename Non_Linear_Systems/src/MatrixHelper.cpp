@@ -4,7 +4,15 @@
 
 #include "MatrixHelper.h"
 
-double GetError(double* x1, double* x2, int size){
+double GetError(double* x1, double* x2, int size)
+/**
+ *
+ * @param x1 a vector
+ * @param x2 a vector
+ * @param size the size of the vector
+ * @return the norm of the output of x1 -x2
+ */
+{
     double sum = 0.0;
     double error = 0.0;
 
@@ -18,6 +26,12 @@ double GetError(double* x1, double* x2, int size){
 }
 
 double GetError(double x1, double x2)
+/**
+ *
+ * @param x1 a scalar
+ * @param x2 a scalar
+ * @return the absolute norm of the difference between x1 ans x2
+ */
 {
     double error = 0.0;
     error = fabs(x1 - x2);
@@ -39,7 +53,15 @@ double GetError(double* x,int size)
     return error;
 }
 
-double* MatrixAdd(double* m1, double* m2, int n){
+double* MatrixAdd(double* m1, double* m2, int n)
+/**
+ *
+ * @param m1 a vector
+ * @param m2 a vector
+ * @param n the size of the vector
+ * @return the sum of these two vectors
+ */
+{
     double* A;
     A = new double [n];
 
@@ -50,7 +72,16 @@ double* MatrixAdd(double* m1, double* m2, int n){
     return A;
 }
 
-double** MatrixAdd(double** m1, double** m2, int n, int m){
+double** MatrixAdd(double** m1, double** m2, int n, int m)
+/**
+ *
+ * @param m1 a matrix
+ * @param m2 a matrix of the same size of m1
+ * @param n the number of the lines
+ * @param m the number of the columns
+ * @return the sum of these two matrices
+ */
+{
     double** A;
     A = new double* [n];
     for (int i = 0; i < n; i++){
@@ -63,7 +94,15 @@ double** MatrixAdd(double** m1, double** m2, int n, int m){
     return A;
 }
 
-double* MatrixSub(double* m1, double* m2, int n){
+double* MatrixSub(double* m1, double* m2, int n)
+/**
+ *
+ * @param m1 a vector
+ * @param m2 a vector
+ * @param n n the size of the vector
+ * @return the difference between these two vectors
+ */
+{
     double* A;
     A = new double [n];
 
@@ -74,7 +113,16 @@ double* MatrixSub(double* m1, double* m2, int n){
     return A;
 }
 
-double** MatrixSub(double** m1, double** m2, int n, int m){
+double** MatrixSub(double** m1, double** m2, int n, int m)
+/**
+ *
+ * @param m1 a matrix
+ * @param m2 a matrix of the same size of m1
+ * @param n the number of the lines
+ * @param m the number of the columns
+ * @return the difference between these two matrices
+ */
+{
     double** A;
     A = new double* [n];
     for (int i = 0; i < n; i++){
@@ -87,7 +135,15 @@ double** MatrixSub(double** m1, double** m2, int n, int m){
     return A;
 }
 
-double** MatrixMulti(double** m1, int a, int n){
+double** MatrixMulti(double** m1, int a, int n)
+/**
+ *
+ * @param m1 a squared matrix
+ * @param a a scalar
+ * @param n the number of lines(columns) of this matrix
+ * @return the result of the multiplication of a and m1
+ */
+{
     double** A;
     A = new double* [n];
     for (int i = 0; i < n; i++){
@@ -100,7 +156,15 @@ double** MatrixMulti(double** m1, int a, int n){
     return A;
 }
 
-double* MatrixMulti(double** m1, double* m2, int n){
+double* MatrixMulti(double** m1, double* m2, int n)
+/**
+ *
+ * @param m1 a squared matrix
+ * @param m2 a vector
+ * @param n the number of lines(columns) of this matrix, also the size of the vector
+ * @return the result of the multiplication of m1 and m2
+ */
+{
     double* A;
     A = new double [n];
     for (int i = 0; i < n; i++){
@@ -115,7 +179,15 @@ double* MatrixMulti(double** m1, double* m2, int n){
 }
 
 //Helper Function for LU method
-double* Forward(double** P, double* res, int dim){
+double* Forward(double** P, double* res, int dim)
+/**
+ *
+ * @param P a matrix(supposed to be low triangular)
+ * @param res a vector(the second member of the system Ax = b)
+ * @param dim the number of lines(columns) of this matrix, also the size of the vector
+ * @return the solution of the system P * x = res
+ */
+{
     double* ans;
     ans = new double[dim];
     ans[0] = res[0] / P[0][0];
@@ -129,7 +201,15 @@ double* Forward(double** P, double* res, int dim){
     return ans;
 }
 
-double* Backward(double** P, double* res, int dim){
+double* Backward(double** P, double* res, int dim)
+/**
+ *
+ * @param P a matrix(supposed to be upper triangular)
+ * @param res a vector(the second member of the system Ax = b)
+ * @param dim the number of lines(columns) of this matrix, also the size of the vector
+ * @return the solution of the system P * x = res
+ */
+{
     double* ans;
     ans = new double[dim];
     ans[dim - 1] = (res[dim - 1] / P[dim - 1][dim - 1]);
@@ -145,6 +225,14 @@ double* Backward(double** P, double* res, int dim){
 
 //need to add pivot technique
 void LUDecomposition(double** A, double** L, double** U, int n)
+/**
+ *
+ * @param A a squared matrix
+ * @param L a lower triangular matrix
+ * @param U a upper triangular matrix
+ * @param n  the number of lines(columns) of this matrix
+ * It performs the matrix decomposition of A = L * U
+ */
 {
     //allocate the space for A, L, U outside the function
     for(int i =0;i<n;i++)
@@ -178,37 +266,4 @@ void LUDecomposition(double** A, double** L, double** U, int n)
     }
 }
 
-double Deter(double** A, int n){
-    if(n ==1)
-        return A[0][0];
-    double** B = new double* [n-1];
-    for (int l = 0; l < n-1; l++){
-        B[l] = new double[n-1];
-    }
-    double sum = 0.0;
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            for (int k = 0; k <(n - 1); k++) {
-                if (j < i){
-                    B[k][j] = A[k+1][j];
-                }
-                else if (j > i){
-                    B[k][j-1] = A[k+1][j];
-                }
-            }
-        }
-        sum = sum + pow(-1, i)*A[0][i] * Deter(B, (n - 1));
-    }
-    for (int l = 0; l < n-1; l++){
-        delete[] B[l];
-    }
-    delete[] B;
-}
 
-bool unique(double** A, double* b, int dim){
-    bool uni = true;
-    if(fabs(Deter(A,dim))<1e-5){
-        uni = false;
-    }
-    return uni;
-}

@@ -8,13 +8,21 @@
 #include "list"
 #include "../exprtk/exprtk.hpp"
 
-//the input functions should follow a specific standard
-//do i need to check the balance of brackets
-
+/**
+ * To read the content of a txt file, store them in a list of strings and send the content to another function to analyze
+ */
 void ReadFromFiles();
+
+/**
+ * To analyze the content of the txt file and store the expression of the functions respectively
+ */
 void AnalyzeFiles(std::list<std::string>);
+
+/**
+ * To read the expression of the functions by the keyboard input
+ */
 void ReadFromInput();
-void AnalyzeFunction(std::string function);
+
 
 
 

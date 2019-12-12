@@ -40,7 +40,7 @@ NonLinearEquation::NonLinearEquation(functions_type *funArray, functions_type **
 
 NonLinearEquation::~NonLinearEquation()
 {
-    //nothing to do
+
 }
 
 int NonLinearEquation::GetDimension()

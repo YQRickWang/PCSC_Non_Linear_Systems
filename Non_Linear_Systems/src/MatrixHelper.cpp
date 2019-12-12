@@ -231,7 +231,6 @@ void LUDecomposition(double** A, double** L, double** U, int n)
  * @param L a lower triangular matrix
  * @param U a upper triangular matrix
  * @param n  the number of lines(columns) of this matrix
- * It performs the matrix decomposition of A = L * U
  */
 {
     //allocate the space for A, L, U outside the function

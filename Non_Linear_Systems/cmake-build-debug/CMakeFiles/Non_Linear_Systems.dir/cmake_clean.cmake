@@ -14,8 +14,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Non_Linear_Systems.dir/test/Test_D.cpp.obj"
   "Non_Linear_Systems.exe"
   "Non_Linear_Systems.exe.manifest"
+  "Non_Linear_Systems.lib"
   "Non_Linear_Systems.pdb"
-  "libNon_Linear_Systems.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

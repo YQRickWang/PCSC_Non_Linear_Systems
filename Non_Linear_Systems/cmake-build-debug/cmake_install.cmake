@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/11818/Desktop/EPFL/S1/MATH-458/Projet/PCSC_Non_Linear_Systems/Non_Linear_Systems
+# Install script for directory: D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/11818/Desktop/EPFL/S1/MATH-458/Projet/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

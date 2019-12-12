@@ -6,17 +6,17 @@
 
 double Test_A_function_1(double *input)
 {
-    return input[0]-1;
+    return exp(input[0])-1;
 }
 
 double Test_A_dfunction_11(double *input)
 {
-    return 1;
+    return exp(input[0]);
 }
 
 double Test_A_fpfunction(double *input)
 {
-    return 1;
+    return log(1.0);
 }
 
 Test_A::Test_A()
@@ -68,10 +68,10 @@ void Test_A::ShowEquationsInfo()
 {
     std::cout<<"Test A info: "<<std::endl;
     std::cout<<"Dimension: "<<equations.GetDimension()<<std::endl;
-    std::cout<<"f(x) = x - 1"<<std::endl;
-    std::cout<<"df(x) = 1"<<std::endl;
-    std::cout<<"g(x) = 1"<<std::endl;
-    std::cout<<"Expected Result: 1"<<std::endl;
+    std::cout<<"f(x) = exp(x) - 1"<<std::endl;
+    std::cout<<"df(x) = exp(x)"<<std::endl;
+    std::cout<<"g(x) = log(1)"<<std::endl;
+    std::cout<<"Expected Result: 0.0"<<std::endl;
     std::cout<<"--------------------------------------------------"<<std::endl;
     std::cout<<"In this case, you can choose following methods: "<<std::endl;
     std::cout<<"Aitken Bisection Chord FixedPoint ModifiedNewton1D Newton1D"<<std::endl;

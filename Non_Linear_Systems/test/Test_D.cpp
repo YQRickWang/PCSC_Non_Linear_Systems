@@ -6,17 +6,17 @@
 
 double Test_D_function_1(double* input)
 {
-    return exp(input[0] * input[0]) + input[1] - 8;
+    return input[0] * input[0] * input[0] + input[1] - 1;
 }
 
 double Test_D_function_2(double* input)
 {
-    return exp(input[0]) + exp(input[1]) - 6;
+    return input[0] - input[1] * input[1] * input[1] - 1;
 }
 
 double Test_D_dfunction_11(double* input)
 {
-    return 2 * input[0] * exp(input[0] * input[0]);
+    return 3 * input[0] * input[0];
 }
 
 double Test_D_dfunction_12(double* input)
@@ -26,12 +26,12 @@ double Test_D_dfunction_12(double* input)
 
 double Test_D_dfunction_21(double* input)
 {
-    return exp(input[0]);
+    return 1;
 }
 
 double Test_D_dfunction_22(double* input)
 {
-    return exp(input[1]);
+    return -3 * input[1] * input[1];
 }
 
 Test_D::Test_D()
@@ -89,9 +89,9 @@ void Test_D::ShowEquationsInfo()
     std::cout<<"Test D info: "<<std::endl;
     std::cout<<"Dimension: "<<equations.GetDimension()<<std::endl;
     std::cout<<"The nonlinear system of equations is: "<<std::endl;
-    std::cout<<" exp(x ^ 2) + y - 8 = 0"<<std::endl;
-    std::cout<<"exp(x) + exp(y) - 6 = 0"<<std::endl;
-    std::cout<<"Expected Result: x = , y = "<<std::endl;
+    std::cout<<"x ^ 3 + y - 1 = 0"<<std::endl;
+    std::cout<<"x - y ^ 3 - 1 = 0"<<std::endl;
+    std::cout<<"Expected Result: x = 1.0, y = 0.0"<<std::endl;
     std::cout<<"--------------------------------------------------"<<std::endl;
     std::cout<<"In this case, you can choose following methods: "<<std::endl;
     std::cout<<"ModifiedNewton Newton"<<std::endl;

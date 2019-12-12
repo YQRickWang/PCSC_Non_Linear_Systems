@@ -5,16 +5,6 @@
 #include "Test_C.h"
 #include "cmath"
 
-//basic test for 2 dimensions
-//simple test
-//f1(x) =
-//f2(x) =
-//df11(x) = 4*x
-//df12(y) = -1
-//df21(x) = 1
-//df22(y) = 2
-
-
 double Test_C_function_1(double* input)
 {
     return 2*pow(input[0],2)-input[1]+1;

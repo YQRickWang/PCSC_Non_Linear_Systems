@@ -4,7 +4,7 @@
 
 **Contact: yuqi.wang@epfl.ch, haojun.zhu@epfl.ch**
 
-**Note: This read me document is only for github, the readme for project is under "Non-Linear-Systems Folder"**
+**Note: This read me document is only for github, the readme for project is under "Non-Linear-Systems" Folder**
 
 ### 1. Overview
 This project is a course project of **Programming Concepts In Scientific Computing (MATH-458)** in EPFL. The aim of the project is to solve non linear systems by using numerical methods including bisection, fixed point (aitken acceleration as well), chord, newton and modified newton method.
@@ -25,11 +25,44 @@ The tool also supports solving nonlinear systems with **equal or less than 4 var
 
 ### 2. How to Compile
 
-### 3. How to Use
+### 3. How to Use And EXAMPLES
 
-When the compling, linking and generating is done. The program is executive.
+When the compling, linking and generating is done. The program is executive. In the executive program, user can choose three different ways to test. Each of them have input standard. **Please follow the standard.**
 
-### 4. Project Structure
+- 1. Test from existing test cases.
+- 2. Test from keyborad input.
+- 3. Test from reading txt files.
+
+
+
+#### A. Test from existing test cases
+
+In the project, there are already some pre-defined test cases. Functions are defined in these test cases. For example, if we wants to **test "Test-B" with "Newton1D"** and exit finally. Type following command. Instructions are made in the programs, and they are easy to follow. The gif also shows the process.
+
+	>>1
+	>>2
+	>>B
+	>>Newton1D
+	>>1.0
+	>>exit
+	>>exit
+	>>exit
+	>>exit
+
+![Test from existing test cases process](https://i.imgur.com/EulPPrI.gif)
+
+
+#### B. Test from keyboard input
+
+
+#### C. Test from reading txt files
+
+
+### 4. List of Features
+
+### 5. List of Tests
+
+### 6. Project Structure
 
 The project includes two important parts. The first part is the implementation of two basic classes: **NonLinearEquation** and **NonLinearSolver**. The second part is a family of test classes which includes the base test class ( **TestBase** ) and other dervied classes ( e.g. **Test-A** ,**Test-B** ). Also, the user defined test calss ( **RandomTest** ) is also derived from base class. The following graph shows the whole structure.
 

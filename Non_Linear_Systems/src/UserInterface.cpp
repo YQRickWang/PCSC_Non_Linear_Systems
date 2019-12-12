@@ -81,7 +81,7 @@ void TestCaseInterface()
             while(true) {
                 std::string command_2;
                 std::cout << "Choose the index of the stored case: (e.g. B)" << std::endl;
-                std::cout << "Type exit if want to exit or type anything else to continue" << std::endl;
+                std::cout << "Type \"exit\" if you want" << std::endl;
                 std::cout << ">>";
                 std::cin >> command_2;
                 if (command_2 == "A") {

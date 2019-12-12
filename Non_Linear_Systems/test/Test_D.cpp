@@ -73,6 +73,7 @@ void Test_D::RunTest()
         std::cout<<"--------------------------------------------------"<<std::endl;
         std::cout<<"Type \"exit\" to get out the test case."<<std::endl;
         std::cout<<"--------------------------------------------------"<<std::endl;
+        std::cout<<">>";
         std::cin>>command;
         if(command=="exit")
         {

@@ -12,9 +12,9 @@
 #include "string"
 #include "NonLinearSolver.h"
 #include "NonLinearEquation.h"
-#include "Helper.h" //helper function
+#include "Helper.h"
 
-typedef double (*functions_type)(double*); //do i have to add this line in this file
+typedef double (*functions_type)(double*);
 
 
 class NonLinearSolver {
@@ -33,24 +33,25 @@ public:
     //get member function
     const NonLinearEquation GetEquations();
     const std::map<std::string,std::list<double>> GetZeroPoint();
-
     //Set member function
     void SetEquations(NonLinearEquation input_equations);
 
 
     //method function
-    void Bisection(double a, double b);//bisection between a and b
+    void Bisection(double a, double b);
     void Aitken(double initial_guess = 0.0, int max_iterations = 100);
     void Chord(double a, double b);
-    void Newton(int max_iterations=100);
+    void FixedPoint(double initial_guess = 0.0 , int max_iterations = 100);
     void Newton1D(double initial_guess=0.0, int max_iterations=100);
-    void ModifiedNewton(double m=1.0, int max_iterations=100);
     void ModifiedNewton1D(double initial_guess = 0.0, double m=1.0, int max_iterations=100);
-    void FixedPoint(double initial_guess = 0.0 , int max_iterations = 100);//intial_guess and max_iterations are default values
+    void Newton(int max_iterations=100);
+    void ModifiedNewton(double m=1.0, int max_iterations=100);
+
+    //print the zero point list
     void ZeroPointPrint();//print the zeropoint and method of the function
 
 
-    //iterative linear system solver
+    // linear system solver
     double* LinearSolver_Jacobi(double** A, double* b, int max_iterations = 1000);
     double* LinearSolver_LU(double** A,double* b);
 

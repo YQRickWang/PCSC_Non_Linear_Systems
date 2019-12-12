@@ -97,8 +97,10 @@ void NonLinearSolver::Aitken(double initial_guess, int max_iterations)
 
     if(dim>1)
     {
-        std::cout<<"The Fixed Point method (Aitken) is only for 1 dimension, please check again."<<std::endl;
+        std::cout<<"The Aitken is only for 1 dimension, please check again."<<std::endl;
+        return;
     }
+
 
     do{
         x_next = equations.GetFpFunctionValue(x_prev);
@@ -111,6 +113,7 @@ void NonLinearSolver::Aitken(double initial_guess, int max_iterations)
         x_prev = x_next;
         it_count++;
     }while(error>=tol&&it_count<=max_iterations);
+
 
     if(error>=tol)
         std::cout<<"The aitken method does not converges."<<std::endl;

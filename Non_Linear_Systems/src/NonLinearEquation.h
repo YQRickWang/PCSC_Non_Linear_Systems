@@ -25,13 +25,12 @@ public:
     //Destructor
     ~NonLinearEquation();
 
-    //Member functions
+    //Get value of functions
     double* GetFunctionValue(double* input);
     double GetFunctionValue(double input);//overload for dimension 1
     double** GetDfunctionValue(double* input);
     double GetDfunctionValue(double input);//overload for dimesion 1
     double GetFpFunctionValue(double input);
-    //void Plot(double a,double b);//only plot for 1d dimension, need to check if 1d
 
     //Get Member Function
     int GetDimension();
@@ -45,10 +44,6 @@ public:
     void SetDFunArray(functions_type** dfunarray);
     void SetFpFun(functions_type fp);
 
-    //operator
-    //NonLinearEquation &operator =(NonLinearEquation);//copy assignment
-
-    //Helper functions
 };
 
 

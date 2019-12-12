@@ -1,5 +1,11 @@
 # PCSC NonLinear Systems Solver
 
+**Author: Yuqi Wang, Haojun Zhu**
+
+**Contact: yuqi.wang@epfl.ch, haojun.zhu@epfl.ch**
+
+**Note: This read me document is only for github, the readme for project is under "Non-Linear-Systems Folder"**
+
 ### 1. Overview
 This project is a course project of **Programming Concepts In Scientific Computing (MATH-458)** in EPFL. The aim of the project is to solve non linear systems by using numerical methods including bisection, fixed point (aitken acceleration as well), chord, newton and modified newton method.
 
@@ -20,6 +26,8 @@ The tool also supports solving nonlinear systems with **equal or less than 4 var
 ### 2. How to Compile
 
 ### 3. How to Use
+
+When the compling, linking and generating is done. The program is executive.
 
 ### 4. Project Structure
 

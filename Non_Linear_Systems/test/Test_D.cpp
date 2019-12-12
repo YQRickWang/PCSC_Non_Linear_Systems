@@ -54,7 +54,7 @@ Test_D::Test_D()
     dfun_1[1][1] = &Test_D_dfunction_22;
 
 
-    this->equations.SetDimension(1);
+    this->equations.SetDimension(2);
     this->equations.SetFunArray(fun_1);
     this->equations.SetDFunArray(dfun_1);
     this->equations.SetFpFun(fp_1);

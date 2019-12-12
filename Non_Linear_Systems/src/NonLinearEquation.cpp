@@ -160,13 +160,5 @@ double NonLinearEquation::GetDfunctionValue(double input)
     return dfunPtrArray[0][0](x);
 }
 
-//operator
-//NonLinearEquation& NonLinearEquation::operator=(NonLinearEquation other)
-//{
-//    //copy assignment
-//    dim = other.GetDimension();
-//    funPtrArray = other.GetFunArray();
-//    dfunPtrArray = other.GetDfunArray();
-//    fpPtr = other.GetFpFun();
-//}
+
 

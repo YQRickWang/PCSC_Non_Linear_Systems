@@ -40,7 +40,7 @@ NonLinearEquation::NonLinearEquation(functions_type *funArray, functions_type **
 
 NonLinearEquation::~NonLinearEquation()
 {
-    //nothing to do
+
 }
 
 int NonLinearEquation::GetDimension()
@@ -160,13 +160,5 @@ double NonLinearEquation::GetDfunctionValue(double input)
     return dfunPtrArray[0][0](x);
 }
 
-//operator
-//NonLinearEquation& NonLinearEquation::operator=(NonLinearEquation other)
-//{
-//    //copy assignment
-//    dim = other.GetDimension();
-//    funPtrArray = other.GetFunArray();
-//    dfunPtrArray = other.GetDfunArray();
-//    fpPtr = other.GetFpFun();
-//}
+
 

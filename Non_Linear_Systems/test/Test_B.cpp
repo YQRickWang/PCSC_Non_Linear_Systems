@@ -1,16 +1,9 @@
 //
-// Created by Rick Wang on 2019/12/7.
+// Created by 11818 on 2019/12/7.
 //
 
 #include "Test_B.h"
 
-//basic test for 1 dimension
-//simple test
-//f(x) = e^x-x-2
-//df(x) = e^x-1
-//g(x) = e^x-2
-//x1 = -1.8414
-//x2 = 1.14619
 double Test_B_function_1(double *input)
 {
     return exp(input[0])-input[0]-2;
@@ -60,6 +53,7 @@ void Test_B::RunTest()
         std::cout<<"--------------------------------------------------"<<std::endl;
         std::cout<<"Type \"exit\" to get out the test case."<<std::endl;
         std::cout<<"--------------------------------------------------"<<std::endl;
+        std::cout << ">>";
         std::cin>>command;
         if(command=="exit")
         {
@@ -80,7 +74,7 @@ void Test_B::ShowEquationsInfo()
     std::cout<<"Expected Result: -1.8414, 1.14619"<<std::endl;
     std::cout<<"--------------------------------------------------"<<std::endl;
     std::cout<<"In this case, you can choose following methods: "<<std::endl;
-    std::cout<<"Aitken Bisection Chord FixedPoint ModifiedNewton1D Newton1D All"<<std::endl;
+    std::cout<<"Aitken Bisection Chord FixedPoint ModifiedNewton1D Newton1D"<<std::endl;
     std::cout<<"--------------------------------------------------"<<std::endl;
 }
 

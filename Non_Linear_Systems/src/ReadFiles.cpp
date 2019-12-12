@@ -24,28 +24,19 @@ void ReadFromFiles()
     std::cin>>file_name;
     file_name=prefix+file_name;
 
-    //for debug
-//    TCHAR Buffer[MAX_PATH];
-//    DWORD dwRet;
-//    dwRet = GetCurrentDirectory(MAX_PATH, Buffer);
-//    std::wcout << Buffer << std::endl;
-
     std::ifstream myfile (file_name);
     if(myfile.is_open())
     {
         while(std::getline(myfile,line))
         {
-            std::cout<<line<<std::endl;
             string_list.push_back(line);
         }
         myfile.close();
+        AnalyzeFiles(string_list);
     }
     else{
         std::cout<<"Unable to open file, please check again."<<std::endl;
     }
-
-    AnalyzeFiles(string_list);
-
 }
 
 void ReadFromInput()
@@ -71,7 +62,7 @@ void ReadFromInput()
     //Read Functions
     for(int i=1;i<=dim;i++)
     {
-        std::cout<<"Please type in number "<<dim<<" function"<<std::endl;
+        std::cout<<"Please type in number "<<i<<" function"<<std::endl;
         std::cout<<"Note: We will not check functions right now, we will check it later, please make it correct."<<std::endl;
         std::string str_func;
         std::cin>>str_func;

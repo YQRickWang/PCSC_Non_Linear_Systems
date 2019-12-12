@@ -78,43 +78,30 @@ void TestCaseInterface()
         }
         else if(command=="2")
         {
-
-                std::string index,exit;
-                std::cout << "Choose the index of the stored case: " << std::endl;
-                std::cin >> index;
-                std::cout<<"Type exit if want to exit or type anything else to continue"<<std::endl;
-                std::cin>>exit;
-                if (index == "A") {
+            while(true) {
+                std::string command_2;
+                std::cout << "Choose the index of the stored case: (e.g. B)" << std::endl;
+                std::cout << "Type \"exit\" if you want" << std::endl;
+                std::cout << ">>";
+                std::cin >> command_2;
+                if (command_2 == "A") {
                     Test_A test_a;
                     test_a.RunTest();
-                    std::cout<<"Type exit if want to exit or type anything else to continue"<<std::endl;
-                    std::cin>>exit;
-                } else if (index == "B") {
+                } else if (command_2 == "B") {
                     Test_B test_b;
                     test_b.RunTest();
-                    std::cout<<"Type exit if want to exit or type anything else to continue"<<std::endl;
-                    std::cin>>exit;
-                } else if (index == "C"){
+                } else if (command_2 == "C") {
                     Test_C test_c;
                     test_c.RunTest();
-                    std::cout<<"Type exit if want to exit or type anything else to continue"<<std::endl;
-                    std::cin>>exit;
-                }
-                else if(index == "D"){
+                } else if (command_2 == "D") {
                     Test_D test_d;
                     test_d.RunTest();
-                    std::cout<<"Type exit if want to exit or type anything else to continue"<<std::endl;
-                    std::cin>>exit;
-                }
-                else if(exit == "exit"){
+                } else if (command_2 == "exit") {
                     break;
+                } else {
+                    std::cout << "No such test case, please check again." << std::endl;
                 }
-                else{
-                    std::cout<<"No such test case"<<std::endl;
-                    std::cout<<"Type exit if want to exit or type anything else to continue"<<std::endl;
-                    std::cin>>exit;
-                }
-
+            }
         }
         else if(command=="exit"||command=="3")
         {
@@ -165,8 +152,5 @@ void TestFileInterface()
     std::cout<<"------------------------------------------------------------------------"<<std::endl;
     ReadFromFiles();
     RandomTest test;
-    std::cout<<fun_1_expression<<std::endl;
-    std::cout<<dfun_11_expression<<std::endl;
-    std::cout<<fun_fp_expression<<std::endl;
     test.RunTest();
 }

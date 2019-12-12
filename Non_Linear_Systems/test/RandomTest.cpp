@@ -101,7 +101,53 @@ RandomTest::~RandomTest()
 
 void RandomTest::ShowEquationsInfo()
 {
-//nothing to do rightnow
+    int dim=equations.GetDimension();
+    std::cout<<"Random Test info: "<<std::endl;
+    std::cout<<"Dimension: "<<dim<<std::endl;
+    std::cout<<"The nonlinear system of equations is: "<<std::endl;
+    if(dim==1)
+    {
+        std::cout<<"f(x)="<<fun_1_expression<<std::endl;
+        std::cout<<"df(x)="<<dfun_11_expression<<std::endl;
+        std::cout<<"g(x)="<<fun_fp_expression<<std::endl;
+        std::cout<<"--------------------------------------------------"<<std::endl;
+        std::cout<<"In this case, you can choose following methods: "<<std::endl;
+        std::cout<<"Aitken Bisection Chord FixedPoint ModifiedNewton1D Newton1D"<<std::endl;
+        std::cout<<"--------------------------------------------------"<<std::endl;
+    }
+    else if(dim==2)
+    {
+        std::cout<<"f1(x)="<<fun_1_expression<<std::endl;
+        std::cout<<"f2(x)="<<fun_2_expression<<std::endl;
+        std::cout<<"--------------------------------------------------"<<std::endl;
+        std::cout<<"In this case, you can choose following methods: "<<std::endl;
+        std::cout<<"ModifiedNewton Newton"<<std::endl;
+        std::cout<<"--------------------------------------------------"<<std::endl;
+    }
+    else if(dim==3)
+    {
+        std::cout<<"f1(x)="<<fun_1_expression<<std::endl;
+        std::cout<<"f2(x)="<<fun_2_expression<<std::endl;
+        std::cout<<"f3(x)="<<fun_3_expression<<std::endl;
+        std::cout<<"--------------------------------------------------"<<std::endl;
+        std::cout<<"In this case, you can choose following methods: "<<std::endl;
+        std::cout<<"ModifiedNewton Newton"<<std::endl;
+        std::cout<<"--------------------------------------------------"<<std::endl;
+    }
+    else if(dim==4)
+    {
+        std::cout<<"f1(x)="<<fun_1_expression<<std::endl;
+        std::cout<<"f2(x)="<<fun_2_expression<<std::endl;
+        std::cout<<"f3(x)="<<fun_3_expression<<std::endl;
+        std::cout<<"f4(x)="<<fun_4_expression<<std::endl;
+        std::cout<<"--------------------------------------------------"<<std::endl;
+        std::cout<<"In this case, you can choose following methods: "<<std::endl;
+        std::cout<<"ModifiedNewton Newton"<<std::endl;
+        std::cout<<"--------------------------------------------------"<<std::endl;
+    }
+    else{
+        std::cout<<"Dimension Error"<<std::endl;
+    }
 }
 
 void RandomTest::RunTest()

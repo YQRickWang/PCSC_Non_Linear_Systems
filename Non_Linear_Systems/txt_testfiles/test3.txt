@@ -1,0 +1,4 @@
+1
+cos(x)-(x*exp(x))
+-sin(x)-exp(x)-x*exp(x)
+cos(x)/exp(x)

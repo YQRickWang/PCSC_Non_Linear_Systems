@@ -6,7 +6,7 @@
 #define NON_LINEAR_SYSTEMS_READFILES_H
 #include "string"
 #include "list"
-#include "../exprtk/exprtk.hpp"
+#include "../lib/exprtk/exprtk.hpp"
 
 /**
  * To read the content of a txt file, store them in a list of strings and send the content to another function to analyze

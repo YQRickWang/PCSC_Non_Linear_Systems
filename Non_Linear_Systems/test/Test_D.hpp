@@ -6,8 +6,8 @@
 #define NON_LINEAR_SYSTEMS_TEST_D_HPP
 
 #include "cmath"
-#include "../src/NonLinearEquation.h"
-#include "../src/NonLinearSolver.h"
+#include "../nonlinear/NonLinearEquation.h"
+#include "../nonlinear/NonLinearSolver.h"
 #include "TestBase.h"
 
 double Test_D_function_1(double* input);

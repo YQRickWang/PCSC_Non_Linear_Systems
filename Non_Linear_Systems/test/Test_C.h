@@ -5,8 +5,8 @@
 #ifndef NON_LINEAR_SYSTEMS_TEST_C_H
 #define NON_LINEAR_SYSTEMS_TEST_C_H
 #include "cmath"
-#include "../src/NonLinearEquation.h"
-#include "../src/NonLinearSolver.h"
+#include "../nonlinear/NonLinearEquation.h"
+#include "../nonlinear/NonLinearSolver.h"
 #include "TestBase.h"
 
 double Test_C_function_1(double* input);

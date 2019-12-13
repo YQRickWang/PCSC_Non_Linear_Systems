@@ -25,6 +25,23 @@ The tool also supports solving nonlinear systems with **equal or less than 4 var
 
 ### 2. How to Compile
 
+If you didn't clone the project yet. Please follow command below to download project. Note that use option "--depth=1" to avoid downloading large files.
+
+	git clone --depth=1 https://github.com/YQRickWang/PCSC_Non_Linear_Systems.git
+	cd PCSC_Non_Linear_Systems
+	cd Non_Linear_Systems
+
+If you already download the project, please follow following commands to generate makefile from cmakelist and build the project (including compling, linking).
+
+	mkdir build
+	cd build
+	cmake ..
+	make
+
+Then, run the following command to run the executable file.
+
+	./Non_Linear_Systems
+	
 ### 3. How to Use And EXAMPLES
 
 When the compling, linking and generating is done. The program is executive. In the executive program, user can choose three different ways to test. Each of them have input standard. **Please follow the standard.**
@@ -85,7 +102,7 @@ The tool also supports reading input from keyboard. User can type in any test ca
 
 //remember to insert gif
 
-	//Tes from keyboard input: Example 2
+	//Test from keyboard input: Example 2
 	//Expected results: (1.28868 4.28868) or (-1.5071 1.4929)
 	//Command to type in
 	//choose mode
@@ -105,11 +122,13 @@ The tool also supports reading input from keyboard. User can type in any test ca
 	>>-1 -1
 	>>1
 	
+
+
 //remember to insert gif
 
 #### C. Test from reading txt files
 
-Our tool can also test from existing txt files. The content in the file should following the standard. No extra lines are allowed in txt files. And all the files shoulde be in the directory "txt_testfiles". The order of lines should follow in order of dimension, functions, derivative functions (derivative for all variables in function 1 then function 2 ...) and fixed point function (only for 1d). Following are two examples of test from txt files. 
+Our tool can also test from existing txt files. The content in the file should following the standard. No extra lines are allowed in txt files. And all the files should be in the directory "txt_testfiles". The order of lines should follow in order of dimension, functions, derivative functions (derivative for all variables in function 1 then function 2 ...) and fixed point function (only for 1d). Following are two examples of test from txt files. 
 
 Txt file Content:
 
@@ -136,15 +155,16 @@ Command type in
 
 #### A. Interactive user experience
 
-We provide a basic user interface to load existing test cases, read random equations from keyboard as well as read from txt files. This interactive interface helps user to switch between different approches.
+We provide a basic user interface to load existing test cases, read random equations from keyboard as well as read from txt files. This interactive interface helps user to switch between different approaches.
 
-#### B. Multiple input approches 
+#### B. Multiple input approaches 
 
-As mentioned in previous part, the tool provides three input ways. The first is to load pre-defined test cases which are already defined in the program. The second is to read equations from keyboard. User can type any appropriate equation or system of equations (less than or equal to 4 variables). The program will prase these input automatically and give proper results. The third one is reading from txt files. The input flow is same as the second approach. But these equations are already defined in txt files.
+As mentioned in previous part, the tool provides three input ways. The first is to load pre-defined test cases which are already defined in the program. The second is to read equations from keyboard. User can type any appropriate equation or system of equations (less than or equal to 4 variables). The program will parsing these input automatically and give proper results. The third one is reading from txt files. The input flow is same as the second approach. But these equations are already defined in txt files.
 
 #### C. Applicable for both single equation and system of equations
 
 Our program is suitable for solving nonlinear equation with one variable by aitken, newton, bisection and etc. What's more, solving system of equations by newton and modified newton method is also supported.
+
 
 ### 5. List of Tests
 
@@ -292,13 +312,13 @@ RandomTest is also a class derived from TestBase which is used for user input or
 
 #### A. Support higher dimension (more than 4)
 
-Now, our tool only support nonlinear systems equal to (or less than) 4, which involves hard-coding. In the future, we may find a way to support higher dimension. 
+Now, our tool only supports nonlinear systems equal to (or less than) 4, which involves hard-coding. In the future, we may find a way to support higher dimension. 
 
 #### B. Make algoritms more stable
 
 There are two unstable parts in our program. The first is that our program lacks ability detecting inappropriate input. This may cause unexpected error. We may use exceptions to help us deal with this problem.
 
-Another part is related to the implementation of algorithms. In our implementation, especially newton method for nonlinear systems (2 variables or more), we are using some algorithms to solve **linear systems**. We implement such algorithm by ourselves. As far, these implementation are not stable enough to consider general problems. We are considering using external libraries to improve the stability. Also, we implement matrix opeartions by ourselves, which may also encounter some problems. We have to deal with the allocated space carefully to avoid memory leak.
+Another part is related to the implementation of algorithms. In our implementation, especially newton method for nonlinear systems (2 variables or more), we are using some algorithms to solve **linear systems**. We implement such algorithm by ourselves. As far, these implementations are not stable enough to consider general problems. We are considering using external libraries to improve the stability. Also, we implement matrix operations by ourselves, which may also encounter some problems. We have to deal with the allocated space carefully to avoid memory leak.
 
 #### C. More friendly user interface
 

@@ -7,15 +7,30 @@
 
 #include "TestBase.h"
 #include "cmath"
-#include "../src/NonLinearEquation.h"
-#include "../src/NonLinearSolver.h"
+#include "../nonlinear/NonLinearEquation.h"
+#include "../nonlinear/NonLinearSolver.h"
 #include "RandomFunctions.h"
 
 class RandomTest:public TestBase{
 public:
+    /**
+    * default constructor for random test
+    */
     RandomTest();
+
+    /**
+    * default destructor for random test
+    */
     ~RandomTest();
+
+    /**
+    * It controls the execution of the analysis of the random test case
+    */
     void RunTest() override;
+
+    /**
+     * It shows the relevant information of the random test case, saying the expression of the function, etc
+     */
     void ShowEquationsInfo() override;
 };
 

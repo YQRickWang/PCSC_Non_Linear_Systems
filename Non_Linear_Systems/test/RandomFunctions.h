@@ -8,6 +8,11 @@
 #include "iostream"
 #include "string"
 
+/**
+ * This file contain lots of hard coding work. Following are functions for random test. The argument of these functions
+ * will be defined by input.
+ */
+
 double RandomFunction_1(double* input);
 double RandomFunction_2(double* input);
 double RandomFunction_3(double* input);
@@ -31,8 +36,10 @@ double RandomDFunction_44(double* input);
 double RandomFunction_fp(double* input);
 double RandomFunctionBase(std::string str_expression,double* input);
 
-//define global value
-//define global variable for random function
+
+/**
+ * declare global variables for random function
+ */
 extern std::string fun_1_expression;
 extern std::string fun_2_expression;
 extern std::string fun_3_expression;

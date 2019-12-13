@@ -5,8 +5,8 @@
 #ifndef NON_LINEAR_SYSTEMS_TESTBASE_H
 #define NON_LINEAR_SYSTEMS_TESTBASE_H
 
-#include "../src/NonLinearSolver.h"
-#include "../src/NonLinearEquation.h"
+#include "../nonlinear/NonLinearSolver.h"
+#include "../nonlinear/NonLinearEquation.h"
 #include "cmath"
 #include "string"
 

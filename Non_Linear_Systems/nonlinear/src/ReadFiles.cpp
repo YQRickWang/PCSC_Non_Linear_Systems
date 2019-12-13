@@ -18,7 +18,7 @@ void ReadFromFiles()
 
     std::cout<<"Read functions from txt files"<<std::endl;
     std::cout<<"--------------------------------------------------"<<std::endl;
-    std::cout<<"Please type the file name. E.g. test_function.txt"<<std::endl;
+    std::cout<<"Please type the file name. E.g. test2.txt"<<std::endl;
     std::cin>>file_name;
     file_name=prefix+file_name;
 

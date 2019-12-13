@@ -1,11 +1,13 @@
-digraph "test/Test_C.h"
+digraph "D:/A_github repos/PCSC_Non_Linear_Systems/Non_Linear_Systems/test/Test_C.h"
 {
  // LATEX_PDF_SIZE
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="test/Test_C.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 [label="D:/A_github repos/PCSC\l_Non_Linear_Systems/Non\l_Linear_Systems/test/Test_C.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="nonlinear/src/UserInterface.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_user_interface_8cpp.html",tooltip=" "];
+  Node2 [label="D:/A_github repos/PCSC\l_Non_Linear_Systems/Non\l_Linear_Systems/nonlinear\l/src/UserInterface.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_user_interface_8cpp.html",tooltip=" "];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="test/src/Test_C.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test___c_8cpp.html",tooltip=" "];
+  Node3 [label="D:/A_github repos/PCSC\l_Non_Linear_Systems/Non\l_Linear_Systems/test/src\l/google_all_test.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$google__all__test_8cpp.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="D:/A_github repos/PCSC\l_Non_Linear_Systems/Non\l_Linear_Systems/test/src\l/Test_C.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_test___c_8cpp.html",tooltip=" "];
 }

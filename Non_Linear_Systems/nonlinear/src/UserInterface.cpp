@@ -12,6 +12,7 @@
 #include "../../test/Test_B.h"
 #include "../../test/Test_C.h"
 #include "../../test/Test_D.hpp"
+#include "../../test/google_all_test.h"
 
 void UserInterface()
 {
@@ -34,8 +35,11 @@ void UserInterface()
         else if(command=="3")
         {
             TestFileInterface();
+        } else if(command=="4")
+        {
+            TestAll();
         }
-        else if(command=="exit"||command=="4")
+        else if(command=="exit"||command=="5")
         {
             std::cout<<"PCSC Non Linear System Solver exit."<<std::endl;
             std::cout<<"------------------------------------------------------------------------"<<std::endl;
@@ -56,8 +60,9 @@ void WelcomeInfo()
     std::cout<<"1-"<<"Test from existing test cases."<<std::endl;
     std::cout<<"2-"<<"Test from keyboard."<<std::endl;
     std::cout<<"3-"<<"Test from txt files."<<std::endl;
-    std::cout<<"4-"<<"Exit"<<std::endl;
-    std::cout<<R"(Please type in the mode you want to choose or type "4" or "exit" to exit)"<<std::endl;
+    std::cout<<"4-"<<"Test all test cases."<<std::endl;
+    std::cout<<"5-"<<"Exit"<<std::endl;
+    std::cout<<R"(Please type in the mode you want to choose or type "5" or "exit" to exit)"<<std::endl;
     std::cout<<"------------------------------------------------------------------------"<<std::endl;
     std::cout<<">>";
 }

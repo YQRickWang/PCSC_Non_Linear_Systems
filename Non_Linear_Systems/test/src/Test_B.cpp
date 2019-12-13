@@ -70,8 +70,8 @@ void Test_B::ShowEquationsInfo()
     std::cout<<"Dimension: "<<equations.GetDimension()<<std::endl;
     std::cout<<"f(x) = exp(x) - x - 2"<<std::endl;
     std::cout<<"df(x) = exp(x) - 1"<<std::endl;
-    std::cout<<"g(x) = exp(x) - 2"<<std::endl;
-    std::cout<<"Expected Result: -1.8414, 1.14619"<<std::endl;
+    std::cout<<"g(x) = exp(x)-2"<<std::endl;
+    std::cout<<"Expected Result: -1.841408 or 1.146193"<<std::endl;
     std::cout<<"--------------------------------------------------"<<std::endl;
     std::cout<<"In this case, you can choose following methods: "<<std::endl;
     std::cout<<"Aitken Bisection Chord FixedPoint ModifiedNewton1D Newton1D"<<std::endl;

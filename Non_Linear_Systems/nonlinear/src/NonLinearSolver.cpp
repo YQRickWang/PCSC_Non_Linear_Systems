@@ -4,6 +4,7 @@
 
 #include "../NonLinearSolver.h"
 #include "../NonLinearEquation.h"
+#include "iomanip"
 
 //Constructor
 NonLinearSolver::NonLinearSolver()
@@ -88,7 +89,7 @@ void NonLinearSolver::Bisection(double a, double b)
 void NonLinearSolver::Aitken(double initial_guess, int max_iterations)
 {
     int dim = equations.GetDimension();
-    double tol = 1e-5;
+    double tol = 1e-6;
     double x_prev = initial_guess;
     double x_next = 0.0;
     double x_next_next = 0.0;
@@ -124,7 +125,7 @@ void NonLinearSolver::Aitken(double initial_guess, int max_iterations)
 
 void NonLinearSolver::Chord(double a, double b)
 {
-    double tol = 1e-5;//tolerance of the method
+    double tol = 1e-6;//tolerance of the method
     double intervalBegin, x, intervalEnd;
     intervalBegin = a;
     intervalEnd = b;
@@ -134,7 +135,7 @@ void NonLinearSolver::Chord(double a, double b)
     {
         double x_prev = x;
         if(equations.GetFunctionValue(intervalBegin) * equations.GetFunctionValue(intervalEnd) >= 0.0){
-            std::cout<< "incorrect interval" <<"\n";
+            std::cout<< "incorrect interval" <<std::endl;
         }
         else if(equations.GetFunctionValue(intervalBegin) * equations.GetFunctionValue(x) < 0){
             intervalEnd = x;
@@ -155,7 +156,7 @@ void NonLinearSolver::Chord(double a, double b)
 void NonLinearSolver::FixedPoint(double initial_guess, int max_iterations)
 {
     int dim = equations.GetDimension();
-    double tol = 1e-5;
+    double tol = 1e-6;
     double x_prev = initial_guess;
     double x_next = 0.0;
     double error = 0.0;
@@ -244,7 +245,7 @@ void NonLinearSolver::ModifiedNewton(double* initial_guess, double m, int max_it
     double* x_delta = nullptr;
     double** A = nullptr;
     double* b = nullptr;
-    double tol = 1e-5;
+    double tol = 1e-6;
     double error = 0.0;
 
     x_prev = initial_guess;
@@ -289,7 +290,7 @@ void NonLinearSolver::ModifiedNewton(double* initial_guess, double m, int max_it
 }
 
 void NonLinearSolver::Newton1D(double initial_guess, int max_iterations) {
-    double tol = 1e-5;
+    double tol = 1e-6;
     int it_count = 0;
 
     double x = initial_guess - equations.GetFunctionValue(initial_guess) / equations.GetDfunctionValue(initial_guess);
@@ -307,7 +308,7 @@ void NonLinearSolver::Newton1D(double initial_guess, int max_iterations) {
 }
 
 void NonLinearSolver::ModifiedNewton1D(double initial_guess, double m, int max_iterations) {
-    double tol = 1e-5;
+    double tol = 1e-6;
     int it_count = 0;
 
     double x = initial_guess - m*equations.GetFunctionValue(initial_guess) / equations.GetDfunctionValue(initial_guess);
@@ -423,14 +424,14 @@ double* NonLinearSolver::LinearSolver_LU(double **A, double *b)
 void NonLinearSolver::ZeroPointPrint()
 {
     //print zero point
+    std::cout << std::fixed << std::setprecision(6) << std::setfill(' ');
     for(auto it = zeroPoint.begin();it!=zeroPoint.end();++it)
     {
         std::cout<<it->first<<":"<<std::endl;
 
-
         for(auto it_list = (it->second).begin();it_list!=(it->second).end();++it_list)
         {
-            std::cout<<*it_list<<std::endl;
+            std::cout<<std::setw(9)<<*it_list<<std::endl;
         }
     }
 }

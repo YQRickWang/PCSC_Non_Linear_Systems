@@ -14,6 +14,11 @@
 void ReadFromFiles();
 
 /**
+ * To read the content of a txt file, store them in a list of strings and send the content to another function to analyze
+ */
+void ReadFromFiles(std::string file_name);
+
+/**
  * To analyze the content of the txt file and store the expression of the functions respectively
  */
 void AnalyzeFiles(std::list<std::string>);

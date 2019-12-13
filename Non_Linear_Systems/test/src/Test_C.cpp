@@ -92,7 +92,7 @@ void Test_C::ShowEquationsInfo()
     std::cout<<"The nonlinear system of equations is: "<<std::endl;
     std::cout<<"2 * x ^ 2 - y + 1 = 0"<<std::endl;
     std::cout<<"    x + 2 * y - 6 = 0"<<std::endl;
-    std::cout<<"Expected Result: x = , y = "<<std::endl;
+    std::cout<<"Expected Result: x = 0.882782, y = 2.55861"<<std::endl;
     std::cout<<"--------------------------------------------------"<<std::endl;
     std::cout<<"In this case, you can choose following methods: "<<std::endl;
     std::cout<<"ModifiedNewton Newton"<<std::endl;

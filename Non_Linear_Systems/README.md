@@ -47,6 +47,7 @@ When the compling, linking and generating is done. The program is executive. In 
 - 1. Test from existing test cases.
 - 2. Test from keyborad input.
 - 3. Test from reading txt files.
+- 4. Test featuring the google unit test
 
 #### A. Test from existing test cases
 
@@ -98,7 +99,7 @@ The tool also supports reading input from keyboard. User can type in any test ca
 	>>exit
 	>>exit
 
-//remember to insert gif
+![Test from existing test cases process](https://i.imgur.com/fKSJgBD.gif)
 
 	//Test from keyboard input: Example 2
 	//Expected results: (1.28868 4.28868) or (-1.5071 1.4929)
@@ -122,8 +123,6 @@ The tool also supports reading input from keyboard. User can type in any test ca
 	
 
 
-//remember to insert gif
-
 #### C. Test from reading txt files
 
 Our tool can also test from existing txt files. The content in the file should following the standard. No extra lines are allowed in txt files. And all the files should be in the directory "txt_testfiles". The order of lines should follow in order of dimension, functions, derivative functions (derivative for all variables in function 1 then function 2 ...) and fixed point function (only for 1d). Following are two examples of test from txt files. 
@@ -135,8 +134,6 @@ Txt file Content:
 	10*x+2*exp(2*x)-1
 	5*x^2+exp(2*x)-10
 
-Command type in
-
 Txt file Content:
 
 	2
@@ -147,7 +144,11 @@ Txt file Content:
 	1
 	-1
 
-Command type in
+![From Files](https://i.imgur.com/qJEcqgs.gif)
+
+### D. Test All
+
+![Test_ALL](https://i.imgur.com/qO78yhg.gif)
 
 ### 4. List of Features
 
@@ -180,8 +181,14 @@ There are 10 text files in the "txt_testfiles" folder.
 
 - test1, test2, test3, test4, test5 are test cases with 1 variable
 - test6, test7, test8 are test cases with 2 variables
-- test9 is a test case with 1 variable
-- test10 is a test case with 1 variable
+
+- test1: f(x) = 5*x^2+exp(2*x)-x-10, the solution is  x1 = -1.31263 and x2 = 0.938533
+- test2: f(x) = x^4-x-10, the solution is x1 = -1.6975 and x2 = 1.8556
+- test3: f(x) = x-exp(-x), the solution is x = 0.567143
+- test4: f(x) = exp(-x)*(x^2+5*x+2)+1, the solution is x1 = -4.55901 and x2 = -0.579159
+- test5: f1(x, y) = (x - 1)^2 + y^2 -1, f2(x, y) = (x + 1)^2 + y^2 - 1, the solution is x = 0.0 and y = 0.0
+- test6: f1(x, y, z) = x^2-y*z-1, f2(x, y, z) = y-2, f3(x, y, z) = x+z^2-4, there are two solutions, 
+            sol1: x = 1.9631, y = 2, z = 1.4272; sol2: x = -2.4668, y = 2, z = 2.5430  
 
 ### 6. Project Structure
 

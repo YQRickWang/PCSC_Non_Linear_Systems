@@ -37,6 +37,31 @@ void ReadFromFiles()
     }
 }
 
+void ReadFromFiles(std::string file_name)
+{
+    std::string prefix="../txt_testfiles/";
+    std::string line;
+    std::list<std::string> string_list;
+
+    std::cout<<"Read functions from txt files"<<std::endl;
+    std::cout<<"--------------------------------------------------"<<std::endl;
+    file_name=prefix+file_name;
+
+    std::ifstream myfile (file_name);
+    if(myfile.is_open())
+    {
+        while(std::getline(myfile,line))
+        {
+            string_list.push_back(line);
+        }
+        myfile.close();
+        AnalyzeFiles(string_list);
+    }
+    else{
+        std::cout<<"Unable to open file, please check again."<<std::endl;
+    }
+}
+
 void ReadFromInput()
 {
     std::string line;

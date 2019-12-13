@@ -29,7 +29,13 @@ If you didn't clone the project yet. Please follow command below to download pro
 	cd PCSC_Non_Linear_Systems
 	cd Non_Linear_Systems
 
-If you already download the project, please follow following commands to generate makefile from cmakelist and build the project (including compling, linking).
+After your download the project, go into main project folder. Please follow the command to add googletest framework.
+	
+	cd lib
+	rmdir googletest
+	git clone https://github.com/google/googletest.git
+	
+Then, go to the main project folder, please follow following commands to generate makefile from cmakelist and build the project (including compling, linking).
 
 	mkdir build
 	cd build
